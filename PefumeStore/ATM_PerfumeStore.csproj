@@ -135,6 +135,11 @@
     <Compile Include="Management Interface\UserRoleManagement.Designer.cs">
       <DependentUpon>UserRoleManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="User Interface\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +151,12 @@
     </Compile>
     <Compile Include="User Interface\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Interface\MakeOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Interface\MakeOrder.Designer.cs">
+      <DependentUpon>MakeOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="User Interface\Register.cs">
       <SubType>Form</SubType>
@@ -190,6 +201,9 @@
     <EmbeddedResource Include="Management Interface\UserRoleManagement.resx">
       <DependentUpon>UserRoleManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User Interface\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Interface\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,13 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Perfume_StoreDataSet.xsc">
       <DependentUpon>Perfume_StoreDataSet.xsd</DependentUpon>
     </None>
@@ -237,6 +247,61 @@
       <DependentUpon>Perfume_Store.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="img\product\hot_deals\versace-deal.jpg" />
+    <None Include="img\product\hot_deals\chanel-deal.jpg" />
+    <None Include="img\banner\home-hero.jpg" />
+    <Content Include="img\channel\GABRIELLE-CHANEL-ESSENCE-Eau de Parfum.jpg" />
+    <Content Include="img\channel\s1001098-main-Lhero.jpg" />
+    <Content Include="img\channel\s1284728-main-Lhero.jpg" />
+    <Content Include="img\channel\s1695980-main-Lhero.jpg" />
+    <Content Include="img\channel\s1837962-main-Lhero.jpg" />
+    <Content Include="img\channel\s2040483-main-Lhero.jpg" />
+    <Content Include="img\channel\s2065415-main-Lhero.jpg" />
+    <Content Include="img\channel\s675132-main-Lhero.jpg" />
+    <Content Include="img\channel\s772616-main-Lhero.jpg" />
+    <Content Include="img\channel\s909093-main-Lhero.jpg" />
+    <Content Include="img\dior\Dior_Addict_eau_ fraiche_2014.jpg" />
+    <Content Include="img\dior\Dior_Fahrenheit.jpg" />
+    <Content Include="img\dior\Dior_Homme_ Cologne_2013.jpg" />
+    <Content Include="img\dior\Dior_Homme_ Sport.jpg" />
+    <Content Include="img\dior\Dior_Hypnotic_Poison.jpg" />
+    <Content Include="img\dior\Dior_J’Adore.jpg" />
+    <Content Include="img\dior\Dior_Sauvage.jpg" />
+    <Content Include="img\dior\Miss_Dior_ Absolutely_ Blooming.jpeg" />
+    <Content Include="img\dior\Miss_Dior_ Blooming_ Bouquet.jpg" />
+    <Content Include="img\dior\Miss_Dior_Cherie Eau_de_Parfum.jpg" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\lolita\images.jpg" />
+    <Content Include="img\lolita\Lolita-Lempicka-Elle-L-aime-pour-femme_pbfz-p1.png-1418108388.png-1418276240.png-1418108388.png" />
+    <Content Include="img\lolita\Lolita-Lempicka-For-Women-EDP_1.jpg" />
+    <Content Include="img\lolita\lolita-lempicka-l-eau-de-minuit-2012-eau-de-parfum-vapo80ml_ebeu-tu.jpg" />
+    <Content Include="img\lolita\Lolita-Lempicka-LEau-en-Blanc-EDP_1.jpg" />
+    <Content Include="img\lolita\lolita_minuit_sonne_9tpu-8f.jpg" />
+    <Content Include="img\lolita\nuoc_hoa_that_sweet_lolita_lempicka_1_hd3c-87.jpg" />
+    <Content Include="img\lolita\o.41313.jpg" />
+    <Content Include="img\lolita\product_9589513b.jpg" />
+    <None Include="img\product\single-product\2\3_0.jpg" />
+    <None Include="img\product\hot_deals\deal-of-the-week.jpg" />
+    <Content Include="img\versace\vanitas versace.jpg" />
+    <Content Include="img\versace\versace bright crystal.jpg" />
+    <Content Include="img\versace\versace crystal noir.jpg" />
+    <Content Include="img\versace\versace eros female.jpg" />
+    <Content Include="img\versace\versace eros flame eau.jpg" />
+    <Content Include="img\versace\versace man.jpg" />
+    <Content Include="img\versace\versace pour homme dyan blue.jpg" />
+    <Content Include="img\versace\versace pour homme.jpg" />
+    <Content Include="img\versace\versace woman.jpg" />
+    <Content Include="img\versace\versace yellow diamond female.jpg" />
+    <Content Include="img\victoria-serect\angel.jpg" />
+    <Content Include="img\victoria-serect\bomshelf.jpg" />
+    <Content Include="img\victoria-serect\caramel.jpg" />
+    <Content Include="img\victoria-serect\gorgeou.jpg" />
+    <Content Include="img\victoria-serect\heavenly.jpg" />
+    <Content Include="img\victoria-serect\Intense.jpg" />
+    <Content Include="img\victoria-serect\love.jpg" />
+    <Content Include="img\victoria-serect\VerySexyForHim2.jpg" />
+    <Content Include="img\victoria-serect\wicked.jpg" />
+    <Content Include="img\victoria-serect\Wild-Palm.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
