@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PefumeStore
+namespace PefumeStore.Management_Interface
 {
-    public partial class Form2 : Form
+    public partial class Admin_Menu : Form
     {
-        public Form2()
+        public Admin_Menu()
         {
             InitializeComponent();
         }

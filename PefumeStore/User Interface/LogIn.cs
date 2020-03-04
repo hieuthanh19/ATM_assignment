@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PefumeStore
 {
-    public partial class Form3 : Form
+    public partial class LogIn : Form
     {
-        public Form3()
+        public LogIn()
         {
             InitializeComponent();
         }
