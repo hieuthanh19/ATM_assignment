@@ -247,6 +247,10 @@
       <DependentUpon>Perfume_Store.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\User_7x_16x.png" />
+    <None Include="Resources\ShoppingBag_16x.png" />
+    <None Include="Resources\Search_glyph71GrayNoHalo_16x.png" />
+    <None Include="Resources\Search_16x_24.bmp" />
     <None Include="img\product\hot_deals\versace-deal.jpg" />
     <None Include="img\product\hot_deals\chanel-deal.jpg" />
     <None Include="img\banner\home-hero.jpg" />
