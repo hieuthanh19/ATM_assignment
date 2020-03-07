@@ -43,6 +43,7 @@
             System.Windows.Forms.Label product_createdByLabel;
             System.Windows.Forms.Label product_updatedAtLabel;
             System.Windows.Forms.Label product_updateByLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.productTableAdapter();
@@ -100,7 +101,7 @@
             // product_idLabel
             // 
             product_idLabel.AutoSize = true;
-            product_idLabel.Location = new System.Drawing.Point(428, 82);
+            product_idLabel.Location = new System.Drawing.Point(586, 82);
             product_idLabel.Name = "product_idLabel";
             product_idLabel.Size = new System.Drawing.Size(75, 17);
             product_idLabel.TabIndex = 2;
@@ -109,7 +110,7 @@
             // product_nameLabel
             // 
             product_nameLabel.AutoSize = true;
-            product_nameLabel.Location = new System.Drawing.Point(428, 110);
+            product_nameLabel.Location = new System.Drawing.Point(586, 110);
             product_nameLabel.Name = "product_nameLabel";
             product_nameLabel.Size = new System.Drawing.Size(99, 17);
             product_nameLabel.TabIndex = 4;
@@ -118,7 +119,7 @@
             // product_volumneLabel
             // 
             product_volumneLabel.AutoSize = true;
-            product_volumneLabel.Location = new System.Drawing.Point(428, 138);
+            product_volumneLabel.Location = new System.Drawing.Point(586, 138);
             product_volumneLabel.Name = "product_volumneLabel";
             product_volumneLabel.Size = new System.Drawing.Size(117, 17);
             product_volumneLabel.TabIndex = 6;
@@ -127,7 +128,7 @@
             // product_quantityLabel
             // 
             product_quantityLabel.AutoSize = true;
-            product_quantityLabel.Location = new System.Drawing.Point(428, 166);
+            product_quantityLabel.Location = new System.Drawing.Point(586, 166);
             product_quantityLabel.Name = "product_quantityLabel";
             product_quantityLabel.Size = new System.Drawing.Size(114, 17);
             product_quantityLabel.TabIndex = 8;
@@ -136,7 +137,7 @@
             // category_idLabel
             // 
             category_idLabel.AutoSize = true;
-            category_idLabel.Location = new System.Drawing.Point(428, 194);
+            category_idLabel.Location = new System.Drawing.Point(586, 194);
             category_idLabel.Name = "category_idLabel";
             category_idLabel.Size = new System.Drawing.Size(82, 17);
             category_idLabel.TabIndex = 10;
@@ -145,7 +146,7 @@
             // brand_idLabel
             // 
             brand_idLabel.AutoSize = true;
-            brand_idLabel.Location = new System.Drawing.Point(428, 222);
+            brand_idLabel.Location = new System.Drawing.Point(586, 222);
             brand_idLabel.Name = "brand_idLabel";
             brand_idLabel.Size = new System.Drawing.Size(64, 17);
             brand_idLabel.TabIndex = 12;
@@ -154,7 +155,7 @@
             // product_originalPriceLabel
             // 
             product_originalPriceLabel.AutoSize = true;
-            product_originalPriceLabel.Location = new System.Drawing.Point(428, 250);
+            product_originalPriceLabel.Location = new System.Drawing.Point(586, 250);
             product_originalPriceLabel.Name = "product_originalPriceLabel";
             product_originalPriceLabel.Size = new System.Drawing.Size(146, 17);
             product_originalPriceLabel.TabIndex = 14;
@@ -163,7 +164,7 @@
             // product_currentPriceLabel
             // 
             product_currentPriceLabel.AutoSize = true;
-            product_currentPriceLabel.Location = new System.Drawing.Point(428, 278);
+            product_currentPriceLabel.Location = new System.Drawing.Point(586, 278);
             product_currentPriceLabel.Name = "product_currentPriceLabel";
             product_currentPriceLabel.Size = new System.Drawing.Size(145, 17);
             product_currentPriceLabel.TabIndex = 16;
@@ -172,7 +173,7 @@
             // product_descriptionLabel
             // 
             product_descriptionLabel.AutoSize = true;
-            product_descriptionLabel.Location = new System.Drawing.Point(428, 306);
+            product_descriptionLabel.Location = new System.Drawing.Point(586, 306);
             product_descriptionLabel.Name = "product_descriptionLabel";
             product_descriptionLabel.Size = new System.Drawing.Size(133, 17);
             product_descriptionLabel.TabIndex = 18;
@@ -181,7 +182,7 @@
             // product_statusLabel
             // 
             product_statusLabel.AutoSize = true;
-            product_statusLabel.Location = new System.Drawing.Point(428, 334);
+            product_statusLabel.Location = new System.Drawing.Point(586, 372);
             product_statusLabel.Name = "product_statusLabel";
             product_statusLabel.Size = new System.Drawing.Size(102, 17);
             product_statusLabel.TabIndex = 20;
@@ -190,7 +191,7 @@
             // product_createdAtLabel
             // 
             product_createdAtLabel.AutoSize = true;
-            product_createdAtLabel.Location = new System.Drawing.Point(428, 363);
+            product_createdAtLabel.Location = new System.Drawing.Point(586, 401);
             product_createdAtLabel.Name = "product_createdAtLabel";
             product_createdAtLabel.Size = new System.Drawing.Size(129, 17);
             product_createdAtLabel.TabIndex = 22;
@@ -199,7 +200,7 @@
             // product_createdByLabel
             // 
             product_createdByLabel.AutoSize = true;
-            product_createdByLabel.Location = new System.Drawing.Point(428, 390);
+            product_createdByLabel.Location = new System.Drawing.Point(586, 428);
             product_createdByLabel.Name = "product_createdByLabel";
             product_createdByLabel.Size = new System.Drawing.Size(132, 17);
             product_createdByLabel.TabIndex = 24;
@@ -208,7 +209,7 @@
             // product_updatedAtLabel
             // 
             product_updatedAtLabel.AutoSize = true;
-            product_updatedAtLabel.Location = new System.Drawing.Point(428, 419);
+            product_updatedAtLabel.Location = new System.Drawing.Point(586, 457);
             product_updatedAtLabel.Name = "product_updatedAtLabel";
             product_updatedAtLabel.Size = new System.Drawing.Size(133, 17);
             product_updatedAtLabel.TabIndex = 26;
@@ -217,7 +218,7 @@
             // product_updateByLabel
             // 
             product_updateByLabel.AutoSize = true;
-            product_updateByLabel.Location = new System.Drawing.Point(428, 446);
+            product_updateByLabel.Location = new System.Drawing.Point(586, 484);
             product_updateByLabel.Name = "product_updateByLabel";
             product_updateByLabel.Size = new System.Drawing.Size(128, 17);
             product_updateByLabel.TabIndex = 28;
@@ -277,7 +278,7 @@
             this.productDataGridView.Location = new System.Drawing.Point(20, 82);
             this.productDataGridView.Name = "productDataGridView";
             this.productDataGridView.RowTemplate.Height = 24;
-            this.productDataGridView.Size = new System.Drawing.Size(402, 381);
+            this.productDataGridView.Size = new System.Drawing.Size(560, 421);
             this.productDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -367,113 +368,114 @@
             // product_idTextBox
             // 
             this.product_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_id", true));
-            this.product_idTextBox.Location = new System.Drawing.Point(580, 79);
+            this.product_idTextBox.Location = new System.Drawing.Point(738, 79);
             this.product_idTextBox.Name = "product_idTextBox";
-            this.product_idTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_idTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_idTextBox.TabIndex = 3;
             // 
             // product_nameTextBox
             // 
             this.product_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_name", true));
-            this.product_nameTextBox.Location = new System.Drawing.Point(580, 107);
+            this.product_nameTextBox.Location = new System.Drawing.Point(738, 107);
             this.product_nameTextBox.Name = "product_nameTextBox";
-            this.product_nameTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_nameTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_nameTextBox.TabIndex = 5;
             // 
             // product_volumneTextBox
             // 
             this.product_volumneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_volumne", true));
-            this.product_volumneTextBox.Location = new System.Drawing.Point(580, 135);
+            this.product_volumneTextBox.Location = new System.Drawing.Point(738, 135);
             this.product_volumneTextBox.Name = "product_volumneTextBox";
-            this.product_volumneTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_volumneTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_volumneTextBox.TabIndex = 7;
             // 
             // product_quantityTextBox
             // 
             this.product_quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_quantity", true));
-            this.product_quantityTextBox.Location = new System.Drawing.Point(580, 163);
+            this.product_quantityTextBox.Location = new System.Drawing.Point(738, 163);
             this.product_quantityTextBox.Name = "product_quantityTextBox";
-            this.product_quantityTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_quantityTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_quantityTextBox.TabIndex = 9;
             // 
             // category_idTextBox
             // 
             this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "category_id", true));
-            this.category_idTextBox.Location = new System.Drawing.Point(580, 191);
+            this.category_idTextBox.Location = new System.Drawing.Point(738, 191);
             this.category_idTextBox.Name = "category_idTextBox";
-            this.category_idTextBox.Size = new System.Drawing.Size(200, 22);
+            this.category_idTextBox.Size = new System.Drawing.Size(256, 22);
             this.category_idTextBox.TabIndex = 11;
             // 
             // brand_idTextBox
             // 
             this.brand_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "brand_id", true));
-            this.brand_idTextBox.Location = new System.Drawing.Point(580, 219);
+            this.brand_idTextBox.Location = new System.Drawing.Point(738, 219);
             this.brand_idTextBox.Name = "brand_idTextBox";
-            this.brand_idTextBox.Size = new System.Drawing.Size(200, 22);
+            this.brand_idTextBox.Size = new System.Drawing.Size(256, 22);
             this.brand_idTextBox.TabIndex = 13;
             // 
             // product_originalPriceTextBox
             // 
             this.product_originalPriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_originalPrice", true));
-            this.product_originalPriceTextBox.Location = new System.Drawing.Point(580, 247);
+            this.product_originalPriceTextBox.Location = new System.Drawing.Point(738, 247);
             this.product_originalPriceTextBox.Name = "product_originalPriceTextBox";
-            this.product_originalPriceTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_originalPriceTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_originalPriceTextBox.TabIndex = 15;
             // 
             // product_currentPriceTextBox
             // 
             this.product_currentPriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_currentPrice", true));
-            this.product_currentPriceTextBox.Location = new System.Drawing.Point(580, 275);
+            this.product_currentPriceTextBox.Location = new System.Drawing.Point(738, 275);
             this.product_currentPriceTextBox.Name = "product_currentPriceTextBox";
-            this.product_currentPriceTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_currentPriceTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_currentPriceTextBox.TabIndex = 17;
             // 
             // product_descriptionTextBox
             // 
             this.product_descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_description", true));
-            this.product_descriptionTextBox.Location = new System.Drawing.Point(580, 303);
+            this.product_descriptionTextBox.Location = new System.Drawing.Point(738, 303);
+            this.product_descriptionTextBox.Multiline = true;
             this.product_descriptionTextBox.Name = "product_descriptionTextBox";
-            this.product_descriptionTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_descriptionTextBox.Size = new System.Drawing.Size(256, 51);
             this.product_descriptionTextBox.TabIndex = 19;
             // 
             // product_statusTextBox
             // 
             this.product_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_status", true));
-            this.product_statusTextBox.Location = new System.Drawing.Point(580, 331);
+            this.product_statusTextBox.Location = new System.Drawing.Point(738, 369);
             this.product_statusTextBox.Name = "product_statusTextBox";
-            this.product_statusTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_statusTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_statusTextBox.TabIndex = 21;
             // 
             // product_createdAtDateTimePicker
             // 
             this.product_createdAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_createdAt", true));
-            this.product_createdAtDateTimePicker.Location = new System.Drawing.Point(580, 359);
+            this.product_createdAtDateTimePicker.Location = new System.Drawing.Point(738, 397);
             this.product_createdAtDateTimePicker.Name = "product_createdAtDateTimePicker";
-            this.product_createdAtDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.product_createdAtDateTimePicker.Size = new System.Drawing.Size(256, 22);
             this.product_createdAtDateTimePicker.TabIndex = 23;
             // 
             // product_createdByTextBox
             // 
             this.product_createdByTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_createdBy", true));
-            this.product_createdByTextBox.Location = new System.Drawing.Point(580, 387);
+            this.product_createdByTextBox.Location = new System.Drawing.Point(738, 425);
             this.product_createdByTextBox.Name = "product_createdByTextBox";
-            this.product_createdByTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_createdByTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_createdByTextBox.TabIndex = 25;
             // 
             // product_updatedAtDateTimePicker
             // 
             this.product_updatedAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_updatedAt", true));
-            this.product_updatedAtDateTimePicker.Location = new System.Drawing.Point(580, 415);
+            this.product_updatedAtDateTimePicker.Location = new System.Drawing.Point(738, 453);
             this.product_updatedAtDateTimePicker.Name = "product_updatedAtDateTimePicker";
-            this.product_updatedAtDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.product_updatedAtDateTimePicker.Size = new System.Drawing.Size(256, 22);
             this.product_updatedAtDateTimePicker.TabIndex = 27;
             // 
             // product_updateByTextBox
             // 
             this.product_updateByTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_updateBy", true));
-            this.product_updateByTextBox.Location = new System.Drawing.Point(580, 443);
+            this.product_updateByTextBox.Location = new System.Drawing.Point(738, 481);
             this.product_updateByTextBox.Name = "product_updateByTextBox";
-            this.product_updateByTextBox.Size = new System.Drawing.Size(200, 22);
+            this.product_updateByTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_updateByTextBox.TabIndex = 29;
             // 
             // btnReturn
@@ -500,7 +502,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 488);
+            this.ClientSize = new System.Drawing.Size(1006, 721);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.label1);
             this.Controls.Add(product_idLabel);
@@ -532,8 +534,12 @@
             this.Controls.Add(product_updateByLabel);
             this.Controls.Add(this.product_updateByTextBox);
             this.Controls.Add(this.productDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ProductManagement";
-            this.Text = "ProductManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Perfume Store Manager | Product Management";
             this.Load += new System.EventHandler(this.ProductManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();

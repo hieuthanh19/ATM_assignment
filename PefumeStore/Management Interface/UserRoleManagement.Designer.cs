@@ -32,6 +32,7 @@
             System.Windows.Forms.Label role_idLabel;
             System.Windows.Forms.Label role_nameLabel;
             System.Windows.Forms.Label role_statusLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserRoleManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.user_roleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.user_roleTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.user_roleTableAdapter();
@@ -202,8 +203,12 @@
             this.Controls.Add(role_statusLabel);
             this.Controls.Add(this.role_statusTextBox);
             this.Controls.Add(this.user_roleDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "UserRoleManagement";
-            this.Text = "UserRoleManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Perfume Store Manager | User Role Management";
             this.Load += new System.EventHandler(this.UserRoleManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_roleBindingSource)).EndInit();

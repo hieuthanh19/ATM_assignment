@@ -32,6 +32,7 @@
             System.Windows.Forms.Label category_idLabel;
             System.Windows.Forms.Label category_nameLabel;
             System.Windows.Forms.Label category_statusLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoryManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoryTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.categoryTableAdapter();
@@ -202,8 +203,12 @@
             this.Controls.Add(category_statusLabel);
             this.Controls.Add(this.category_statusTextBox);
             this.Controls.Add(this.categoryDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CategoryManagement";
-            this.Text = "Category";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Perfume Store Manager | Category Management";
             this.Load += new System.EventHandler(this.CategoryManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();

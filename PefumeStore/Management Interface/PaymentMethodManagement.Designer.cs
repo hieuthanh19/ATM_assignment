@@ -33,6 +33,7 @@
             System.Windows.Forms.Label payment_nameLabel;
             System.Windows.Forms.Label payment_descriptionLabel;
             System.Windows.Forms.Label payment_statusLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaymentMethodManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.paymentMethodBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paymentMethodTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.paymentMethodTableAdapter();
@@ -87,7 +88,7 @@
             // payment_statusLabel
             // 
             payment_statusLabel.AutoSize = true;
-            payment_statusLabel.Location = new System.Drawing.Point(451, 174);
+            payment_statusLabel.Location = new System.Drawing.Point(451, 205);
             payment_statusLabel.Name = "payment_statusLabel";
             payment_statusLabel.Size = new System.Drawing.Size(108, 17);
             payment_statusLabel.TabIndex = 8;
@@ -169,7 +170,7 @@
             this.payment_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentMethodBindingSource, "payment_id", true));
             this.payment_idTextBox.Location = new System.Drawing.Point(596, 87);
             this.payment_idTextBox.Name = "payment_idTextBox";
-            this.payment_idTextBox.Size = new System.Drawing.Size(100, 22);
+            this.payment_idTextBox.Size = new System.Drawing.Size(192, 22);
             this.payment_idTextBox.TabIndex = 3;
             // 
             // payment_nameTextBox
@@ -177,23 +178,24 @@
             this.payment_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentMethodBindingSource, "payment_name", true));
             this.payment_nameTextBox.Location = new System.Drawing.Point(596, 115);
             this.payment_nameTextBox.Name = "payment_nameTextBox";
-            this.payment_nameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.payment_nameTextBox.Size = new System.Drawing.Size(192, 22);
             this.payment_nameTextBox.TabIndex = 5;
             // 
             // payment_descriptionTextBox
             // 
             this.payment_descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentMethodBindingSource, "payment_description", true));
             this.payment_descriptionTextBox.Location = new System.Drawing.Point(596, 143);
+            this.payment_descriptionTextBox.Multiline = true;
             this.payment_descriptionTextBox.Name = "payment_descriptionTextBox";
-            this.payment_descriptionTextBox.Size = new System.Drawing.Size(100, 22);
+            this.payment_descriptionTextBox.Size = new System.Drawing.Size(192, 53);
             this.payment_descriptionTextBox.TabIndex = 7;
             // 
             // payment_statusTextBox
             // 
             this.payment_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentMethodBindingSource, "payment_status", true));
-            this.payment_statusTextBox.Location = new System.Drawing.Point(596, 171);
+            this.payment_statusTextBox.Location = new System.Drawing.Point(596, 202);
             this.payment_statusTextBox.Name = "payment_statusTextBox";
-            this.payment_statusTextBox.Size = new System.Drawing.Size(100, 22);
+            this.payment_statusTextBox.Size = new System.Drawing.Size(192, 22);
             this.payment_statusTextBox.TabIndex = 9;
             // 
             // btnReturn
@@ -232,8 +234,12 @@
             this.Controls.Add(payment_statusLabel);
             this.Controls.Add(this.payment_statusTextBox);
             this.Controls.Add(this.paymentMethodDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "PaymentMethodManagement";
-            this.Text = "PaymentMethodManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Perfume Store Manager | Payment Method Management";
             this.Load += new System.EventHandler(this.PaymentMethodManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentMethodBindingSource)).EndInit();

@@ -33,6 +33,7 @@
             System.Windows.Forms.Label delivery_nameLabel;
             System.Windows.Forms.Label delivery_descriptionLabel;
             System.Windows.Forms.Label delivery_statusLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeliveryMethodManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.deliveryMethodBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.deliveryMethodTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.deliveryMethodTableAdapter();
@@ -60,7 +61,7 @@
             // delivery_idLabel
             // 
             delivery_idLabel.AutoSize = true;
-            delivery_idLabel.Location = new System.Drawing.Point(483, 133);
+            delivery_idLabel.Location = new System.Drawing.Point(459, 66);
             delivery_idLabel.Name = "delivery_idLabel";
             delivery_idLabel.Size = new System.Drawing.Size(76, 17);
             delivery_idLabel.TabIndex = 2;
@@ -69,7 +70,7 @@
             // delivery_nameLabel
             // 
             delivery_nameLabel.AutoSize = true;
-            delivery_nameLabel.Location = new System.Drawing.Point(483, 161);
+            delivery_nameLabel.Location = new System.Drawing.Point(459, 94);
             delivery_nameLabel.Name = "delivery_nameLabel";
             delivery_nameLabel.Size = new System.Drawing.Size(100, 17);
             delivery_nameLabel.TabIndex = 4;
@@ -78,7 +79,7 @@
             // delivery_descriptionLabel
             // 
             delivery_descriptionLabel.AutoSize = true;
-            delivery_descriptionLabel.Location = new System.Drawing.Point(483, 189);
+            delivery_descriptionLabel.Location = new System.Drawing.Point(459, 122);
             delivery_descriptionLabel.Name = "delivery_descriptionLabel";
             delivery_descriptionLabel.Size = new System.Drawing.Size(134, 17);
             delivery_descriptionLabel.TabIndex = 6;
@@ -87,11 +88,12 @@
             // delivery_statusLabel
             // 
             delivery_statusLabel.AutoSize = true;
-            delivery_statusLabel.Location = new System.Drawing.Point(483, 217);
+            delivery_statusLabel.Location = new System.Drawing.Point(459, 185);
             delivery_statusLabel.Name = "delivery_statusLabel";
             delivery_statusLabel.Size = new System.Drawing.Size(103, 17);
             delivery_statusLabel.TabIndex = 8;
             delivery_statusLabel.Text = "delivery status:";
+            delivery_statusLabel.Click += new System.EventHandler(this.delivery_statusLabel_Click);
             // 
             // perfume_StoreDataSet
             // 
@@ -134,10 +136,10 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.deliveryMethodDataGridView.DataSource = this.deliveryMethodBindingSource;
-            this.deliveryMethodDataGridView.Location = new System.Drawing.Point(32, 116);
+            this.deliveryMethodDataGridView.Location = new System.Drawing.Point(12, 66);
             this.deliveryMethodDataGridView.Name = "deliveryMethodDataGridView";
             this.deliveryMethodDataGridView.RowTemplate.Height = 24;
-            this.deliveryMethodDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.deliveryMethodDataGridView.Size = new System.Drawing.Size(441, 220);
             this.deliveryMethodDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -167,33 +169,34 @@
             // delivery_idTextBox
             // 
             this.delivery_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_id", true));
-            this.delivery_idTextBox.Location = new System.Drawing.Point(623, 130);
+            this.delivery_idTextBox.Location = new System.Drawing.Point(599, 63);
             this.delivery_idTextBox.Name = "delivery_idTextBox";
-            this.delivery_idTextBox.Size = new System.Drawing.Size(100, 22);
+            this.delivery_idTextBox.Size = new System.Drawing.Size(129, 22);
             this.delivery_idTextBox.TabIndex = 3;
             // 
             // delivery_nameTextBox
             // 
             this.delivery_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_name", true));
-            this.delivery_nameTextBox.Location = new System.Drawing.Point(623, 158);
+            this.delivery_nameTextBox.Location = new System.Drawing.Point(599, 91);
             this.delivery_nameTextBox.Name = "delivery_nameTextBox";
-            this.delivery_nameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.delivery_nameTextBox.Size = new System.Drawing.Size(129, 22);
             this.delivery_nameTextBox.TabIndex = 5;
             // 
             // delivery_descriptionTextBox
             // 
             this.delivery_descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_description", true));
-            this.delivery_descriptionTextBox.Location = new System.Drawing.Point(623, 186);
+            this.delivery_descriptionTextBox.Location = new System.Drawing.Point(599, 119);
+            this.delivery_descriptionTextBox.Multiline = true;
             this.delivery_descriptionTextBox.Name = "delivery_descriptionTextBox";
-            this.delivery_descriptionTextBox.Size = new System.Drawing.Size(100, 22);
+            this.delivery_descriptionTextBox.Size = new System.Drawing.Size(194, 42);
             this.delivery_descriptionTextBox.TabIndex = 7;
             // 
             // delivery_statusTextBox
             // 
             this.delivery_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_status", true));
-            this.delivery_statusTextBox.Location = new System.Drawing.Point(623, 214);
+            this.delivery_statusTextBox.Location = new System.Drawing.Point(599, 182);
             this.delivery_statusTextBox.Name = "delivery_statusTextBox";
-            this.delivery_statusTextBox.Size = new System.Drawing.Size(100, 22);
+            this.delivery_statusTextBox.Size = new System.Drawing.Size(129, 22);
             this.delivery_statusTextBox.TabIndex = 9;
             // 
             // btnReturn
@@ -220,7 +223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(818, 450);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.label1);
             this.Controls.Add(delivery_idLabel);
@@ -232,8 +235,12 @@
             this.Controls.Add(delivery_statusLabel);
             this.Controls.Add(this.delivery_statusTextBox);
             this.Controls.Add(this.deliveryMethodDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DeliveryMethodManagement";
-            this.Text = "DeliveryMethodManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Perfume Store Manager | Delivery Method Management";
             this.Load += new System.EventHandler(this.DeliveryMethodManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deliveryMethodBindingSource)).EndInit();

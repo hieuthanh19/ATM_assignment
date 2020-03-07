@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.tableAdapterManager = new PefumeStore.Perfume_StoreDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
@@ -41,7 +42,9 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.brandTableAdapter = null;
             this.tableAdapterManager.categoryTableAdapter = null;
+            this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.countriesTableAdapter = null;
             this.tableAdapterManager.deliveryMethodTableAdapter = null;
             this.tableAdapterManager.favListTableAdapter = null;
@@ -59,8 +62,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Register";
-            this.Text = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Perfume Store | Register";
             this.Load += new System.EventHandler(this.Register_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             this.ResumeLayout(false);

@@ -33,6 +33,7 @@
             System.Windows.Forms.Label country_statusLabel;
             System.Windows.Forms.Label country_idLabel;
             System.Windows.Forms.Label country_createdAtLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CountryManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.countriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.countriesTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.countriesTableAdapter();
@@ -63,7 +64,7 @@
             // country_nameLabel
             // 
             country_nameLabel.AutoSize = true;
-            country_nameLabel.Location = new System.Drawing.Point(534, 111);
+            country_nameLabel.Location = new System.Drawing.Point(511, 111);
             country_nameLabel.Name = "country_nameLabel";
             country_nameLabel.Size = new System.Drawing.Size(98, 17);
             country_nameLabel.TabIndex = 4;
@@ -72,7 +73,7 @@
             // country_statusLabel
             // 
             country_statusLabel.AutoSize = true;
-            country_statusLabel.Location = new System.Drawing.Point(534, 139);
+            country_statusLabel.Location = new System.Drawing.Point(511, 139);
             country_statusLabel.Name = "country_statusLabel";
             country_statusLabel.Size = new System.Drawing.Size(101, 17);
             country_statusLabel.TabIndex = 6;
@@ -81,7 +82,7 @@
             // country_idLabel
             // 
             country_idLabel.AutoSize = true;
-            country_idLabel.Location = new System.Drawing.Point(534, 77);
+            country_idLabel.Location = new System.Drawing.Point(511, 77);
             country_idLabel.Name = "country_idLabel";
             country_idLabel.Size = new System.Drawing.Size(74, 17);
             country_idLabel.TabIndex = 13;
@@ -172,9 +173,9 @@
             // country_nameTextBox
             // 
             this.country_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.countriesBindingSource, "country_name", true));
-            this.country_nameTextBox.Location = new System.Drawing.Point(668, 108);
+            this.country_nameTextBox.Location = new System.Drawing.Point(645, 108);
             this.country_nameTextBox.Name = "country_nameTextBox";
-            this.country_nameTextBox.Size = new System.Drawing.Size(200, 22);
+            this.country_nameTextBox.Size = new System.Drawing.Size(243, 22);
             this.country_nameTextBox.TabIndex = 5;
             // 
             // label1
@@ -199,7 +200,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(705, 209);
+            this.btnUpdate.Location = new System.Drawing.Point(682, 209);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 30);
             this.btnUpdate.TabIndex = 10;
@@ -209,7 +210,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(624, 209);
+            this.btnAdd.Location = new System.Drawing.Point(601, 209);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 30);
             this.btnAdd.TabIndex = 11;
@@ -219,7 +220,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(786, 209);
+            this.btnDelete.Location = new System.Drawing.Point(763, 209);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 30);
             this.btnDelete.TabIndex = 12;
@@ -233,24 +234,24 @@
             this.countryStatusCombobox.Items.AddRange(new object[] {
             "Active",
             "Locked"});
-            this.countryStatusCombobox.Location = new System.Drawing.Point(668, 137);
+            this.countryStatusCombobox.Location = new System.Drawing.Point(645, 137);
             this.countryStatusCombobox.Name = "countryStatusCombobox";
-            this.countryStatusCombobox.Size = new System.Drawing.Size(118, 24);
+            this.countryStatusCombobox.Size = new System.Drawing.Size(161, 24);
             this.countryStatusCombobox.TabIndex = 13;
             // 
             // country_idTextBox
             // 
             this.country_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.countriesBindingSource, "country_id", true));
             this.country_idTextBox.Enabled = false;
-            this.country_idTextBox.Location = new System.Drawing.Point(668, 74);
+            this.country_idTextBox.Location = new System.Drawing.Point(645, 74);
             this.country_idTextBox.Name = "country_idTextBox";
-            this.country_idTextBox.Size = new System.Drawing.Size(100, 22);
+            this.country_idTextBox.Size = new System.Drawing.Size(143, 22);
             this.country_idTextBox.TabIndex = 14;
             // 
             // country_createdAtLabel
             // 
             country_createdAtLabel.AutoSize = true;
-            country_createdAtLabel.Location = new System.Drawing.Point(534, 177);
+            country_createdAtLabel.Location = new System.Drawing.Point(511, 177);
             country_createdAtLabel.Name = "country_createdAtLabel";
             country_createdAtLabel.Size = new System.Drawing.Size(128, 17);
             country_createdAtLabel.TabIndex = 14;
@@ -259,9 +260,9 @@
             // country_createdAtDateTimePicker
             // 
             this.country_createdAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.countriesBindingSource, "country_createdAt", true));
-            this.country_createdAtDateTimePicker.Location = new System.Drawing.Point(668, 173);
+            this.country_createdAtDateTimePicker.Location = new System.Drawing.Point(645, 173);
             this.country_createdAtDateTimePicker.Name = "country_createdAtDateTimePicker";
-            this.country_createdAtDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.country_createdAtDateTimePicker.Size = new System.Drawing.Size(243, 22);
             this.country_createdAtDateTimePicker.TabIndex = 15;
             // 
             // CountryManagement
@@ -283,9 +284,12 @@
             this.Controls.Add(this.country_nameTextBox);
             this.Controls.Add(country_statusLabel);
             this.Controls.Add(this.countriesDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CountryManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Country";
+            this.Text = "Perfume Store Manager | Country Management";
             this.Load += new System.EventHandler(this.CountryManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).EndInit();

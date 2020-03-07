@@ -207,6 +207,9 @@
     <EmbeddedResource Include="User Interface\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User Interface\MakeOrder.resx">
+      <DependentUpon>MakeOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Interface\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>

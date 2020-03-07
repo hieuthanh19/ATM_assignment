@@ -1,6 +1,15 @@
 # ATM_assignment
-
-# Database
+## Account List:
+-Role: Admin
+	username: admin	
+	password: admin
+-Role: Manager
+	username: thanhkh
+	password: 11022000
+-Role: User
+	username: test1234	
+	password: test1234
+## About the Database
 1. Dùng sql server để có thể kéo thả bảng -> nhanh
 2. Dùng file sql rời
 ### Thêm file sql rời vào Project

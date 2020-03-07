@@ -42,5 +42,10 @@ namespace PefumeStore.Management_Interface
                 am.Show();
             }
         }
+
+        private void delivery_statusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

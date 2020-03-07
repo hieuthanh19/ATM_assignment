@@ -42,5 +42,40 @@ namespace PefumeStore.Management_Interface
                 am.Show();
             }
         }
+
+        private void order_receiverPhoneTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void order_receiverEmailTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deliveryMethod_idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void order_deliveryStatusTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void order_createdAtDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void order_updatedAtDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void order_deliveredAtDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
