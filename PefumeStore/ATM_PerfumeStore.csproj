@@ -247,6 +247,7 @@
       <DependentUpon>Perfume_Store.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\User_16x.png" />
     <None Include="Resources\User_7x_16x.png" />
     <None Include="Resources\ShoppingBag_16x.png" />
     <None Include="Resources\Search_glyph71GrayNoHalo_16x.png" />

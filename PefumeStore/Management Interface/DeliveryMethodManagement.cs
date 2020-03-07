@@ -31,5 +31,16 @@ namespace PefumeStore.Management_Interface
             this.deliveryMethodTableAdapter.Fill(this.perfume_StoreDataSet.deliveryMethod);
 
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            DialogResult choice = MessageBox.Show("Return to Main Menu?", "Perfume Store Manager", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (choice == DialogResult.Yes)
+            {
+                Hide();
+                Admin_Menu am = new Admin_Menu();
+                am.Show();
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PefumeStore.Management_Interface;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,14 @@ namespace PefumeStore
 
         private void label9_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Admin_Menu am = new Admin_Menu();
+            am.Show();
 
         }
     }

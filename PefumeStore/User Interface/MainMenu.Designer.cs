@@ -29,23 +29,43 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -53,32 +73,17 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -89,15 +94,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox14);
             this.panel1.Controls.Add(this.pictureBox13);
             this.panel1.Controls.Add(this.pictureBox12);
@@ -111,6 +113,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1005, 79);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::PefumeStore.Properties.Resources.User_16x;
+            this.pictureBox14.Location = new System.Drawing.Point(873, 21);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(40, 29);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 13;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::PefumeStore.Properties.Resources.ShoppingBag_16x;
+            this.pictureBox13.Location = new System.Drawing.Point(922, 21);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(31, 29);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 12;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::PefumeStore.Properties.Resources.Search_glyph71GrayNoHalo_16x;
+            this.pictureBox12.Location = new System.Drawing.Point(655, 28);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(19, 22);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 11;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::PefumeStore.Properties.Resources.favicon;
+            this.pictureBox11.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(81, 54);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 10;
+            this.pictureBox11.TabStop = false;
             // 
             // label8
             // 
@@ -175,6 +217,77 @@
             this.panel2.Size = new System.Drawing.Size(1004, 622);
             this.panel2.TabIndex = 1;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = global::PefumeStore.Properties.Resources.versace_deal;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Controls.Add(this.label29);
+            this.panel6.Location = new System.Drawing.Point(475, 397);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(479, 174);
+            this.panel6.TabIndex = 12;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(205, 66);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(121, 29);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "Collection";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BackgroundImage = global::PefumeStore.Properties.Resources.chanel_deal;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Location = new System.Drawing.Point(3, 397);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(466, 174);
+            this.panel5.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(134, 66);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(121, 29);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Collection";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::PefumeStore.Properties.Resources.home_hero;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(977, 388);
+            this.panel4.TabIndex = 10;
+            this.panel4.TabStop = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(295, 82);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(282, 51);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Home banner";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -199,7 +312,7 @@
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Location = new System.Drawing.Point(20, 657);
+            this.panel3.Location = new System.Drawing.Point(3, 632);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(951, 526);
             this.panel3.TabIndex = 9;
@@ -248,184 +361,6 @@
             this.label27.Size = new System.Drawing.Size(121, 17);
             this.label27.TabIndex = 27;
             this.label27.Text = "Fragrances Name";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(770, 264);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(121, 17);
-            this.label22.TabIndex = 21;
-            this.label22.Text = "Fragrances Name";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(226, 264);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(121, 17);
-            this.label21.TabIndex = 20;
-            this.label21.Text = "Fragrances Name";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(411, 264);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(121, 17);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "Fragrances Name";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(599, 264);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(121, 17);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "Fragrances Name";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(48, 264);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(121, 17);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "Fragrances Name";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(394, 19);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(138, 17);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "Freature Fragrances";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(210, 620);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(82, 17);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "Brand Logo";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(437, 620);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(82, 17);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "Brand Logo";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(620, 620);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 17);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "Brand Logo";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(830, 620);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(82, 17);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Brand Logo";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(42, 620);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 17);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Brand Logo";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(65, 1001);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(82, 17);
-            this.label28.TabIndex = 10;
-            this.label28.Text = "Brand Logo";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.BackgroundImage = global::PefumeStore.Properties.Resources.versace_deal;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Controls.Add(this.label29);
-            this.panel6.Location = new System.Drawing.Point(492, 422);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(479, 174);
-            this.panel6.TabIndex = 12;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(205, 66);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(121, 29);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "Collection";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.BackgroundImage = global::PefumeStore.Properties.Resources.chanel_deal;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.label11);
-            this.panel5.Location = new System.Drawing.Point(20, 422);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(466, 174);
-            this.panel5.TabIndex = 11;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(188, 66);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 29);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Collection";
-            // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::PefumeStore.Properties.Resources.home_hero;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(20, 15);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(951, 388);
-            this.panel4.TabIndex = 10;
-            this.panel4.TabStop = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(295, 82);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(287, 52);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Home banner";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox6
             // 
@@ -476,6 +411,51 @@
             this.pictureBox10.TabIndex = 22;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.WaitOnLoad = true;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(770, 264);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(121, 17);
+            this.label22.TabIndex = 21;
+            this.label22.Text = "Fragrances Name";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(226, 264);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(121, 17);
+            this.label21.TabIndex = 20;
+            this.label21.Text = "Fragrances Name";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(411, 264);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(121, 17);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "Fragrances Name";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(599, 264);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(121, 17);
+            this.label19.TabIndex = 18;
+            this.label19.Text = "Fragrances Name";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(48, 264);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(121, 17);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "Fragrances Name";
             // 
             // pictureBox5
             // 
@@ -528,45 +508,78 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.WaitOnLoad = true;
             // 
-            // pictureBox14
+            // label13
             // 
-            this.pictureBox14.Image = global::PefumeStore.Properties.Resources.User_7x_16x;
-            this.pictureBox14.Location = new System.Drawing.Point(864, 21);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 13;
-            this.pictureBox14.TabStop = false;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(394, 19);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(138, 17);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Freature Fragrances";
             // 
-            // pictureBox13
+            // label17
             // 
-            this.pictureBox13.Image = global::PefumeStore.Properties.Resources.ShoppingBag_16x;
-            this.pictureBox13.Location = new System.Drawing.Point(922, 21);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(31, 29);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 12;
-            this.pictureBox13.TabStop = false;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(193, 595);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(82, 17);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "Brand Logo";
             // 
-            // pictureBox12
+            // label16
             // 
-            this.pictureBox12.Image = global::PefumeStore.Properties.Resources.Search_glyph71GrayNoHalo_16x;
-            this.pictureBox12.Location = new System.Drawing.Point(655, 28);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(19, 22);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 11;
-            this.pictureBox12.TabStop = false;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(420, 595);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(82, 17);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "Brand Logo";
             // 
-            // pictureBox11
+            // label15
             // 
-            this.pictureBox11.Image = global::PefumeStore.Properties.Resources.favicon;
-            this.pictureBox11.Location = new System.Drawing.Point(3, 12);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(81, 54);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 10;
-            this.pictureBox11.TabStop = false;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(603, 595);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(82, 17);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Brand Logo";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(813, 595);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(82, 17);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Brand Logo";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(25, 595);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 17);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Brand Logo";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(65, 1001);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(82, 17);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Brand Logo";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(143, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Admin";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainMenu
             // 
@@ -578,19 +591,24 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -601,10 +619,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -657,6 +671,7 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Button button1;
     }
 }
 
