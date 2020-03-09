@@ -74,7 +74,7 @@
     <Compile Include="Class\ProductImg.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Class\User_role.cs" />
-    <Compile Include="Connection.cs" />
+    <Compile Include="Class\Connection.cs" />
     <Compile Include="Management Interface\Admin Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,6 +322,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

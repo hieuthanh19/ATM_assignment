@@ -19,5 +19,7 @@ namespace PerfumeStoreManagement.Class
         public string user_email { get; set; }
         public string user_avatarPath { get; set; }
         public DateTime user_createAt { get; set; }
+
+       
     }
 }
