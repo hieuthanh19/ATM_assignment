@@ -607,6 +607,7 @@
             this.Name = "OrderManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfume Store Manager | Order Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OrderManagement_FormClosed);
             this.Load += new System.EventHandler(this.OrderManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();

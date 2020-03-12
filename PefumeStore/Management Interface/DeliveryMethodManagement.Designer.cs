@@ -241,6 +241,7 @@
             this.Name = "DeliveryMethodManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfume Store Manager | Delivery Method Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DeliveryMethodManagement_FormClosed);
             this.Load += new System.EventHandler(this.DeliveryMethodManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deliveryMethodBindingSource)).EndInit();

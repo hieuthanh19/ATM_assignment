@@ -88,5 +88,10 @@ namespace PefumeStore.Management_Interface
             MainMenu mm = new MainMenu();
             mm.Show();
         }
+
+        private void Admin_Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

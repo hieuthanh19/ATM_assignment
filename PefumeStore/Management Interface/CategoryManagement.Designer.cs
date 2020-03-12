@@ -115,6 +115,7 @@
             // categoryDataGridView
             // 
             this.categoryDataGridView.AutoGenerateColumns = false;
+            this.categoryDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.categoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.categoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -132,18 +133,21 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "category_id";
             this.dataGridViewTextBoxColumn1.HeaderText = "category_id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 111;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "category_name";
             this.dataGridViewTextBoxColumn2.HeaderText = "category_name";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 135;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "category_status";
             this.dataGridViewTextBoxColumn3.HeaderText = "category_status";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 138;
             // 
             // category_idTextBox
             // 
@@ -209,6 +213,7 @@
             this.Name = "CategoryManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfume Store Manager | Category Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CategoryManagement_FormClosed);
             this.Load += new System.EventHandler(this.CategoryManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();

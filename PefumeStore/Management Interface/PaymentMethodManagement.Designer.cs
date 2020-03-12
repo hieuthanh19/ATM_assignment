@@ -240,6 +240,7 @@
             this.Name = "PaymentMethodManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfume Store Manager | Payment Method Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PaymentMethodManagement_FormClosed);
             this.Load += new System.EventHandler(this.PaymentMethodManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentMethodBindingSource)).EndInit();

@@ -43,6 +43,7 @@
             System.Windows.Forms.Label product_createdByLabel;
             System.Windows.Forms.Label product_updatedAtLabel;
             System.Windows.Forms.Label product_updateByLabel;
+            System.Windows.Forms.Label proImgLbl;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -79,20 +80,7 @@
             this.fKorderItemprodu0A9D95DBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.orderItemTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.orderItemTableAdapter();
             this.perfumeStoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productvolumneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productquantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brandidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productoriginalPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productcurrentPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productstatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productcreatedAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productcreatedByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productupdatedAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productupdateByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proImgBtn = new System.Windows.Forms.Button();
             product_idLabel = new System.Windows.Forms.Label();
             product_nameLabel = new System.Windows.Forms.Label();
             product_volumneLabel = new System.Windows.Forms.Label();
@@ -107,6 +95,7 @@
             product_createdByLabel = new System.Windows.Forms.Label();
             product_updatedAtLabel = new System.Windows.Forms.Label();
             product_updateByLabel = new System.Windows.Forms.Label();
+            proImgLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
@@ -245,6 +234,15 @@
             product_updateByLabel.TabIndex = 28;
             product_updateByLabel.Text = "Updated By:";
             // 
+            // proImgLbl
+            // 
+            proImgLbl.AutoSize = true;
+            proImgLbl.Location = new System.Drawing.Point(586, 522);
+            proImgLbl.Name = "proImgLbl";
+            proImgLbl.Size = new System.Drawing.Size(110, 17);
+            proImgLbl.TabIndex = 45;
+            proImgLbl.Text = "Product Images:";
+            // 
             // perfume_StoreDataSet
             // 
             this.perfume_StoreDataSet.DataSetName = "Perfume_StoreDataSet";
@@ -280,29 +278,12 @@
             // 
             this.productDataGridView.AllowUserToAddRows = false;
             this.productDataGridView.AllowUserToDeleteRows = false;
-            this.productDataGridView.AutoGenerateColumns = false;
             this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productidDataGridViewTextBoxColumn,
-            this.productnameDataGridViewTextBoxColumn,
-            this.productvolumneDataGridViewTextBoxColumn,
-            this.productquantityDataGridViewTextBoxColumn,
-            this.categoryidDataGridViewTextBoxColumn,
-            this.brandidDataGridViewTextBoxColumn,
-            this.productoriginalPriceDataGridViewTextBoxColumn,
-            this.productcurrentPriceDataGridViewTextBoxColumn,
-            this.productdescriptionDataGridViewTextBoxColumn,
-            this.productstatusDataGridViewTextBoxColumn,
-            this.productcreatedAtDataGridViewTextBoxColumn,
-            this.productcreatedByDataGridViewTextBoxColumn,
-            this.productupdatedAtDataGridViewTextBoxColumn,
-            this.productupdateByDataGridViewTextBoxColumn});
-            this.productDataGridView.DataSource = this.productBindingSource;
             this.productDataGridView.Location = new System.Drawing.Point(20, 82);
             this.productDataGridView.Name = "productDataGridView";
             this.productDataGridView.ReadOnly = true;
             this.productDataGridView.RowTemplate.Height = 24;
-            this.productDataGridView.Size = new System.Drawing.Size(560, 457);
+            this.productDataGridView.Size = new System.Drawing.Size(560, 499);
             this.productDataGridView.TabIndex = 1;
             this.productDataGridView.SelectionChanged += new System.EventHandler(this.productDataGridView_SelectionChanged);
             // 
@@ -370,7 +351,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(900, 509);
+            this.btnDelete.Location = new System.Drawing.Point(900, 551);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 30);
             this.btnDelete.TabIndex = 34;
@@ -380,7 +361,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(738, 509);
+            this.btnAdd.Location = new System.Drawing.Point(738, 551);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 30);
             this.btnAdd.TabIndex = 33;
@@ -390,7 +371,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(819, 509);
+            this.btnUpdate.Location = new System.Drawing.Point(819, 551);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 30);
             this.btnUpdate.TabIndex = 32;
@@ -544,116 +525,23 @@
             this.perfumeStoreDataSetBindingSource.DataSource = this.perfume_StoreDataSet;
             this.perfumeStoreDataSetBindingSource.Position = 0;
             // 
-            // productidDataGridViewTextBoxColumn
+            // proImgBtn
             // 
-            this.productidDataGridViewTextBoxColumn.DataPropertyName = "product_id";
-            this.productidDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.productidDataGridViewTextBoxColumn.Name = "productidDataGridViewTextBoxColumn";
-            this.productidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productidDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // productnameDataGridViewTextBoxColumn
-            // 
-            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "product_name";
-            this.productnameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
-            this.productnameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productnameDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // productvolumneDataGridViewTextBoxColumn
-            // 
-            this.productvolumneDataGridViewTextBoxColumn.DataPropertyName = "product_volumne";
-            this.productvolumneDataGridViewTextBoxColumn.HeaderText = "Volumne";
-            this.productvolumneDataGridViewTextBoxColumn.Name = "productvolumneDataGridViewTextBoxColumn";
-            this.productvolumneDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productvolumneDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // productquantityDataGridViewTextBoxColumn
-            // 
-            this.productquantityDataGridViewTextBoxColumn.DataPropertyName = "product_quantity";
-            this.productquantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.productquantityDataGridViewTextBoxColumn.Name = "productquantityDataGridViewTextBoxColumn";
-            this.productquantityDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productquantityDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // categoryidDataGridViewTextBoxColumn
-            // 
-            this.categoryidDataGridViewTextBoxColumn.DataPropertyName = "category_id";
-            this.categoryidDataGridViewTextBoxColumn.HeaderText = "Category ID";
-            this.categoryidDataGridViewTextBoxColumn.Name = "categoryidDataGridViewTextBoxColumn";
-            this.categoryidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.categoryidDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // brandidDataGridViewTextBoxColumn
-            // 
-            this.brandidDataGridViewTextBoxColumn.DataPropertyName = "brand_id";
-            this.brandidDataGridViewTextBoxColumn.HeaderText = "Brand ID";
-            this.brandidDataGridViewTextBoxColumn.Name = "brandidDataGridViewTextBoxColumn";
-            this.brandidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.brandidDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // productoriginalPriceDataGridViewTextBoxColumn
-            // 
-            this.productoriginalPriceDataGridViewTextBoxColumn.DataPropertyName = "product_originalPrice";
-            this.productoriginalPriceDataGridViewTextBoxColumn.HeaderText = "Original Price";
-            this.productoriginalPriceDataGridViewTextBoxColumn.Name = "productoriginalPriceDataGridViewTextBoxColumn";
-            this.productoriginalPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productcurrentPriceDataGridViewTextBoxColumn
-            // 
-            this.productcurrentPriceDataGridViewTextBoxColumn.DataPropertyName = "product_currentPrice";
-            this.productcurrentPriceDataGridViewTextBoxColumn.HeaderText = "Current Price";
-            this.productcurrentPriceDataGridViewTextBoxColumn.Name = "productcurrentPriceDataGridViewTextBoxColumn";
-            this.productcurrentPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productdescriptionDataGridViewTextBoxColumn
-            // 
-            this.productdescriptionDataGridViewTextBoxColumn.DataPropertyName = "product_description";
-            this.productdescriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.productdescriptionDataGridViewTextBoxColumn.Name = "productdescriptionDataGridViewTextBoxColumn";
-            this.productdescriptionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productstatusDataGridViewTextBoxColumn
-            // 
-            this.productstatusDataGridViewTextBoxColumn.DataPropertyName = "product_status";
-            this.productstatusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.productstatusDataGridViewTextBoxColumn.Name = "productstatusDataGridViewTextBoxColumn";
-            this.productstatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productstatusDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // productcreatedAtDataGridViewTextBoxColumn
-            // 
-            this.productcreatedAtDataGridViewTextBoxColumn.DataPropertyName = "product_createdAt";
-            this.productcreatedAtDataGridViewTextBoxColumn.HeaderText = "Created At";
-            this.productcreatedAtDataGridViewTextBoxColumn.Name = "productcreatedAtDataGridViewTextBoxColumn";
-            this.productcreatedAtDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productcreatedByDataGridViewTextBoxColumn
-            // 
-            this.productcreatedByDataGridViewTextBoxColumn.DataPropertyName = "product_createdBy";
-            this.productcreatedByDataGridViewTextBoxColumn.HeaderText = "Created By";
-            this.productcreatedByDataGridViewTextBoxColumn.Name = "productcreatedByDataGridViewTextBoxColumn";
-            this.productcreatedByDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productupdatedAtDataGridViewTextBoxColumn
-            // 
-            this.productupdatedAtDataGridViewTextBoxColumn.DataPropertyName = "product_updatedAt";
-            this.productupdatedAtDataGridViewTextBoxColumn.HeaderText = "Updated At";
-            this.productupdatedAtDataGridViewTextBoxColumn.Name = "productupdatedAtDataGridViewTextBoxColumn";
-            this.productupdatedAtDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productupdateByDataGridViewTextBoxColumn
-            // 
-            this.productupdateByDataGridViewTextBoxColumn.DataPropertyName = "product_updateBy";
-            this.productupdateByDataGridViewTextBoxColumn.HeaderText = "Updated By";
-            this.productupdateByDataGridViewTextBoxColumn.Name = "productupdateByDataGridViewTextBoxColumn";
-            this.productupdateByDataGridViewTextBoxColumn.ReadOnly = true;
+            this.proImgBtn.Location = new System.Drawing.Point(738, 515);
+            this.proImgBtn.Name = "proImgBtn";
+            this.proImgBtn.Size = new System.Drawing.Size(75, 30);
+            this.proImgBtn.TabIndex = 44;
+            this.proImgBtn.Text = "Manage";
+            this.proImgBtn.UseVisualStyleBackColor = true;
+            this.proImgBtn.Click += new System.EventHandler(this.proImgBtn_Click);
             // 
             // ProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 553);
+            this.ClientSize = new System.Drawing.Size(1014, 597);
+            this.Controls.Add(proImgLbl);
+            this.Controls.Add(this.proImgBtn);
             this.Controls.Add(this.productUpdatedBy_comboBox);
             this.Controls.Add(this.productCreatedBy_ComboBox);
             this.Controls.Add(this.product_statusCombobox);
@@ -694,6 +582,7 @@
             this.Name = "ProductManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfume Store Manager | Product Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ProductManagement_FormClosed);
             this.Load += new System.EventHandler(this.ProductManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
@@ -701,9 +590,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brandBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKproductcategor04E4BC85BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKproductbrandi05D8E0BEBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKorderItemprodu0A9D95DBBindingSource)).EndInit();
+            
+
+
             ((System.ComponentModel.ISupportInitialize)(this.perfumeStoreDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -746,20 +635,7 @@
         private System.Windows.Forms.BindingSource fKproductbrandi05D8E0BEBindingSource;
         private System.Windows.Forms.BindingSource fKorderItemprodu0A9D95DBBindingSource;
         private Perfume_StoreDataSetTableAdapters.orderItemTableAdapter orderItemTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productvolumneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productquantityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brandidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productoriginalPriceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productcurrentPriceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productdescriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productstatusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productcreatedAtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productcreatedByDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productupdatedAtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productupdateByDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource perfumeStoreDataSetBindingSource;
+        private System.Windows.Forms.Button proImgBtn;
     }
 }

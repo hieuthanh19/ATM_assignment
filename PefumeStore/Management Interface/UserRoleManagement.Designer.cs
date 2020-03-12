@@ -209,6 +209,7 @@
             this.Name = "UserRoleManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfume Store Manager | User Role Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserRoleManagement_FormClosed);
             this.Load += new System.EventHandler(this.UserRoleManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_roleBindingSource)).EndInit();

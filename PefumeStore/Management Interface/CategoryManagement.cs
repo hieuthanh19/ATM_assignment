@@ -42,5 +42,10 @@ namespace PefumeStore.Management_Interface
                 am.Show();
             }
         }
+
+        private void CategoryManagement_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

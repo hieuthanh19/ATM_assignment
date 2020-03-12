@@ -29,8 +29,8 @@ namespace PerfumeStoreManagement.Class
             {
                 SqlCommand command = new SqlCommand("select * from product where product_id = @productId", sqlCon);
                 command.Parameters.AddWithValue("productId", productId);
-
                 sqlCon.Open();
+
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())

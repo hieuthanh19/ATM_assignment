@@ -64,17 +64,11 @@ namespace PefumeStore.Management_Interface
         }
 
         private void ProductManagement_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'perfume_StoreDataSet.orderItem' table. You can move, or remove it, as needed.
-            this.orderItemTableAdapter.Fill(this.perfume_StoreDataSet.orderItem);
-            // TODO: This line of code loads data into the 'perfume_StoreDataSet.users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter.Fill(this.perfume_StoreDataSet.users);
-            // TODO: This line of code loads data into the 'perfume_StoreDataSet.brand' table. You can move, or remove it, as needed.
-            this.brandTableAdapter.Fill(this.perfume_StoreDataSet.brand);
-            // TODO: This line of code loads data into the 'perfume_StoreDataSet.category' table. You can move, or remove it, as needed.
-            this.categoryTableAdapter.Fill(this.perfume_StoreDataSet.category);
+        {           
             // TODO: This line of code loads data into the 'perfume_StoreDataSet.product' table. You can move, or remove it, as needed.
-            this.productTableAdapter.Fill(this.perfume_StoreDataSet.product);
+            this.productTableAdapter.FillByBrandAndCategory(this.perfume_StoreDataSet.product);
+            productBindingSource.DataSource = this.perfume_StoreDataSet.product;
+            productDataGridView.DataSource = productBindingSource;
 
         }
 
@@ -97,8 +91,7 @@ namespace PefumeStore.Management_Interface
                 MessageBox.Show("Text fields can't be empty", "Perfume Store Manager", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
-            {
-                int productId = int.Parse(product_idTextBox.Text);
+            {                
                 string productName = product_nameTextBox.Text;
                 double productVolumne = int.Parse(product_volumneMaskedTxtBox.Text);
                 int productQuantity = int.Parse(product_quantityMaskedTxtBox.Text);
@@ -108,12 +101,9 @@ namespace PefumeStore.Management_Interface
                 double currentPrice = double.Parse(product_currentPriceMaskedTextBox.Text);
                 string description = product_descriptionTextBox.Text;
                 int status = (int)product_statusCombobox.SelectedValue;
-                DateTime createdTime = product_createdAtDateTimePicker.Value;
-                int createdBy = (int)productCreatedBy_ComboBox.SelectedValue;
-                DateTime updatedAt = product_updatedAtDateTimePicker.Value;
-                int updatedBy = (int)productUpdatedBy_comboBox.SelectedValue;
-
-                productTableAdapter.Insert(productId, productName, productVolumne, productQuantity, categoryId, brandId, originalPrice, currentPrice, description, status, createdTime, createdBy, updatedAt, updatedBy);
+                DateTime createdTime = product_createdAtDateTimePicker.Value;               
+                DateTime updatedAt = product_updatedAtDateTimePicker.Value;               
+                productTableAdapter.Insert(productName, productVolumne, productQuantity, categoryId, brandId, originalPrice, currentPrice, description, status, createdTime, updatedAt);               
 
 
                 //Update Data grid view
@@ -156,7 +146,7 @@ namespace PefumeStore.Management_Interface
                 DateTime updatedAt = product_updatedAtDateTimePicker.Value;
                 int updatedBy = (int)productUpdatedBy_comboBox.SelectedValue;
 
-                productTableAdapter.Delete(productId, productName, productVolumne, productQuantity, categoryId, brandId, originalPrice, currentPrice, status, createdTime, createdBy, updatedAt, updatedBy);
+                productTableAdapter.Delete(productId, productName, productVolumne, productQuantity, categoryId, brandId, originalPrice, currentPrice, status, createdTime, updatedAt);
 
                 //Update Data grid view
                 productDataTable productDatatable = new productDataTable();
@@ -169,6 +159,18 @@ namespace PefumeStore.Management_Interface
         private void productDataGridView_SelectionChanged(object sender, EventArgs e)
         {
             loadComboBox();
+        }
+
+        private void proImgBtn_Click(object sender, EventArgs e)
+        {
+            int productId = int.Parse(product_idTextBox.Text);
+            ProductImagesManagement product_Images_Management = new ProductImagesManagement(productId);
+            product_Images_Management.Show();
+        }
+
+        private void ProductManagement_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

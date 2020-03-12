@@ -18,13 +18,7 @@ namespace PefumeStore.Management_Interface
             InitializeComponent();
         }
 
-        private void countriesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.countriesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.perfume_StoreDataSet);
-
-        }
+        
 
         private void CountryManagement_Load(object sender, EventArgs e)
         {
@@ -57,7 +51,7 @@ namespace PefumeStore.Management_Interface
                 int countryId = int.Parse(country_idTextBox.Text);
                 string countryName = country_nameTextBox.Text;
                 int status = (int)countryStatusCombobox.SelectedValue;
-                countriesTableAdapter.Insert(countryId, countryName, status, null);
+                countriesTableAdapter.Insert(countryName, status, null);
 
                 //Update Data grid view
                 countriesDataTable countryDatatable = new countriesDataTable();
@@ -96,6 +90,11 @@ namespace PefumeStore.Management_Interface
                 countriesBindingSource.DataSource = countryDatatable;
                 countriesDataGridView.DataSource = countryDatatable;                
             }
+        }
+
+        private void CountryManagement_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

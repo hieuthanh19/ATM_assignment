@@ -47,5 +47,10 @@ namespace PefumeStore.Management_Interface
         {
 
         }
+
+        private void DeliveryMethodManagement_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

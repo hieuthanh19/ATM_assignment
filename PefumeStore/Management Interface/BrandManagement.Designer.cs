@@ -36,10 +36,10 @@
             System.Windows.Forms.Label country_nameLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrandManagement));
             this.brandDataGridView = new System.Windows.Forms.DataGridView();
-            this.countriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
-            this.brand_idTextBox = new System.Windows.Forms.TextBox();
             this.brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
+            this.countriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.brand_idTextBox = new System.Windows.Forms.TextBox();
             this.brand_nameTextBox = new System.Windows.Forms.TextBox();
             this.brand_createdAtDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,26 +53,20 @@
             this.countriesTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.countriesTableAdapter();
             this.fKbrandcountryi0F624AF8BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fKbrandcountryi0F624AF8BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.brand_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countrynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.country_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countryidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countrystatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countrycreatedAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brand_createdAt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brand_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.country_idComboBox = new System.Windows.Forms.ComboBox();
+            this.country_nameComboBox = new System.Windows.Forms.ComboBox();
+            this.fKbrandcountryi0F624AF8BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             brand_idLabel = new System.Windows.Forms.Label();
             brand_nameLabel = new System.Windows.Forms.Label();
             brand_createdAtLabel = new System.Windows.Forms.Label();
             brand_statusLabel = new System.Windows.Forms.Label();
             country_nameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.brandDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brandBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKbrandcountryi0F624AF8BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKbrandcountryi0F624AF8BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKbrandcountryi0F624AF8BindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // brand_idLabel
@@ -111,38 +105,44 @@
             brand_statusLabel.TabIndex = 10;
             brand_statusLabel.Text = "brand status:";
             // 
+            // country_nameLabel
+            // 
+            country_nameLabel.AutoSize = true;
+            country_nameLabel.Location = new System.Drawing.Point(611, 149);
+            country_nameLabel.Name = "country_nameLabel";
+            country_nameLabel.Size = new System.Drawing.Size(59, 17);
+            country_nameLabel.TabIndex = 21;
+            country_nameLabel.Text = "country:";
+            // 
             // brandDataGridView
             // 
             this.brandDataGridView.AllowUserToAddRows = false;
             this.brandDataGridView.AllowUserToDeleteRows = false;
-            this.brandDataGridView.AutoGenerateColumns = false;
+            this.brandDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.brandDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.brandDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.brand_name,
-            this.countrynameDataGridViewTextBoxColumn,
-            this.country_id,
-            this.countryidDataGridViewTextBoxColumn,
-            this.countrystatusDataGridViewTextBoxColumn,
-            this.countrycreatedAtDataGridViewTextBoxColumn,
-            this.brand_createdAt,
-            this.brand_status});
-            this.brandDataGridView.DataSource = this.countriesBindingSource;
             this.brandDataGridView.Location = new System.Drawing.Point(12, 94);
+            this.brandDataGridView.MultiSelect = false;
             this.brandDataGridView.Name = "brandDataGridView";
             this.brandDataGridView.ReadOnly = true;
             this.brandDataGridView.RowTemplate.Height = 24;
             this.brandDataGridView.Size = new System.Drawing.Size(593, 220);
             this.brandDataGridView.TabIndex = 1;
+            this.brandDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.brandDataGridView_CellContentClick);
             // 
-            // countriesBindingSource
+            // brandBindingSource
             // 
-            this.countriesBindingSource.DataMember = "countries";
-            this.countriesBindingSource.DataSource = this.perfume_StoreDataSet;
+            this.brandBindingSource.DataMember = "brand";
+            this.brandBindingSource.DataSource = this.perfume_StoreDataSet;
             // 
             // perfume_StoreDataSet
             // 
             this.perfume_StoreDataSet.DataSetName = "Perfume_StoreDataSet";
             this.perfume_StoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // countriesBindingSource
+            // 
+            this.countriesBindingSource.DataMember = "countries";
+            this.countriesBindingSource.DataSource = this.perfume_StoreDataSet;
             // 
             // brand_idTextBox
             // 
@@ -152,11 +152,6 @@
             this.brand_idTextBox.Name = "brand_idTextBox";
             this.brand_idTextBox.Size = new System.Drawing.Size(75, 22);
             this.brand_idTextBox.TabIndex = 3;
-            // 
-            // brandBindingSource
-            // 
-            this.brandBindingSource.DataMember = "brand";
-            this.brandBindingSource.DataSource = this.perfume_StoreDataSet;
             // 
             // brand_nameTextBox
             // 
@@ -270,96 +265,27 @@
             this.fKbrandcountryi0F624AF8BindingSource1.DataMember = "FK__brand__country_i__0F624AF8";
             this.fKbrandcountryi0F624AF8BindingSource1.DataSource = this.countriesBindingSource;
             // 
-            // brand_name
+            // country_nameComboBox
             // 
-            this.brand_name.DataPropertyName = "brand_name";
-            this.brand_name.HeaderText = "Name";
-            this.brand_name.Name = "brand_name";
-            this.brand_name.ReadOnly = true;
-            this.brand_name.Width = 200;
+            this.country_nameComboBox.DataSource = this.brandBindingSource;
+            
+            this.country_nameComboBox.FormattingEnabled = true;
+            this.country_nameComboBox.Location = new System.Drawing.Point(735, 144);
+            this.country_nameComboBox.Name = "country_nameComboBox";
+            this.country_nameComboBox.Size = new System.Drawing.Size(244, 24);
+            this.country_nameComboBox.TabIndex = 22;
             // 
-            // countrynameDataGridViewTextBoxColumn
+            // fKbrandcountryi0F624AF8BindingSource2
             // 
-            this.countrynameDataGridViewTextBoxColumn.DataPropertyName = "country_name";
-            this.countrynameDataGridViewTextBoxColumn.HeaderText = "Country";
-            this.countrynameDataGridViewTextBoxColumn.Name = "countrynameDataGridViewTextBoxColumn";
-            this.countrynameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.countrynameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // country_id
-            // 
-            this.country_id.DataPropertyName = "country_id";
-            this.country_id.HeaderText = "country_id";
-            this.country_id.Name = "country_id";
-            this.country_id.ReadOnly = true;
-            this.country_id.Visible = false;
-            // 
-            // countryidDataGridViewTextBoxColumn
-            // 
-            this.countryidDataGridViewTextBoxColumn.DataPropertyName = "country_id";
-            this.countryidDataGridViewTextBoxColumn.HeaderText = "country_id";
-            this.countryidDataGridViewTextBoxColumn.Name = "countryidDataGridViewTextBoxColumn";
-            this.countryidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.countryidDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // countrystatusDataGridViewTextBoxColumn
-            // 
-            this.countrystatusDataGridViewTextBoxColumn.DataPropertyName = "country_status";
-            this.countrystatusDataGridViewTextBoxColumn.HeaderText = "country_status";
-            this.countrystatusDataGridViewTextBoxColumn.Name = "countrystatusDataGridViewTextBoxColumn";
-            this.countrystatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.countrystatusDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // countrycreatedAtDataGridViewTextBoxColumn
-            // 
-            this.countrycreatedAtDataGridViewTextBoxColumn.DataPropertyName = "country_createdAt";
-            this.countrycreatedAtDataGridViewTextBoxColumn.HeaderText = "country_createdAt";
-            this.countrycreatedAtDataGridViewTextBoxColumn.Name = "countrycreatedAtDataGridViewTextBoxColumn";
-            this.countrycreatedAtDataGridViewTextBoxColumn.ReadOnly = true;
-            this.countrycreatedAtDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // brand_createdAt
-            // 
-            this.brand_createdAt.DataPropertyName = "brand_createdAt";
-            this.brand_createdAt.HeaderText = "Created At";
-            this.brand_createdAt.Name = "brand_createdAt";
-            this.brand_createdAt.ReadOnly = true;
-            this.brand_createdAt.Width = 150;
-            // 
-            // brand_status
-            // 
-            this.brand_status.DataPropertyName = "brand_status";
-            this.brand_status.HeaderText = "Status";
-            this.brand_status.Name = "brand_status";
-            this.brand_status.ReadOnly = true;
-            this.brand_status.Width = 50;
-            // 
-            // country_nameLabel
-            // 
-            country_nameLabel.AutoSize = true;
-            country_nameLabel.Location = new System.Drawing.Point(611, 149);
-            country_nameLabel.Name = "country_nameLabel";
-            country_nameLabel.Size = new System.Drawing.Size(59, 17);
-            country_nameLabel.TabIndex = 21;
-            country_nameLabel.Text = "country:";
-            // 
-            // country_idComboBox
-            // 
-            this.country_idComboBox.DataSource = this.countriesBindingSource;
-            this.country_idComboBox.DisplayMember = "country_name";
-            this.country_idComboBox.FormattingEnabled = true;
-            this.country_idComboBox.Location = new System.Drawing.Point(735, 144);
-            this.country_idComboBox.Name = "country_idComboBox";
-            this.country_idComboBox.Size = new System.Drawing.Size(244, 24);
-            this.country_idComboBox.TabIndex = 22;
-            this.country_idComboBox.ValueMember = "country_id";
+            this.fKbrandcountryi0F624AF8BindingSource2.DataMember = "FK__brand__country_i__0F624AF8";
+            this.fKbrandcountryi0F624AF8BindingSource2.DataSource = this.countriesBindingSource;
             // 
             // BrandManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 342);
-            this.Controls.Add(this.country_idComboBox);
+            this.Controls.Add(this.country_nameComboBox);
             this.Controls.Add(country_nameLabel);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnDelete);
@@ -381,13 +307,14 @@
             this.Name = "BrandManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfume Store Manager | Brand Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BrandManagement_FormClosed);
             this.Load += new System.EventHandler(this.BrandManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.brandDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brandBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKbrandcountryi0F624AF8BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKbrandcountryi0F624AF8BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).EndInit();
+           
+        
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,14 +340,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brand_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn countrynameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn country_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn countryidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn countrystatusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn countrycreatedAtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brand_createdAt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brand_status;
-        private System.Windows.Forms.ComboBox country_idComboBox;
+        private System.Windows.Forms.ComboBox country_nameComboBox;
+        private System.Windows.Forms.BindingSource fKbrandcountryi0F624AF8BindingSource2;
     }
 }

@@ -88,6 +88,15 @@
             country_idLabel.TabIndex = 13;
             country_idLabel.Text = "country id:";
             // 
+            // country_createdAtLabel
+            // 
+            country_createdAtLabel.AutoSize = true;
+            country_createdAtLabel.Location = new System.Drawing.Point(511, 177);
+            country_createdAtLabel.Name = "country_createdAtLabel";
+            country_createdAtLabel.Size = new System.Drawing.Size(128, 17);
+            country_createdAtLabel.TabIndex = 14;
+            country_createdAtLabel.Text = "country created At:";
+            // 
             // perfume_StoreDataSet
             // 
             this.perfume_StoreDataSet.DataSetName = "Perfume_StoreDataSet";
@@ -124,6 +133,7 @@
             this.countriesDataGridView.AllowUserToAddRows = false;
             this.countriesDataGridView.AllowUserToDeleteRows = false;
             this.countriesDataGridView.AutoGenerateColumns = false;
+            this.countriesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.countriesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.countriesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -152,7 +162,7 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Name";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 200;
+            this.dataGridViewTextBoxColumn2.Width = 74;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -160,7 +170,7 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Status";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 50;
+            this.dataGridViewTextBoxColumn3.Width = 77;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -168,7 +178,7 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Created At";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 150;
+            this.dataGridViewTextBoxColumn4.Width = 104;
             // 
             // country_nameTextBox
             // 
@@ -248,15 +258,6 @@
             this.country_idTextBox.Size = new System.Drawing.Size(143, 22);
             this.country_idTextBox.TabIndex = 14;
             // 
-            // country_createdAtLabel
-            // 
-            country_createdAtLabel.AutoSize = true;
-            country_createdAtLabel.Location = new System.Drawing.Point(511, 177);
-            country_createdAtLabel.Name = "country_createdAtLabel";
-            country_createdAtLabel.Size = new System.Drawing.Size(128, 17);
-            country_createdAtLabel.TabIndex = 14;
-            country_createdAtLabel.Text = "country created At:";
-            // 
             // country_createdAtDateTimePicker
             // 
             this.country_createdAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.countriesBindingSource, "country_createdAt", true));
@@ -290,6 +291,7 @@
             this.Name = "CountryManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfume Store Manager | Country Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CountryManagement_FormClosed);
             this.Load += new System.EventHandler(this.CountryManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).EndInit();
