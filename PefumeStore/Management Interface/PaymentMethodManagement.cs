@@ -47,5 +47,32 @@ namespace PefumeStore.Management_Interface
         {
             Application.Exit();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.paymentMethodBindingSource.AddNew();
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            this.paymentMethodBindingSource.RemoveCurrent();
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            this.paymentMethodBindingSource.MoveNext();
+        }
+
+        private void btnPre_Click(object sender, EventArgs e)
+        {
+            this.paymentMethodBindingSource.MovePrevious();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.paymentMethodBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.perfume_StoreDataSet);
+        }
     }
 }
