@@ -27,49 +27,52 @@ namespace PefumeStore.Management_Interface
         }
 
         /// <summary>
-        /// Set data for combo box according to current selected row
+        /// Set up data grid view  
         /// </summary>
-        public void loadComboBox()
+        public void configDataGridViewForFillByBrandAndCategory()
         {
-            //disable combo boxes
-            productCreatedBy_ComboBox.Enabled = false;
-            productCreatedBy_ComboBox.Enabled = false;
-
-            //get IDs
-            int categoryId = (int)productDataGridView.CurrentRow.Cells[4].Value;
-            int brandId = (int)productDataGridView.CurrentRow.Cells[5].Value;
-            int createdById = -1;
-            int updatedById = -1;
-            if (productDataGridView.CurrentRow.Cells[11].Value.Equals(""))
-                createdById = (int)productDataGridView.CurrentRow.Cells[11].Value;
-            if (productDataGridView.CurrentRow.Cells[13].Value.Equals(""))
-                updatedById = (int)productDataGridView.CurrentRow.Cells[13].Value;
-            //Set combo box
-            categoryComboBox.SelectedValue = categoryId;
-            brandComboBox.SelectedValue = brandId;
-
-            if (createdById == -1)
-            {
-                productCreatedBy_ComboBox.SelectedValue = createdById;
-                productCreatedBy_ComboBox.Enabled = true;
-            }
-
-            if (updatedById == -1)
-            {
-                productUpdatedBy_comboBox.SelectedValue = updatedById;
-                productCreatedBy_ComboBox.Enabled = true;
-            }
-
+            //bind data
+            categoryComboBox.DisplayMember = "category_name";
+            brandComboBox.DisplayMember = "brand_name";
+            //set visible
+            productDataGridView.Columns["category_id"].Visible = false;
+            productDataGridView.Columns["brand_id"].Visible = false;
+            //set headers
+            productDataGridView.Columns["product_id"].HeaderText = "ID";
+            productDataGridView.Columns["product_name"].HeaderText = "Name";
+            productDataGridView.Columns["category_name"].HeaderText = "Category";
+            productDataGridView.Columns["brand_name"].HeaderText = "Brand";
+            productDataGridView.Columns["product_volumne"].HeaderText = "Volumne";
+            productDataGridView.Columns["product_quantity"].HeaderText = "Quantity";
+            productDataGridView.Columns["product_originalPrice"].HeaderText = "Original Price";
+            productDataGridView.Columns["product_currentPrice"].HeaderText = "Current Price";
+            productDataGridView.Columns["product_description"].HeaderText = "Description";
+            productDataGridView.Columns["product_status"].HeaderText = "Status";
+            productDataGridView.Columns["product_createdAt"].HeaderText = "Created At";
+            productDataGridView.Columns["product_updatedAt"].HeaderText = "Updated At";
+            //set column display position
+            productDataGridView.Columns["category_name"].DisplayIndex = 2;
+            productDataGridView.Columns["brand_name"].DisplayIndex = 3;
+            //set column width
+            productDataGridView.Columns["product_id"].Width = 50;
+            productDataGridView.Columns["product_name"].Width = 200;
+            productDataGridView.Columns["product_volumne"].Width = 75;
+            productDataGridView.Columns["product_quantity"].Width = 75;
+            productDataGridView.Columns["product_originalPrice"].Width = 75;
+            productDataGridView.Columns["product_currentPrice"].Width = 75;
+            productDataGridView.Columns["product_description"].Width = 250;
+            productDataGridView.Columns["product_status"].Width = 50;
 
         }
 
         private void ProductManagement_Load(object sender, EventArgs e)
-        {           
+        {
             // TODO: This line of code loads data into the 'perfume_StoreDataSet.product' table. You can move, or remove it, as needed.
+
             this.productTableAdapter.FillByBrandAndCategory(this.perfume_StoreDataSet.product);
             productBindingSource.DataSource = this.perfume_StoreDataSet.product;
             productDataGridView.DataSource = productBindingSource;
-
+            configDataGridViewForFillByBrandAndCategory();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
@@ -91,20 +94,20 @@ namespace PefumeStore.Management_Interface
                 MessageBox.Show("Text fields can't be empty", "Perfume Store Manager", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
-            {                
+            {
                 string productName = product_nameTextBox.Text;
-                double productVolumne = int.Parse(product_volumneMaskedTxtBox.Text);
-                int productQuantity = int.Parse(product_quantityMaskedTxtBox.Text);
+                double productVolumne = (int)product_volumneNumericUpDown.Value;
+                int productQuantity = (int)product_quantityNumericUpDown.Value;                
                 int categoryId = (int)categoryComboBox.SelectedValue;
                 int brandId = (int)brandComboBox.SelectedValue;
                 double originalPrice = double.Parse(product_originalPriceMaskedTextBox.Text);
                 double currentPrice = double.Parse(product_currentPriceMaskedTextBox.Text);
                 string description = product_descriptionTextBox.Text;
                 int status = (int)product_statusCombobox.SelectedValue;
-                DateTime createdTime = product_createdAtDateTimePicker.Value;               
-                DateTime updatedAt = product_updatedAtDateTimePicker.Value;               
-                productTableAdapter.Insert(productName, productVolumne, productQuantity, categoryId, brandId, originalPrice, currentPrice, description, status, createdTime, updatedAt);               
+                DateTime createdTime = product_createdAtDateTimePicker.Value;
+                DateTime updatedAt = product_updatedAtDateTimePicker.Value;
 
+                productTableAdapter.Insert(productName, productVolumne, productQuantity, categoryId, brandId, originalPrice, currentPrice, description, status, createdTime, updatedAt);
 
                 //Update Data grid view
                 productDataTable productDatatable = new productDataTable();
@@ -133,18 +136,16 @@ namespace PefumeStore.Management_Interface
             {
                 int productId = int.Parse(product_idTextBox.Text);
                 string productName = product_nameTextBox.Text;
-                double productVolumne = int.Parse(product_volumneMaskedTxtBox.Text);
-                int productQuantity = int.Parse(product_quantityMaskedTxtBox.Text);
+                double productVolumne = (int)product_volumneNumericUpDown.Value;
+                int productQuantity = (int)product_quantityNumericUpDown.Value;
                 int categoryId = (int)categoryComboBox.SelectedValue;
                 int brandId = (int)brandComboBox.SelectedValue;
                 double originalPrice = double.Parse(product_originalPriceMaskedTextBox.Text);
                 double currentPrice = double.Parse(product_currentPriceMaskedTextBox.Text);
                 //string description = product_descriptionTextBox.Text;
                 int status = (int)product_statusCombobox.SelectedValue;
-                DateTime createdTime = product_createdAtDateTimePicker.Value;
-                int createdBy = (int)productCreatedBy_ComboBox.SelectedValue;
-                DateTime updatedAt = product_updatedAtDateTimePicker.Value;
-                int updatedBy = (int)productUpdatedBy_comboBox.SelectedValue;
+                DateTime createdTime = product_createdAtDateTimePicker.Value;                
+                DateTime updatedAt = product_updatedAtDateTimePicker.Value;                
 
                 productTableAdapter.Delete(productId, productName, productVolumne, productQuantity, categoryId, brandId, originalPrice, currentPrice, status, createdTime, updatedAt);
 
@@ -156,10 +157,7 @@ namespace PefumeStore.Management_Interface
             }
         }
 
-        private void productDataGridView_SelectionChanged(object sender, EventArgs e)
-        {
-            loadComboBox();
-        }
+       
 
         private void proImgBtn_Click(object sender, EventArgs e)
         {

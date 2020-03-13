@@ -11024,7 +11024,7 @@ SELECT product_id, product_name, product_volumne, product_quantity, category_id,
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = @"SELECT product.product_id, product.product_name, category.category_name, brand.brand_name, product.product_volumne, product.product_quantity, product.product_originalPrice, product.product_currentPrice, product.product_description, 
-                  product.product_status, product.product_createdAt, product.product_updatedAt
+                  product.product_status, product.product_createdAt, product.product_updatedAt, product.category_id, product.brand_id
 FROM     product INNER JOIN
                   category ON product.category_id = category.category_id INNER JOIN
                   brand ON product.brand_id = brand.brand_id";
