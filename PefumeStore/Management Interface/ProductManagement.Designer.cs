@@ -42,6 +42,15 @@
             System.Windows.Forms.Label product_createdAtLabel;
             System.Windows.Forms.Label product_updatedAtLabel;
             System.Windows.Forms.Label proImgLbl;
+            System.Windows.Forms.Label createProduct_nameLabel;
+            System.Windows.Forms.Label product_volumneLabel1;
+            System.Windows.Forms.Label product_quantityLabel1;
+            System.Windows.Forms.Label Product_originalPriceLabel1;
+            System.Windows.Forms.Label product_currentPriceLabel1;
+            System.Windows.Forms.Label createProduct_descriptionLabel;
+            System.Windows.Forms.Label product_statusLabel1;
+            System.Windows.Forms.Label brand_idLabel1;
+            System.Windows.Forms.Label category_idLabel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -64,16 +73,31 @@
             this.brandComboBox = new System.Windows.Forms.ComboBox();
             this.brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.brandTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.brandTableAdapter();
-            this.product_statusCombobox = new System.Windows.Forms.ComboBox();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.usersTableAdapter();
             this.orderItemTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.orderItemTableAdapter();
             this.perfumeStoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proImgBtn = new System.Windows.Forms.Button();
             this.product_quantityNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.product_originalPriceMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.product_currentPriceMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.product_volumneNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.createPnl = new System.Windows.Forms.Panel();
+            this.createProduct_currentPriceNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.createProduct_originalPriceNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.createCategory_idComboBox = new System.Windows.Forms.ComboBox();
+            this.createBrand_idComboBox = new System.Windows.Forms.ComboBox();
+            this.createProduct_quantityNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.createProduct_volumneNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.createStatusComboBox = new System.Windows.Forms.ComboBox();
+            this.createProduct_nameTextBox = new System.Windows.Forms.TextBox();
+            this.createProduct_descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.returnToListBtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.createClearBtn = new System.Windows.Forms.Button();
+            this.createCreateBtn = new System.Windows.Forms.Button();
+            this.listPnl = new System.Windows.Forms.Panel();
+            this.product_statusComboBox = new System.Windows.Forms.ComboBox();
+            this.product_originalPriceNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.product_currentPriceNumericUpDown = new System.Windows.Forms.NumericUpDown();
             product_idLabel = new System.Windows.Forms.Label();
             product_nameLabel = new System.Windows.Forms.Label();
             product_volumneLabel = new System.Windows.Forms.Label();
@@ -87,6 +111,15 @@
             product_createdAtLabel = new System.Windows.Forms.Label();
             product_updatedAtLabel = new System.Windows.Forms.Label();
             proImgLbl = new System.Windows.Forms.Label();
+            createProduct_nameLabel = new System.Windows.Forms.Label();
+            product_volumneLabel1 = new System.Windows.Forms.Label();
+            product_quantityLabel1 = new System.Windows.Forms.Label();
+            Product_originalPriceLabel1 = new System.Windows.Forms.Label();
+            product_currentPriceLabel1 = new System.Windows.Forms.Label();
+            createProduct_descriptionLabel = new System.Windows.Forms.Label();
+            product_statusLabel1 = new System.Windows.Forms.Label();
+            brand_idLabel1 = new System.Windows.Forms.Label();
+            category_idLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
@@ -96,12 +129,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.perfumeStoreDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product_quantityNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product_volumneNumericUpDown)).BeginInit();
+            this.createPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.createProduct_currentPriceNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.createProduct_originalPriceNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.createProduct_quantityNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.createProduct_volumneNumericUpDown)).BeginInit();
+            this.listPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.product_originalPriceNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.product_currentPriceNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // product_idLabel
             // 
             product_idLabel.AutoSize = true;
-            product_idLabel.Location = new System.Drawing.Point(586, 82);
+            product_idLabel.Location = new System.Drawing.Point(583, 78);
             product_idLabel.Name = "product_idLabel";
             product_idLabel.Size = new System.Drawing.Size(25, 17);
             product_idLabel.TabIndex = 2;
@@ -110,7 +151,7 @@
             // product_nameLabel
             // 
             product_nameLabel.AutoSize = true;
-            product_nameLabel.Location = new System.Drawing.Point(586, 110);
+            product_nameLabel.Location = new System.Drawing.Point(583, 106);
             product_nameLabel.Name = "product_nameLabel";
             product_nameLabel.Size = new System.Drawing.Size(100, 17);
             product_nameLabel.TabIndex = 4;
@@ -119,7 +160,7 @@
             // product_volumneLabel
             // 
             product_volumneLabel.AutoSize = true;
-            product_volumneLabel.Location = new System.Drawing.Point(586, 138);
+            product_volumneLabel.Location = new System.Drawing.Point(583, 134);
             product_volumneLabel.Name = "product_volumneLabel";
             product_volumneLabel.Size = new System.Drawing.Size(146, 17);
             product_volumneLabel.TabIndex = 6;
@@ -128,7 +169,7 @@
             // product_quantityLabel
             // 
             product_quantityLabel.AutoSize = true;
-            product_quantityLabel.Location = new System.Drawing.Point(586, 166);
+            product_quantityLabel.Location = new System.Drawing.Point(583, 162);
             product_quantityLabel.Name = "product_quantityLabel";
             product_quantityLabel.Size = new System.Drawing.Size(115, 17);
             product_quantityLabel.TabIndex = 8;
@@ -137,7 +178,7 @@
             // category_idLabel
             // 
             category_idLabel.AutoSize = true;
-            category_idLabel.Location = new System.Drawing.Point(586, 194);
+            category_idLabel.Location = new System.Drawing.Point(583, 190);
             category_idLabel.Name = "category_idLabel";
             category_idLabel.Size = new System.Drawing.Size(69, 17);
             category_idLabel.TabIndex = 10;
@@ -146,7 +187,7 @@
             // brand_idLabel
             // 
             brand_idLabel.AutoSize = true;
-            brand_idLabel.Location = new System.Drawing.Point(586, 222);
+            brand_idLabel.Location = new System.Drawing.Point(583, 218);
             brand_idLabel.Name = "brand_idLabel";
             brand_idLabel.Size = new System.Drawing.Size(50, 17);
             brand_idLabel.TabIndex = 12;
@@ -155,25 +196,25 @@
             // product_originalPriceLabel
             // 
             product_originalPriceLabel.AutoSize = true;
-            product_originalPriceLabel.Location = new System.Drawing.Point(586, 250);
+            product_originalPriceLabel.Location = new System.Drawing.Point(583, 250);
             product_originalPriceLabel.Name = "product_originalPriceLabel";
-            product_originalPriceLabel.Size = new System.Drawing.Size(97, 17);
+            product_originalPriceLabel.Size = new System.Drawing.Size(119, 17);
             product_originalPriceLabel.TabIndex = 14;
-            product_originalPriceLabel.Text = "Original Price:";
+            product_originalPriceLabel.Text = "Original Price ($):";
             // 
             // product_currentPriceLabel
             // 
             product_currentPriceLabel.AutoSize = true;
-            product_currentPriceLabel.Location = new System.Drawing.Point(586, 278);
+            product_currentPriceLabel.Location = new System.Drawing.Point(583, 278);
             product_currentPriceLabel.Name = "product_currentPriceLabel";
-            product_currentPriceLabel.Size = new System.Drawing.Size(95, 17);
+            product_currentPriceLabel.Size = new System.Drawing.Size(117, 17);
             product_currentPriceLabel.TabIndex = 16;
-            product_currentPriceLabel.Text = "Current Price:";
+            product_currentPriceLabel.Text = "Current Price ($):";
             // 
             // product_descriptionLabel
             // 
             product_descriptionLabel.AutoSize = true;
-            product_descriptionLabel.Location = new System.Drawing.Point(586, 306);
+            product_descriptionLabel.Location = new System.Drawing.Point(583, 306);
             product_descriptionLabel.Name = "product_descriptionLabel";
             product_descriptionLabel.Size = new System.Drawing.Size(83, 17);
             product_descriptionLabel.TabIndex = 18;
@@ -182,7 +223,7 @@
             // product_statusLabel
             // 
             product_statusLabel.AutoSize = true;
-            product_statusLabel.Location = new System.Drawing.Point(586, 372);
+            product_statusLabel.Location = new System.Drawing.Point(583, 372);
             product_statusLabel.Name = "product_statusLabel";
             product_statusLabel.Size = new System.Drawing.Size(103, 17);
             product_statusLabel.TabIndex = 20;
@@ -191,7 +232,7 @@
             // product_createdAtLabel
             // 
             product_createdAtLabel.AutoSize = true;
-            product_createdAtLabel.Location = new System.Drawing.Point(586, 401);
+            product_createdAtLabel.Location = new System.Drawing.Point(583, 411);
             product_createdAtLabel.Name = "product_createdAtLabel";
             product_createdAtLabel.Size = new System.Drawing.Size(79, 17);
             product_createdAtLabel.TabIndex = 22;
@@ -200,7 +241,7 @@
             // product_updatedAtLabel
             // 
             product_updatedAtLabel.AutoSize = true;
-            product_updatedAtLabel.Location = new System.Drawing.Point(586, 434);
+            product_updatedAtLabel.Location = new System.Drawing.Point(583, 444);
             product_updatedAtLabel.Name = "product_updatedAtLabel";
             product_updatedAtLabel.Size = new System.Drawing.Size(83, 17);
             product_updatedAtLabel.TabIndex = 26;
@@ -209,11 +250,92 @@
             // proImgLbl
             // 
             proImgLbl.AutoSize = true;
-            proImgLbl.Location = new System.Drawing.Point(586, 474);
+            proImgLbl.Location = new System.Drawing.Point(583, 484);
             proImgLbl.Name = "proImgLbl";
             proImgLbl.Size = new System.Drawing.Size(110, 17);
             proImgLbl.TabIndex = 45;
             proImgLbl.Text = "Product Images:";
+            // 
+            // createProduct_nameLabel
+            // 
+            createProduct_nameLabel.AutoSize = true;
+            createProduct_nameLabel.Location = new System.Drawing.Point(223, 92);
+            createProduct_nameLabel.Name = "createProduct_nameLabel";
+            createProduct_nameLabel.Size = new System.Drawing.Size(100, 17);
+            createProduct_nameLabel.TabIndex = 21;
+            createProduct_nameLabel.Text = "Product name:";
+            // 
+            // product_volumneLabel1
+            // 
+            product_volumneLabel1.AutoSize = true;
+            product_volumneLabel1.Location = new System.Drawing.Point(223, 120);
+            product_volumneLabel1.Name = "product_volumneLabel1";
+            product_volumneLabel1.Size = new System.Drawing.Size(146, 17);
+            product_volumneLabel1.TabIndex = 23;
+            product_volumneLabel1.Text = "Product volumne (ml):";
+            // 
+            // product_quantityLabel1
+            // 
+            product_quantityLabel1.AutoSize = true;
+            product_quantityLabel1.Location = new System.Drawing.Point(223, 149);
+            product_quantityLabel1.Name = "product_quantityLabel1";
+            product_quantityLabel1.Size = new System.Drawing.Size(115, 17);
+            product_quantityLabel1.TabIndex = 25;
+            product_quantityLabel1.Text = "Product quantity:";
+            // 
+            // Product_originalPriceLabel1
+            // 
+            Product_originalPriceLabel1.AutoSize = true;
+            Product_originalPriceLabel1.Location = new System.Drawing.Point(223, 238);
+            Product_originalPriceLabel1.Name = "Product_originalPriceLabel1";
+            Product_originalPriceLabel1.Size = new System.Drawing.Size(171, 17);
+            Product_originalPriceLabel1.TabIndex = 31;
+            Product_originalPriceLabel1.Text = "Product Original price ($):";
+            // 
+            // product_currentPriceLabel1
+            // 
+            product_currentPriceLabel1.AutoSize = true;
+            product_currentPriceLabel1.Location = new System.Drawing.Point(223, 266);
+            product_currentPriceLabel1.Name = "product_currentPriceLabel1";
+            product_currentPriceLabel1.Size = new System.Drawing.Size(169, 17);
+            product_currentPriceLabel1.TabIndex = 33;
+            product_currentPriceLabel1.Text = "Product Current price ($):";
+            // 
+            // createProduct_descriptionLabel
+            // 
+            createProduct_descriptionLabel.AutoSize = true;
+            createProduct_descriptionLabel.Location = new System.Drawing.Point(223, 294);
+            createProduct_descriptionLabel.Name = "createProduct_descriptionLabel";
+            createProduct_descriptionLabel.Size = new System.Drawing.Size(134, 17);
+            createProduct_descriptionLabel.TabIndex = 35;
+            createProduct_descriptionLabel.Text = "Product description:";
+            // 
+            // product_statusLabel1
+            // 
+            product_statusLabel1.AutoSize = true;
+            product_statusLabel1.Location = new System.Drawing.Point(223, 359);
+            product_statusLabel1.Name = "product_statusLabel1";
+            product_statusLabel1.Size = new System.Drawing.Size(103, 17);
+            product_statusLabel1.TabIndex = 37;
+            product_statusLabel1.Text = "Product status:";
+            // 
+            // brand_idLabel1
+            // 
+            brand_idLabel1.AutoSize = true;
+            brand_idLabel1.Location = new System.Drawing.Point(223, 177);
+            brand_idLabel1.Name = "brand_idLabel1";
+            brand_idLabel1.Size = new System.Drawing.Size(50, 17);
+            brand_idLabel1.TabIndex = 40;
+            brand_idLabel1.Text = "Brand:";
+            // 
+            // category_idLabel1
+            // 
+            category_idLabel1.AutoSize = true;
+            category_idLabel1.Location = new System.Drawing.Point(223, 208);
+            category_idLabel1.Name = "category_idLabel1";
+            category_idLabel1.Size = new System.Drawing.Size(69, 17);
+            category_idLabel1.TabIndex = 41;
+            category_idLabel1.Text = "Category:";
             // 
             // perfume_StoreDataSet
             // 
@@ -251,18 +373,21 @@
             this.productDataGridView.AllowUserToAddRows = false;
             this.productDataGridView.AllowUserToDeleteRows = false;
             this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productDataGridView.Location = new System.Drawing.Point(20, 82);
+            this.productDataGridView.Location = new System.Drawing.Point(3, 78);
+            this.productDataGridView.MultiSelect = false;
             this.productDataGridView.Name = "productDataGridView";
             this.productDataGridView.ReadOnly = true;
             this.productDataGridView.RowTemplate.Height = 24;
+            this.productDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.productDataGridView.Size = new System.Drawing.Size(560, 499);
             this.productDataGridView.TabIndex = 1;
+            this.productDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.productDataGridView_CellMouseClick);
             // 
             // product_idTextBox
             // 
             this.product_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_id", true));
             this.product_idTextBox.Enabled = false;
-            this.product_idTextBox.Location = new System.Drawing.Point(738, 79);
+            this.product_idTextBox.Location = new System.Drawing.Point(735, 75);
             this.product_idTextBox.Name = "product_idTextBox";
             this.product_idTextBox.Size = new System.Drawing.Size(75, 22);
             this.product_idTextBox.TabIndex = 3;
@@ -270,7 +395,7 @@
             // product_nameTextBox
             // 
             this.product_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_name", true));
-            this.product_nameTextBox.Location = new System.Drawing.Point(738, 107);
+            this.product_nameTextBox.Location = new System.Drawing.Point(735, 103);
             this.product_nameTextBox.Name = "product_nameTextBox";
             this.product_nameTextBox.Size = new System.Drawing.Size(256, 22);
             this.product_nameTextBox.TabIndex = 5;
@@ -278,7 +403,7 @@
             // product_descriptionTextBox
             // 
             this.product_descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_description", true));
-            this.product_descriptionTextBox.Location = new System.Drawing.Point(738, 303);
+            this.product_descriptionTextBox.Location = new System.Drawing.Point(735, 303);
             this.product_descriptionTextBox.Multiline = true;
             this.product_descriptionTextBox.Name = "product_descriptionTextBox";
             this.product_descriptionTextBox.Size = new System.Drawing.Size(256, 60);
@@ -287,7 +412,7 @@
             // product_createdAtDateTimePicker
             // 
             this.product_createdAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_createdAt", true));
-            this.product_createdAtDateTimePicker.Location = new System.Drawing.Point(738, 397);
+            this.product_createdAtDateTimePicker.Location = new System.Drawing.Point(735, 407);
             this.product_createdAtDateTimePicker.Name = "product_createdAtDateTimePicker";
             this.product_createdAtDateTimePicker.Size = new System.Drawing.Size(256, 22);
             this.product_createdAtDateTimePicker.TabIndex = 23;
@@ -295,14 +420,15 @@
             // product_updatedAtDateTimePicker
             // 
             this.product_updatedAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_updatedAt", true));
-            this.product_updatedAtDateTimePicker.Location = new System.Drawing.Point(738, 430);
+            this.product_updatedAtDateTimePicker.Enabled = false;
+            this.product_updatedAtDateTimePicker.Location = new System.Drawing.Point(735, 440);
             this.product_updatedAtDateTimePicker.Name = "product_updatedAtDateTimePicker";
             this.product_updatedAtDateTimePicker.Size = new System.Drawing.Size(256, 22);
             this.product_updatedAtDateTimePicker.TabIndex = 27;
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(12, 15);
+            this.btnReturn.Location = new System.Drawing.Point(8, 33);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(75, 30);
             this.btnReturn.TabIndex = 31;
@@ -314,7 +440,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(368, 9);
+            this.label1.Location = new System.Drawing.Point(381, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(304, 32);
             this.label1.TabIndex = 30;
@@ -322,7 +448,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(900, 503);
+            this.btnDelete.Location = new System.Drawing.Point(897, 513);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 30);
             this.btnDelete.TabIndex = 34;
@@ -332,7 +458,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(738, 503);
+            this.btnAdd.Location = new System.Drawing.Point(735, 513);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 30);
             this.btnAdd.TabIndex = 33;
@@ -342,7 +468,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(819, 503);
+            this.btnUpdate.Location = new System.Drawing.Point(816, 513);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 30);
             this.btnUpdate.TabIndex = 32;
@@ -361,9 +487,10 @@
             // 
             // categoryComboBox
             // 
-            this.categoryComboBox.DataSource = this.productBindingSource;
+            this.categoryComboBox.DataSource = this.categoryBindingSource;
+            this.categoryComboBox.DisplayMember = "category_name";
             this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(738, 191);
+            this.categoryComboBox.Location = new System.Drawing.Point(735, 187);
             this.categoryComboBox.Name = "categoryComboBox";
             this.categoryComboBox.Size = new System.Drawing.Size(256, 24);
             this.categoryComboBox.TabIndex = 37;
@@ -371,9 +498,10 @@
             // 
             // brandComboBox
             // 
-            this.brandComboBox.DataSource = this.productBindingSource;
+            this.brandComboBox.DataSource = this.brandBindingSource;
+            this.brandComboBox.DisplayMember = "brand_name";
             this.brandComboBox.FormattingEnabled = true;
-            this.brandComboBox.Location = new System.Drawing.Point(738, 221);
+            this.brandComboBox.Location = new System.Drawing.Point(735, 217);
             this.brandComboBox.Name = "brandComboBox";
             this.brandComboBox.Size = new System.Drawing.Size(256, 24);
             this.brandComboBox.TabIndex = 38;
@@ -387,17 +515,6 @@
             // brandTableAdapter
             // 
             this.brandTableAdapter.ClearBeforeFill = true;
-            // 
-            // product_statusCombobox
-            // 
-            this.product_statusCombobox.DataSource = this.productBindingSource;
-            this.product_statusCombobox.DisplayMember = "product_status";
-            this.product_statusCombobox.FormattingEnabled = true;
-            this.product_statusCombobox.Location = new System.Drawing.Point(738, 367);
-            this.product_statusCombobox.Name = "product_statusCombobox";
-            this.product_statusCombobox.Size = new System.Drawing.Size(75, 24);
-            this.product_statusCombobox.TabIndex = 41;
-            this.product_statusCombobox.ValueMember = "product_status";
             // 
             // usersBindingSource
             // 
@@ -419,7 +536,7 @@
             // 
             // proImgBtn
             // 
-            this.proImgBtn.Location = new System.Drawing.Point(738, 467);
+            this.proImgBtn.Location = new System.Drawing.Point(735, 477);
             this.proImgBtn.Name = "proImgBtn";
             this.proImgBtn.Size = new System.Drawing.Size(75, 30);
             this.proImgBtn.TabIndex = 44;
@@ -430,14 +547,9 @@
             // product_quantityNumericUpDown
             // 
             this.product_quantityNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_quantity", true));
-            this.product_quantityNumericUpDown.Location = new System.Drawing.Point(738, 164);
+            this.product_quantityNumericUpDown.Location = new System.Drawing.Point(735, 160);
             this.product_quantityNumericUpDown.Maximum = new decimal(new int[] {
             10000,
-            0,
-            0,
-            0});
-            this.product_quantityNumericUpDown.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -445,32 +557,11 @@
             this.product_quantityNumericUpDown.Size = new System.Drawing.Size(120, 22);
             this.product_quantityNumericUpDown.TabIndex = 47;
             this.product_quantityNumericUpDown.ThousandsSeparator = true;
-            this.product_quantityNumericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // product_originalPriceMaskedTextBox
-            // 
-            this.product_originalPriceMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_originalPrice", true));
-            this.product_originalPriceMaskedTextBox.Location = new System.Drawing.Point(738, 247);
-            this.product_originalPriceMaskedTextBox.Name = "product_originalPriceMaskedTextBox";
-            this.product_originalPriceMaskedTextBox.Size = new System.Drawing.Size(100, 22);
-            this.product_originalPriceMaskedTextBox.TabIndex = 48;
-            // 
-            // product_currentPriceMaskedTextBox
-            // 
-            this.product_currentPriceMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "product_currentPrice", true));
-            this.product_currentPriceMaskedTextBox.Location = new System.Drawing.Point(738, 273);
-            this.product_currentPriceMaskedTextBox.Name = "product_currentPriceMaskedTextBox";
-            this.product_currentPriceMaskedTextBox.Size = new System.Drawing.Size(100, 22);
-            this.product_currentPriceMaskedTextBox.TabIndex = 49;
             // 
             // product_volumneNumericUpDown
             // 
             this.product_volumneNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_volumne", true));
-            this.product_volumneNumericUpDown.Location = new System.Drawing.Point(738, 133);
+            this.product_volumneNumericUpDown.Location = new System.Drawing.Point(735, 129);
             this.product_volumneNumericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -491,43 +582,277 @@
             0,
             0});
             // 
+            // createPnl
+            // 
+            this.createPnl.Controls.Add(this.createProduct_currentPriceNumericUpDown);
+            this.createPnl.Controls.Add(this.createProduct_originalPriceNumericUpDown);
+            this.createPnl.Controls.Add(category_idLabel1);
+            this.createPnl.Controls.Add(this.createCategory_idComboBox);
+            this.createPnl.Controls.Add(brand_idLabel1);
+            this.createPnl.Controls.Add(this.createBrand_idComboBox);
+            this.createPnl.Controls.Add(this.createProduct_quantityNumericUpDown);
+            this.createPnl.Controls.Add(this.createProduct_volumneNumericUpDown);
+            this.createPnl.Controls.Add(this.createStatusComboBox);
+            this.createPnl.Controls.Add(createProduct_nameLabel);
+            this.createPnl.Controls.Add(this.createProduct_nameTextBox);
+            this.createPnl.Controls.Add(product_volumneLabel1);
+            this.createPnl.Controls.Add(product_quantityLabel1);
+            this.createPnl.Controls.Add(Product_originalPriceLabel1);
+            this.createPnl.Controls.Add(product_currentPriceLabel1);
+            this.createPnl.Controls.Add(createProduct_descriptionLabel);
+            this.createPnl.Controls.Add(this.createProduct_descriptionTextBox);
+            this.createPnl.Controls.Add(product_statusLabel1);
+            this.createPnl.Controls.Add(this.returnToListBtn);
+            this.createPnl.Controls.Add(this.label2);
+            this.createPnl.Controls.Add(this.createClearBtn);
+            this.createPnl.Controls.Add(this.createCreateBtn);
+            this.createPnl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.createPnl.Location = new System.Drawing.Point(0, 0);
+            this.createPnl.Name = "createPnl";
+            this.createPnl.Size = new System.Drawing.Size(1006, 604);
+            this.createPnl.TabIndex = 52;
+            this.createPnl.Visible = false;
+            // 
+            // createProduct_currentPriceNumericUpDown
+            // 
+            this.createProduct_currentPriceNumericUpDown.DecimalPlaces = 2;
+            this.createProduct_currentPriceNumericUpDown.Location = new System.Drawing.Point(400, 262);
+            this.createProduct_currentPriceNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.createProduct_currentPriceNumericUpDown.Name = "createProduct_currentPriceNumericUpDown";
+            this.createProduct_currentPriceNumericUpDown.Size = new System.Drawing.Size(137, 22);
+            this.createProduct_currentPriceNumericUpDown.TabIndex = 44;
+            this.createProduct_currentPriceNumericUpDown.ThousandsSeparator = true;
+            // 
+            // createProduct_originalPriceNumericUpDown
+            // 
+            this.createProduct_originalPriceNumericUpDown.DecimalPlaces = 2;
+            this.createProduct_originalPriceNumericUpDown.Location = new System.Drawing.Point(399, 233);
+            this.createProduct_originalPriceNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.createProduct_originalPriceNumericUpDown.Name = "createProduct_originalPriceNumericUpDown";
+            this.createProduct_originalPriceNumericUpDown.Size = new System.Drawing.Size(137, 22);
+            this.createProduct_originalPriceNumericUpDown.TabIndex = 43;
+            this.createProduct_originalPriceNumericUpDown.ThousandsSeparator = true;
+            // 
+            // createCategory_idComboBox
+            // 
+            this.createCategory_idComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoryBindingSource, "category_id", true));
+            this.createCategory_idComboBox.DataSource = this.categoryBindingSource;
+            this.createCategory_idComboBox.DisplayMember = "category_name";
+            this.createCategory_idComboBox.FormattingEnabled = true;
+            this.createCategory_idComboBox.Location = new System.Drawing.Point(399, 205);
+            this.createCategory_idComboBox.Name = "createCategory_idComboBox";
+            this.createCategory_idComboBox.Size = new System.Drawing.Size(192, 24);
+            this.createCategory_idComboBox.TabIndex = 42;
+            this.createCategory_idComboBox.ValueMember = "category_id";
+            // 
+            // createBrand_idComboBox
+            // 
+            this.createBrand_idComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.brandBindingSource, "brand_id", true));
+            this.createBrand_idComboBox.DataSource = this.brandBindingSource;
+            this.createBrand_idComboBox.DisplayMember = "brand_name";
+            this.createBrand_idComboBox.FormattingEnabled = true;
+            this.createBrand_idComboBox.Location = new System.Drawing.Point(399, 174);
+            this.createBrand_idComboBox.Name = "createBrand_idComboBox";
+            this.createBrand_idComboBox.Size = new System.Drawing.Size(192, 24);
+            this.createBrand_idComboBox.TabIndex = 41;
+            this.createBrand_idComboBox.ValueMember = "brand_id";
+            // 
+            // createProduct_quantityNumericUpDown
+            // 
+            this.createProduct_quantityNumericUpDown.Location = new System.Drawing.Point(399, 147);
+            this.createProduct_quantityNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.createProduct_quantityNumericUpDown.Name = "createProduct_quantityNumericUpDown";
+            this.createProduct_quantityNumericUpDown.Size = new System.Drawing.Size(97, 22);
+            this.createProduct_quantityNumericUpDown.TabIndex = 40;
+            // 
+            // createProduct_volumneNumericUpDown
+            // 
+            this.createProduct_volumneNumericUpDown.Location = new System.Drawing.Point(398, 118);
+            this.createProduct_volumneNumericUpDown.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.createProduct_volumneNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.createProduct_volumneNumericUpDown.Name = "createProduct_volumneNumericUpDown";
+            this.createProduct_volumneNumericUpDown.Size = new System.Drawing.Size(97, 22);
+            this.createProduct_volumneNumericUpDown.TabIndex = 39;
+            this.createProduct_volumneNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // createStatusComboBox
+            // 
+            this.createStatusComboBox.FormattingEnabled = true;
+            this.createStatusComboBox.Items.AddRange(new object[] {
+            "Locked",
+            "In Stock",
+            "Out of Stock"});
+            this.createStatusComboBox.Location = new System.Drawing.Point(399, 356);
+            this.createStatusComboBox.Name = "createStatusComboBox";
+            this.createStatusComboBox.Size = new System.Drawing.Size(192, 24);
+            this.createStatusComboBox.TabIndex = 38;
+            // 
+            // createProduct_nameTextBox
+            // 
+            this.createProduct_nameTextBox.Location = new System.Drawing.Point(398, 89);
+            this.createProduct_nameTextBox.Name = "createProduct_nameTextBox";
+            this.createProduct_nameTextBox.Size = new System.Drawing.Size(271, 22);
+            this.createProduct_nameTextBox.TabIndex = 22;
+            // 
+            // createProduct_descriptionTextBox
+            // 
+            this.createProduct_descriptionTextBox.Location = new System.Drawing.Point(399, 291);
+            this.createProduct_descriptionTextBox.Multiline = true;
+            this.createProduct_descriptionTextBox.Name = "createProduct_descriptionTextBox";
+            this.createProduct_descriptionTextBox.Size = new System.Drawing.Size(271, 57);
+            this.createProduct_descriptionTextBox.TabIndex = 36;
+            // 
+            // returnToListBtn
+            // 
+            this.returnToListBtn.Location = new System.Drawing.Point(20, 12);
+            this.returnToListBtn.Name = "returnToListBtn";
+            this.returnToListBtn.Size = new System.Drawing.Size(110, 35);
+            this.returnToListBtn.TabIndex = 19;
+            this.returnToListBtn.Text = "Return to List";
+            this.returnToListBtn.UseVisualStyleBackColor = true;
+            this.returnToListBtn.Click += new System.EventHandler(this.returnToListBtn_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(456, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 46);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Create";
+            // 
+            // createClearBtn
+            // 
+            this.createClearBtn.Location = new System.Drawing.Point(530, 411);
+            this.createClearBtn.Name = "createClearBtn";
+            this.createClearBtn.Size = new System.Drawing.Size(110, 35);
+            this.createClearBtn.TabIndex = 17;
+            this.createClearBtn.Text = "Clear";
+            this.createClearBtn.UseVisualStyleBackColor = true;
+            this.createClearBtn.Click += new System.EventHandler(this.createClearBtn_Click);
+            // 
+            // createCreateBtn
+            // 
+            this.createCreateBtn.Location = new System.Drawing.Point(399, 411);
+            this.createCreateBtn.Name = "createCreateBtn";
+            this.createCreateBtn.Size = new System.Drawing.Size(110, 35);
+            this.createCreateBtn.TabIndex = 16;
+            this.createCreateBtn.Text = "Create";
+            this.createCreateBtn.UseVisualStyleBackColor = true;
+            this.createCreateBtn.Click += new System.EventHandler(this.createCreateBtn_Click);
+            // 
+            // listPnl
+            // 
+            this.listPnl.Controls.Add(this.product_currentPriceNumericUpDown);
+            this.listPnl.Controls.Add(this.product_originalPriceNumericUpDown);
+            this.listPnl.Controls.Add(this.product_statusComboBox);
+            this.listPnl.Controls.Add(this.btnReturn);
+            this.listPnl.Controls.Add(this.productDataGridView);
+            this.listPnl.Controls.Add(this.product_volumneNumericUpDown);
+            this.listPnl.Controls.Add(this.product_updatedAtDateTimePicker);
+            this.listPnl.Controls.Add(product_updatedAtLabel);
+            this.listPnl.Controls.Add(this.product_createdAtDateTimePicker);
+            this.listPnl.Controls.Add(this.product_quantityNumericUpDown);
+            this.listPnl.Controls.Add(product_createdAtLabel);
+            this.listPnl.Controls.Add(proImgLbl);
+            this.listPnl.Controls.Add(product_statusLabel);
+            this.listPnl.Controls.Add(this.proImgBtn);
+            this.listPnl.Controls.Add(this.product_descriptionTextBox);
+            this.listPnl.Controls.Add(this.brandComboBox);
+            this.listPnl.Controls.Add(product_descriptionLabel);
+            this.listPnl.Controls.Add(this.categoryComboBox);
+            this.listPnl.Controls.Add(product_currentPriceLabel);
+            this.listPnl.Controls.Add(this.btnDelete);
+            this.listPnl.Controls.Add(product_originalPriceLabel);
+            this.listPnl.Controls.Add(this.btnAdd);
+            this.listPnl.Controls.Add(brand_idLabel);
+            this.listPnl.Controls.Add(this.btnUpdate);
+            this.listPnl.Controls.Add(category_idLabel);
+            this.listPnl.Controls.Add(product_quantityLabel);
+            this.listPnl.Controls.Add(this.label1);
+            this.listPnl.Controls.Add(product_volumneLabel);
+            this.listPnl.Controls.Add(product_idLabel);
+            this.listPnl.Controls.Add(this.product_nameTextBox);
+            this.listPnl.Controls.Add(this.product_idTextBox);
+            this.listPnl.Controls.Add(product_nameLabel);
+            this.listPnl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listPnl.Location = new System.Drawing.Point(0, 0);
+            this.listPnl.Name = "listPnl";
+            this.listPnl.Size = new System.Drawing.Size(1006, 604);
+            this.listPnl.TabIndex = 45;
+            // 
+            // product_statusComboBox
+            // 
+            this.product_statusComboBox.FormattingEnabled = true;
+            this.product_statusComboBox.Items.AddRange(new object[] {
+            "Locked",
+            "In Stock",
+            "Out of Stock"});
+            this.product_statusComboBox.Location = new System.Drawing.Point(735, 369);
+            this.product_statusComboBox.Name = "product_statusComboBox";
+            this.product_statusComboBox.Size = new System.Drawing.Size(192, 24);
+            this.product_statusComboBox.TabIndex = 51;
+            // 
+            // product_originalPriceNumericUpDown
+            // 
+            this.product_originalPriceNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_originalPrice", true));
+            this.product_originalPriceNumericUpDown.DecimalPlaces = 2;
+            this.product_originalPriceNumericUpDown.Location = new System.Drawing.Point(735, 248);
+            this.product_originalPriceNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.product_originalPriceNumericUpDown.Name = "product_originalPriceNumericUpDown";
+            this.product_originalPriceNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.product_originalPriceNumericUpDown.TabIndex = 52;
+            // 
+            // product_currentPriceNumericUpDown
+            // 
+            this.product_currentPriceNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_currentPrice", true));
+            this.product_currentPriceNumericUpDown.DecimalPlaces = 2;
+            this.product_currentPriceNumericUpDown.Location = new System.Drawing.Point(735, 276);
+            this.product_currentPriceNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.product_currentPriceNumericUpDown.Name = "product_currentPriceNumericUpDown";
+            this.product_currentPriceNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.product_currentPriceNumericUpDown.TabIndex = 53;
+            // 
             // ProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 601);
-            this.Controls.Add(this.product_volumneNumericUpDown);
-            this.Controls.Add(this.product_currentPriceMaskedTextBox);
-            this.Controls.Add(this.product_originalPriceMaskedTextBox);
-            this.Controls.Add(this.product_quantityNumericUpDown);
-            this.Controls.Add(proImgLbl);
-            this.Controls.Add(this.proImgBtn);
-            this.Controls.Add(this.product_statusCombobox);
-            this.Controls.Add(this.brandComboBox);
-            this.Controls.Add(this.categoryComboBox);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(product_idLabel);
-            this.Controls.Add(this.product_idTextBox);
-            this.Controls.Add(product_nameLabel);
-            this.Controls.Add(this.product_nameTextBox);
-            this.Controls.Add(product_volumneLabel);
-            this.Controls.Add(product_quantityLabel);
-            this.Controls.Add(category_idLabel);
-            this.Controls.Add(brand_idLabel);
-            this.Controls.Add(product_originalPriceLabel);
-            this.Controls.Add(product_currentPriceLabel);
-            this.Controls.Add(product_descriptionLabel);
-            this.Controls.Add(this.product_descriptionTextBox);
-            this.Controls.Add(product_statusLabel);
-            this.Controls.Add(product_createdAtLabel);
-            this.Controls.Add(this.product_createdAtDateTimePicker);
-            this.Controls.Add(product_updatedAtLabel);
-            this.Controls.Add(this.product_updatedAtDateTimePicker);
-            this.Controls.Add(this.productDataGridView);
+            this.ClientSize = new System.Drawing.Size(1006, 604);
+            this.Controls.Add(this.listPnl);
+            this.Controls.Add(this.createPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -545,8 +870,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.perfumeStoreDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.product_quantityNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.product_volumneNumericUpDown)).EndInit();
+            this.createPnl.ResumeLayout(false);
+            this.createPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.createProduct_currentPriceNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.createProduct_originalPriceNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.createProduct_quantityNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.createProduct_volumneNumericUpDown)).EndInit();
+            this.listPnl.ResumeLayout(false);
+            this.listPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.product_originalPriceNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.product_currentPriceNumericUpDown)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -573,15 +907,30 @@
         private System.Windows.Forms.ComboBox brandComboBox;
         private System.Windows.Forms.BindingSource brandBindingSource;
         private Perfume_StoreDataSetTableAdapters.brandTableAdapter brandTableAdapter;
-        private System.Windows.Forms.ComboBox product_statusCombobox;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private Perfume_StoreDataSetTableAdapters.usersTableAdapter usersTableAdapter;
         private Perfume_StoreDataSetTableAdapters.orderItemTableAdapter orderItemTableAdapter;
         private System.Windows.Forms.BindingSource perfumeStoreDataSetBindingSource;
         private System.Windows.Forms.Button proImgBtn;
         private System.Windows.Forms.NumericUpDown product_quantityNumericUpDown;
-        private System.Windows.Forms.MaskedTextBox product_originalPriceMaskedTextBox;
-        private System.Windows.Forms.MaskedTextBox product_currentPriceMaskedTextBox;
         private System.Windows.Forms.NumericUpDown product_volumneNumericUpDown;
+        private System.Windows.Forms.Panel createPnl;
+        private System.Windows.Forms.Button createClearBtn;
+        private System.Windows.Forms.Button createCreateBtn;
+        private System.Windows.Forms.TextBox createProduct_nameTextBox;
+        private System.Windows.Forms.TextBox createProduct_descriptionTextBox;
+        private System.Windows.Forms.Button returnToListBtn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox createStatusComboBox;
+        private System.Windows.Forms.NumericUpDown createProduct_quantityNumericUpDown;
+        private System.Windows.Forms.NumericUpDown createProduct_volumneNumericUpDown;
+        private System.Windows.Forms.ComboBox createCategory_idComboBox;
+        private System.Windows.Forms.ComboBox createBrand_idComboBox;
+        private System.Windows.Forms.NumericUpDown createProduct_currentPriceNumericUpDown;
+        private System.Windows.Forms.NumericUpDown createProduct_originalPriceNumericUpDown;
+        private System.Windows.Forms.Panel listPnl;
+        private System.Windows.Forms.ComboBox product_statusComboBox;
+        private System.Windows.Forms.NumericUpDown product_originalPriceNumericUpDown;
+        private System.Windows.Forms.NumericUpDown product_currentPriceNumericUpDown;
     }
 }

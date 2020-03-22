@@ -141,9 +141,6 @@
     <Compile Include="Management Interface\UserRoleManagement.Designer.cs">
       <DependentUpon>UserRoleManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfume_StoreDataSet.cs">
-      <DependentUpon>Perfume_StoreDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Perfume_StoreDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

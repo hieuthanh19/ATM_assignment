@@ -40,12 +40,13 @@
             this.btnUserMng = new System.Windows.Forms.Button();
             this.btnCountryMng = new System.Windows.Forms.Button();
             this.btnBrandMng = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.returnHomeBtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,11 +125,6 @@
             this.btnBrandMng.UseVisualStyleBackColor = true;
             this.btnBrandMng.Click += new System.EventHandler(this.btnBrandMng_Click);
             // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
@@ -143,6 +139,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Beige;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label3);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
@@ -164,27 +161,33 @@
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
-            // button1
+            // returnHomeBtn
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.returnHomeBtn, "returnHomeBtn");
+            this.returnHomeBtn.Name = "returnHomeBtn";
+            this.returnHomeBtn.UseVisualStyleBackColor = true;
+            this.returnHomeBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // Admin_Menu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.returnHomeBtn);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Admin_Menu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Admin_Menu_FormClosed);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -205,11 +208,11 @@
         private System.Windows.Forms.Button btnUserMng;
         private System.Windows.Forms.Button btnCountryMng;
         private System.Windows.Forms.Button btnBrandMng;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button returnHomeBtn;
+        private System.Windows.Forms.Label label3;
     }
 }

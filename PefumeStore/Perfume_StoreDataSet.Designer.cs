@@ -7457,9 +7457,9 @@ SELECT brand_id, brand_name, country_id, brand_createdAt, brand_status FROM bran
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT brand.brand_id, brand.brand_name, countries.country_name, brand.brand_crea" +
-                "tedAt, brand.brand_status\r\nFROM     brand INNER JOIN\r\n                  countrie" +
-                "s ON brand.country_id = countries.country_id";
+            this._commandCollection[1].CommandText = "SELECT brand.brand_id, brand.brand_name, brand.country_id, brand.brand_createdAt," +
+                " brand.brand_status, countries.country_name\r\nFROM     brand INNER JOIN\r\n        " +
+                "          countries ON brand.country_id = countries.country_id";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -11023,8 +11023,8 @@ SELECT product_id, product_name, product_volumne, product_quantity, category_id,
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT product.product_id, product.product_name, category.category_name, brand.brand_name, product.product_volumne, product.product_quantity, product.product_originalPrice, product.product_currentPrice, product.product_description, 
-                  product.product_status, product.product_createdAt, product.product_updatedAt, product.category_id, product.brand_id
+            this._commandCollection[1].CommandText = @"SELECT product.product_id, product.product_name, product.product_volumne, product.product_quantity, product.category_id, product.brand_id, product.product_originalPrice, product.product_currentPrice, product.product_description, 
+                  product.product_status, product.product_createdAt, product.product_updatedAt, brand.brand_name, category.category_name
 FROM     product INNER JOIN
                   category ON product.category_id = category.category_id INNER JOIN
                   brand ON product.brand_id = brand.brand_id";
@@ -11072,7 +11072,7 @@ FROM     product INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual Perfume_StoreDataSet.productDataTable GetDataByBrandAndCategory() {
+        public virtual Perfume_StoreDataSet.productDataTable GetDataBy() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             Perfume_StoreDataSet.productDataTable dataTable = new Perfume_StoreDataSet.productDataTable();
             this.Adapter.Fill(dataTable);
@@ -11669,11 +11669,17 @@ SELECT img_id, product_id, img_path, img_status FROM productImg WHERE (img_id = 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT img_id, product_id, img_path, img_status FROM dbo.productImg";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT img_id, product_id, img_path, img_status\r\nFROM     productImg\r\nWHERE  (pro" +
+                "duct_id = @product_id)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@product_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "product_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11695,6 +11701,32 @@ SELECT img_id, product_id, img_path, img_status FROM productImg WHERE (img_id = 
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual Perfume_StoreDataSet.productImgDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            Perfume_StoreDataSet.productImgDataTable dataTable = new Perfume_StoreDataSet.productImgDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByProductId(Perfume_StoreDataSet.productImgDataTable dataTable, int product_id) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(product_id));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual Perfume_StoreDataSet.productImgDataTable GetDataBy(int product_id) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(product_id));
             Perfume_StoreDataSet.productImgDataTable dataTable = new Perfume_StoreDataSet.productImgDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

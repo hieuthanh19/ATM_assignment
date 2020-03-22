@@ -34,6 +34,9 @@
             System.Windows.Forms.Label brand_createdAtLabel;
             System.Windows.Forms.Label brand_statusLabel;
             System.Windows.Forms.Label country_nameLabel;
+            System.Windows.Forms.Label createBrand_nameLabel;
+            System.Windows.Forms.Label craeteBrand_statusLabel;
+            System.Windows.Forms.Label createCountry_idLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrandManagement));
             this.brandDataGridView = new System.Windows.Forms.DataGridView();
             this.brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -43,7 +46,6 @@
             this.brand_nameTextBox = new System.Windows.Forms.TextBox();
             this.brand_createdAtDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.brand_statusComboBox = new System.Windows.Forms.ComboBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -51,22 +53,30 @@
             this.brandTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.brandTableAdapter();
             this.tableAdapterManager = new PefumeStore.Perfume_StoreDataSetTableAdapters.TableAdapterManager();
             this.countriesTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.countriesTableAdapter();
-            this.fKbrandcountryi0F624AF8BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKbrandcountryi0F624AF8BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.country_nameComboBox = new System.Windows.Forms.ComboBox();
-            this.fKbrandcountryi0F624AF8BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.brand_statusNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.createPnl = new System.Windows.Forms.Panel();
+            this.returnToListBtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.createBrand_nameTextBox = new System.Windows.Forms.TextBox();
+            this.createCountry_idComboBox = new System.Windows.Forms.ComboBox();
+            this.createClearBtn = new System.Windows.Forms.Button();
+            this.createCreateBtn = new System.Windows.Forms.Button();
+            this.createStatusComboBox = new System.Windows.Forms.ComboBox();
             brand_idLabel = new System.Windows.Forms.Label();
             brand_nameLabel = new System.Windows.Forms.Label();
             brand_createdAtLabel = new System.Windows.Forms.Label();
             brand_statusLabel = new System.Windows.Forms.Label();
             country_nameLabel = new System.Windows.Forms.Label();
+            createBrand_nameLabel = new System.Windows.Forms.Label();
+            craeteBrand_statusLabel = new System.Windows.Forms.Label();
+            createCountry_idLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.brandDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brandBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKbrandcountryi0F624AF8BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKbrandcountryi0F624AF8BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKbrandcountryi0F624AF8BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brand_statusNumericUpDown)).BeginInit();
+            this.createPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // brand_idLabel
@@ -125,9 +135,10 @@
             this.brandDataGridView.Name = "brandDataGridView";
             this.brandDataGridView.ReadOnly = true;
             this.brandDataGridView.RowTemplate.Height = 24;
+            this.brandDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.brandDataGridView.Size = new System.Drawing.Size(593, 220);
             this.brandDataGridView.TabIndex = 1;
-            this.brandDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.brandDataGridView_CellContentClick);
+            this.brandDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.brandDataGridView_CellMouseClick);
             // 
             // brandBindingSource
             // 
@@ -173,22 +184,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(265, 9);
+            this.label1.Location = new System.Drawing.Point(378, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(280, 32);
             this.label1.TabIndex = 12;
             this.label1.Text = "Brand Management";
-            // 
-            // brand_statusComboBox
-            // 
-            this.brand_statusComboBox.DataSource = this.brandBindingSource;
-            this.brand_statusComboBox.DisplayMember = "brand_status";
-            this.brand_statusComboBox.FormattingEnabled = true;
-            this.brand_statusComboBox.Location = new System.Drawing.Point(735, 206);
-            this.brand_statusComboBox.Name = "brand_statusComboBox";
-            this.brand_statusComboBox.Size = new System.Drawing.Size(156, 24);
-            this.brand_statusComboBox.TabIndex = 17;
-            this.brand_statusComboBox.ValueMember = "brand_status";
             // 
             // btnDelete
             // 
@@ -255,43 +255,157 @@
             // 
             this.countriesTableAdapter.ClearBeforeFill = true;
             // 
-            // fKbrandcountryi0F624AF8BindingSource
-            // 
-            this.fKbrandcountryi0F624AF8BindingSource.DataMember = "FK__brand__country_i__0F624AF8";
-            this.fKbrandcountryi0F624AF8BindingSource.DataSource = this.countriesBindingSource;
-            // 
-            // fKbrandcountryi0F624AF8BindingSource1
-            // 
-            this.fKbrandcountryi0F624AF8BindingSource1.DataMember = "FK__brand__country_i__0F624AF8";
-            this.fKbrandcountryi0F624AF8BindingSource1.DataSource = this.countriesBindingSource;
-            // 
             // country_nameComboBox
             // 
-            this.country_nameComboBox.DataSource = this.brandBindingSource;
-            
+            this.country_nameComboBox.DataSource = this.countriesBindingSource;
+            this.country_nameComboBox.DisplayMember = "country_name";
             this.country_nameComboBox.FormattingEnabled = true;
             this.country_nameComboBox.Location = new System.Drawing.Point(735, 144);
             this.country_nameComboBox.Name = "country_nameComboBox";
             this.country_nameComboBox.Size = new System.Drawing.Size(244, 24);
             this.country_nameComboBox.TabIndex = 22;
+            this.country_nameComboBox.ValueMember = "country_id";
             // 
-            // fKbrandcountryi0F624AF8BindingSource2
+            // brand_statusNumericUpDown
             // 
-            this.fKbrandcountryi0F624AF8BindingSource2.DataMember = "FK__brand__country_i__0F624AF8";
-            this.fKbrandcountryi0F624AF8BindingSource2.DataSource = this.countriesBindingSource;
+            this.brand_statusNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.brandBindingSource, "brand_status", true));
+            this.brand_statusNumericUpDown.Location = new System.Drawing.Point(735, 206);
+            this.brand_statusNumericUpDown.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.brand_statusNumericUpDown.Name = "brand_statusNumericUpDown";
+            this.brand_statusNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.brand_statusNumericUpDown.TabIndex = 23;
+            // 
+            // createPnl
+            // 
+            this.createPnl.Controls.Add(this.createStatusComboBox);
+            this.createPnl.Controls.Add(this.createClearBtn);
+            this.createPnl.Controls.Add(this.createCreateBtn);
+            this.createPnl.Controls.Add(this.createCountry_idComboBox);
+            this.createPnl.Controls.Add(createCountry_idLabel);
+            this.createPnl.Controls.Add(createBrand_nameLabel);
+            this.createPnl.Controls.Add(this.createBrand_nameTextBox);
+            this.createPnl.Controls.Add(craeteBrand_statusLabel);
+            this.createPnl.Controls.Add(this.returnToListBtn);
+            this.createPnl.Controls.Add(this.label2);
+            this.createPnl.Location = new System.Drawing.Point(7, 9);
+            this.createPnl.Name = "createPnl";
+            this.createPnl.Size = new System.Drawing.Size(987, 324);
+            this.createPnl.TabIndex = 24;
+            // 
+            // returnToListBtn
+            // 
+            this.returnToListBtn.Location = new System.Drawing.Point(5, 4);
+            this.returnToListBtn.Name = "returnToListBtn";
+            this.returnToListBtn.Size = new System.Drawing.Size(110, 35);
+            this.returnToListBtn.TabIndex = 3;
+            this.returnToListBtn.Text = "Return to List";
+            this.returnToListBtn.UseVisualStyleBackColor = true;
+            this.returnToListBtn.Click += new System.EventHandler(this.returnToListBtn_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(453, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 46);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Create";
+            // 
+            // createBrand_nameLabel
+            // 
+            createBrand_nameLabel.AutoSize = true;
+            createBrand_nameLabel.Location = new System.Drawing.Point(260, 65);
+            createBrand_nameLabel.Name = "createBrand_nameLabel";
+            createBrand_nameLabel.Size = new System.Drawing.Size(89, 17);
+            createBrand_nameLabel.TabIndex = 5;
+            createBrand_nameLabel.Text = "Brand name:";
+            // 
+            // createBrand_nameTextBox
+            // 
+            this.createBrand_nameTextBox.Location = new System.Drawing.Point(384, 62);
+            this.createBrand_nameTextBox.Name = "createBrand_nameTextBox";
+            this.createBrand_nameTextBox.Size = new System.Drawing.Size(225, 22);
+            this.createBrand_nameTextBox.TabIndex = 6;
+            // 
+            // craeteBrand_statusLabel
+            // 
+            craeteBrand_statusLabel.AutoSize = true;
+            craeteBrand_statusLabel.Location = new System.Drawing.Point(260, 140);
+            craeteBrand_statusLabel.Name = "craeteBrand_statusLabel";
+            craeteBrand_statusLabel.Size = new System.Drawing.Size(92, 17);
+            craeteBrand_statusLabel.TabIndex = 11;
+            craeteBrand_statusLabel.Text = "Brand status:";
+            // 
+            // createCountry_idLabel
+            // 
+            createCountry_idLabel.AutoSize = true;
+            createCountry_idLabel.Location = new System.Drawing.Point(260, 102);
+            createCountry_idLabel.Name = "createCountry_idLabel";
+            createCountry_idLabel.Size = new System.Drawing.Size(100, 17);
+            createCountry_idLabel.TabIndex = 12;
+            createCountry_idLabel.Text = "Country name:";
+            // 
+            // createCountry_idComboBox
+            // 
+            this.createCountry_idComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.countriesBindingSource, "country_id", true));
+            this.createCountry_idComboBox.DataSource = this.countriesBindingSource;
+            this.createCountry_idComboBox.DisplayMember = "country_name";
+            this.createCountry_idComboBox.FormattingEnabled = true;
+            this.createCountry_idComboBox.Location = new System.Drawing.Point(384, 95);
+            this.createCountry_idComboBox.Name = "createCountry_idComboBox";
+            this.createCountry_idComboBox.Size = new System.Drawing.Size(121, 24);
+            this.createCountry_idComboBox.TabIndex = 13;
+            this.createCountry_idComboBox.ValueMember = "country_id";
+            // 
+            // createClearBtn
+            // 
+            this.createClearBtn.Location = new System.Drawing.Point(506, 197);
+            this.createClearBtn.Name = "createClearBtn";
+            this.createClearBtn.Size = new System.Drawing.Size(110, 35);
+            this.createClearBtn.TabIndex = 15;
+            this.createClearBtn.Text = "Clear";
+            this.createClearBtn.UseVisualStyleBackColor = true;
+            this.createClearBtn.Click += new System.EventHandler(this.createClearBtn_Click);
+            // 
+            // createCreateBtn
+            // 
+            this.createCreateBtn.Location = new System.Drawing.Point(384, 197);
+            this.createCreateBtn.Name = "createCreateBtn";
+            this.createCreateBtn.Size = new System.Drawing.Size(110, 35);
+            this.createCreateBtn.TabIndex = 14;
+            this.createCreateBtn.Text = "Create";
+            this.createCreateBtn.UseVisualStyleBackColor = true;
+            this.createCreateBtn.Click += new System.EventHandler(this.createCreateBtn_Click);
+            // 
+            // createStatusComboBox
+            // 
+            this.createStatusComboBox.FormattingEnabled = true;
+            this.createStatusComboBox.Items.AddRange(new object[] {
+            "Locked",
+            "Active"});
+            this.createStatusComboBox.Location = new System.Drawing.Point(384, 135);
+            this.createStatusComboBox.Name = "createStatusComboBox";
+            this.createStatusComboBox.Size = new System.Drawing.Size(121, 24);
+            this.createStatusComboBox.TabIndex = 16;
             // 
             // BrandManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 342);
+            this.ClientSize = new System.Drawing.Size(1006, 345);
+            this.Controls.Add(this.createPnl);
+            this.Controls.Add(this.brand_statusNumericUpDown);
             this.Controls.Add(this.country_nameComboBox);
             this.Controls.Add(country_nameLabel);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.brand_statusComboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(brand_idLabel);
             this.Controls.Add(this.brand_idTextBox);
@@ -313,8 +427,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.brandBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).EndInit();
-           
-        
+            ((System.ComponentModel.ISupportInitialize)(this.brand_statusNumericUpDown)).EndInit();
+            this.createPnl.ResumeLayout(false);
+            this.createPnl.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,12 +450,20 @@
         private Perfume_StoreDataSetTableAdapters.countriesTableAdapter countriesTableAdapter;
         private System.Windows.Forms.BindingSource fKbrandcountryi0F624AF8BindingSource;
         private System.Windows.Forms.BindingSource fKbrandcountryi0F624AF8BindingSource1;
-        private System.Windows.Forms.ComboBox brand_statusComboBox;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.ComboBox country_nameComboBox;
         private System.Windows.Forms.BindingSource fKbrandcountryi0F624AF8BindingSource2;
+        private System.Windows.Forms.NumericUpDown brand_statusNumericUpDown;
+        private System.Windows.Forms.Panel createPnl;
+        private System.Windows.Forms.TextBox createBrand_nameTextBox;
+        private System.Windows.Forms.Button returnToListBtn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox createCountry_idComboBox;
+        private System.Windows.Forms.Button createClearBtn;
+        private System.Windows.Forms.Button createCreateBtn;
+        private System.Windows.Forms.ComboBox createStatusComboBox;
     }
 }
