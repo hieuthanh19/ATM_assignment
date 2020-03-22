@@ -48,11 +48,11 @@ namespace PefumeStore.Management_Interface
         {
             for (int i = 0; i < productImgDataGridView.Rows.Count; i++)
             {
-                
+
                 int productId = (int)productImgDataGridView.Rows[i].Cells[1].Value;
                 string imgName = (string)productImgDataGridView.Rows[i].Cells[2].Value;
                 // Directory: img/product/productId/imgname
-                string filepath = AppDomain.CurrentDomain.BaseDirectory + "img\\product\\" + productId+"\\"+ imgName;
+                string filepath = AppDomain.CurrentDomain.BaseDirectory + "img\\product\\" + productId + "\\" + imgName;
                 //Bitmap bmp = new Bitmap(Application.StartupPath + "\\Data\\AirPlaneData\\" + dt.Rows[row][4]);
                 Bitmap bmp = new Bitmap(filepath);
                 ((DataGridViewImageCell)productImgDataGridView.Rows[i].Cells[4]).Value = bmp;
@@ -84,7 +84,7 @@ namespace PefumeStore.Management_Interface
             if (productImgDataGridView.RowCount > 0)
             {
                 previousImgID = (int)productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[0].Value;
-            }                       
+            }
             int currentImgId = ++previousImgID;
             productImgTableAdapter.Insert(this.productId, currentImgId.ToString() + ".jpg", 1);
             //Update data grid view 
@@ -110,9 +110,9 @@ namespace PefumeStore.Management_Interface
                 DataGridViewImageCell dataGridViewImageCell = ((DataGridViewImageCell)productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[4]);
                 dataGridViewImageCell.Value = System.Drawing.Image.FromFile(ofd.FileName);
 
-                SaveImages();                
+                SaveImages();
                 LoadImageToDataGrid();
-                
+
 
 
             }
@@ -132,7 +132,7 @@ namespace PefumeStore.Management_Interface
             Directory.CreateDirectory(filepath);
             myImg.Save(filepath + imgName, myImg.RawFormat);
         }
-      
+
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
@@ -142,10 +142,10 @@ namespace PefumeStore.Management_Interface
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddImage();
-            
+
             LoadImageToDataGrid();
         }
-       
+
         private void ProductImagesManagement_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -178,20 +178,15 @@ namespace PefumeStore.Management_Interface
         {
             if (productImgDataGridView.SelectedRows.Count > 0)
             {
-                if (img_statusNumericUpDown.Value == 0)
-                    img_statusNumericUpDown.Value = 1;
-                else
-                    img_statusNumericUpDown.Value = 0;
-
-                //get new data
-                int newStatus = (int)img_statusNumericUpDown.Value;
-
                 //get old data
                 DataGridViewRow row = productImgDataGridView.SelectedRows[0];
                 int imgId = (int)row.Cells[0].Value;
                 int productID = this.productId;
                 string imgName = (string)row.Cells[2].Value;
                 int status = (int)row.Cells[3].Value;
+
+                //get new data
+                int newStatus = status == 0 ? 1 : 0;
 
                 //update
                 productImgTableAdapter.Update(productId, imgName, newStatus, imgId, productId, imgName, status);

@@ -197,5 +197,10 @@ namespace PefumeStore.Management_Interface
                 createClearData();
             }
         }
+
+        private void createPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Menu));
             this.label1 = new System.Windows.Forms.Label();
             this.btnProductMng = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnCategoryMng = new System.Windows.Forms.Button();
             this.btnDeliveryMethodMng = new System.Windows.Forms.Button();
             this.btnPaymentMethodMng = new System.Windows.Forms.Button();
@@ -46,93 +45,119 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.returnHomeBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label1.Name = "label1";
             // 
             // btnProductMng
             // 
-            this.btnProductMng.BackColor = System.Drawing.Color.Transparent;
+            this.btnProductMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnProductMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnProductMng, "btnProductMng");
+            this.btnProductMng.ForeColor = System.Drawing.Color.White;
             this.btnProductMng.Name = "btnProductMng";
             this.btnProductMng.UseVisualStyleBackColor = false;
             this.btnProductMng.Click += new System.EventHandler(this.btnProductMng_Click);
             // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Name = "label2";
-            // 
             // btnCategoryMng
             // 
+            this.btnCategoryMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnCategoryMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnCategoryMng, "btnCategoryMng");
+            this.btnCategoryMng.ForeColor = System.Drawing.Color.White;
             this.btnCategoryMng.Name = "btnCategoryMng";
-            this.btnCategoryMng.UseVisualStyleBackColor = true;
+            this.btnCategoryMng.UseVisualStyleBackColor = false;
             this.btnCategoryMng.Click += new System.EventHandler(this.btnCategoryMng_Click);
             // 
             // btnDeliveryMethodMng
             // 
+            this.btnDeliveryMethodMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnDeliveryMethodMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnDeliveryMethodMng, "btnDeliveryMethodMng");
+            this.btnDeliveryMethodMng.ForeColor = System.Drawing.Color.White;
             this.btnDeliveryMethodMng.Name = "btnDeliveryMethodMng";
-            this.btnDeliveryMethodMng.UseVisualStyleBackColor = true;
+            this.btnDeliveryMethodMng.UseVisualStyleBackColor = false;
             this.btnDeliveryMethodMng.Click += new System.EventHandler(this.btnDeliveryMethodMng_Click);
             // 
             // btnPaymentMethodMng
             // 
+            this.btnPaymentMethodMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnPaymentMethodMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnPaymentMethodMng, "btnPaymentMethodMng");
+            this.btnPaymentMethodMng.ForeColor = System.Drawing.Color.White;
             this.btnPaymentMethodMng.Name = "btnPaymentMethodMng";
-            this.btnPaymentMethodMng.UseVisualStyleBackColor = true;
+            this.btnPaymentMethodMng.UseVisualStyleBackColor = false;
             this.btnPaymentMethodMng.Click += new System.EventHandler(this.btnPaymentMethodMng_Click);
             // 
             // btnOrderMng
             // 
+            this.btnOrderMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnOrderMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnOrderMng, "btnOrderMng");
+            this.btnOrderMng.ForeColor = System.Drawing.Color.White;
             this.btnOrderMng.Name = "btnOrderMng";
-            this.btnOrderMng.UseVisualStyleBackColor = true;
+            this.btnOrderMng.UseVisualStyleBackColor = false;
             this.btnOrderMng.Click += new System.EventHandler(this.btnOrderMng_Click);
             // 
             // btnUserRoleMng
             // 
+            this.btnUserRoleMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnUserRoleMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnUserRoleMng, "btnUserRoleMng");
+            this.btnUserRoleMng.ForeColor = System.Drawing.Color.White;
             this.btnUserRoleMng.Name = "btnUserRoleMng";
-            this.btnUserRoleMng.UseVisualStyleBackColor = true;
+            this.btnUserRoleMng.UseVisualStyleBackColor = false;
             this.btnUserRoleMng.Click += new System.EventHandler(this.btnUserRoleMng_Click);
             // 
             // btnUserMng
             // 
+            this.btnUserMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnUserMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnUserMng, "btnUserMng");
+            this.btnUserMng.ForeColor = System.Drawing.Color.White;
             this.btnUserMng.Name = "btnUserMng";
-            this.btnUserMng.UseVisualStyleBackColor = true;
+            this.btnUserMng.UseVisualStyleBackColor = false;
             this.btnUserMng.Click += new System.EventHandler(this.btnUserMng_Click);
             // 
             // btnCountryMng
             // 
+            this.btnCountryMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnCountryMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnCountryMng, "btnCountryMng");
+            this.btnCountryMng.ForeColor = System.Drawing.Color.White;
             this.btnCountryMng.Name = "btnCountryMng";
-            this.btnCountryMng.UseVisualStyleBackColor = true;
+            this.btnCountryMng.UseVisualStyleBackColor = false;
             this.btnCountryMng.Click += new System.EventHandler(this.btnCountryMng_Click);
             // 
             // btnBrandMng
             // 
+            this.btnBrandMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnBrandMng.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnBrandMng, "btnBrandMng");
+            this.btnBrandMng.ForeColor = System.Drawing.Color.White;
             this.btnBrandMng.Name = "btnBrandMng";
-            this.btnBrandMng.UseVisualStyleBackColor = true;
+            this.btnBrandMng.UseVisualStyleBackColor = false;
             this.btnBrandMng.Click += new System.EventHandler(this.btnBrandMng_Click);
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label4.Name = "label4";
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label5.Name = "label5";
             // 
             // panel2
@@ -145,8 +170,8 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.Controls.Add(this.label6);
             this.flowLayoutPanel1.Controls.Add(this.btnProductMng);
             this.flowLayoutPanel1.Controls.Add(this.btnCategoryMng);
             this.flowLayoutPanel1.Controls.Add(this.btnBrandMng);
@@ -163,9 +188,13 @@
             // 
             // returnHomeBtn
             // 
+            this.returnHomeBtn.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.returnHomeBtn, "returnHomeBtn");
+            this.returnHomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.returnHomeBtn.FlatAppearance.BorderSize = 2;
+            this.returnHomeBtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.returnHomeBtn.Name = "returnHomeBtn";
-            this.returnHomeBtn.UseVisualStyleBackColor = true;
+            this.returnHomeBtn.UseVisualStyleBackColor = false;
             this.returnHomeBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
@@ -173,15 +202,28 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label6.Name = "label6";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.returnHomeBtn);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
             // Admin_Menu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.returnHomeBtn);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Admin_Menu";
@@ -190,8 +232,9 @@
             this.panel2.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -199,7 +242,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnProductMng;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCategoryMng;
         private System.Windows.Forms.Button btnDeliveryMethodMng;
         private System.Windows.Forms.Button btnPaymentMethodMng;
@@ -214,5 +256,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button returnHomeBtn;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
     }
 }

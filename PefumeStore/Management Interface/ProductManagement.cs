@@ -65,7 +65,7 @@ namespace PefumeStore.Management_Interface
             productDataGridView.Columns["product_name"].HeaderText = "Name";
             productDataGridView.Columns["category_name"].HeaderText = "Category";
             productDataGridView.Columns["brand_name"].HeaderText = "Brand";
-            productDataGridView.Columns["product_volumne"].HeaderText = "Volumne";
+            productDataGridView.Columns["product_volumne"].HeaderText = "Volume";
             productDataGridView.Columns["product_quantity"].HeaderText = "Quantity";
             productDataGridView.Columns["product_originalPrice"].HeaderText = "Original Price";
             productDataGridView.Columns["product_currentPrice"].HeaderText = "Current Price";
