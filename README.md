@@ -6,6 +6,7 @@ Link onedirve project: https://1drv.ms/u/s!AiFVLPRBePKonNhyDyhLufvMKa14dg?e=wmk9
 - Background Color: White
 - Button: FlatStyle là Flat 
 - Title: Font là Arial Rounded MT, Bold
+- DataGridView: Grid Color là SeaGreen, DefaultCellStyle -> Selection Back color là Seagreen
 ## Account List:
 -Role: Admin\
 	username: admin	\
