@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Label delivery_idLabel;
             System.Windows.Forms.Label delivery_nameLabel;
             System.Windows.Forms.Label delivery_descriptionLabel;
             System.Windows.Forms.Label delivery_statusLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeliveryMethodManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.deliveryMethodBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.deliveryMethodTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.deliveryMethodTableAdapter();
@@ -43,10 +43,6 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.delivery_idTextBox = new System.Windows.Forms.TextBox();
-            this.delivery_nameTextBox = new System.Windows.Forms.TextBox();
-            this.delivery_descriptionTextBox = new System.Windows.Forms.TextBox();
-            this.delivery_statusTextBox = new System.Windows.Forms.TextBox();
             this.btnReturn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
@@ -54,6 +50,10 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.delivery_idTextBox = new System.Windows.Forms.TextBox();
+            this.delivery_nameTextBox = new System.Windows.Forms.TextBox();
+            this.delivery_descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.delivery_statusTextBox = new System.Windows.Forms.TextBox();
             delivery_idLabel = new System.Windows.Forms.Label();
             delivery_nameLabel = new System.Windows.Forms.Label();
             delivery_descriptionLabel = new System.Windows.Forms.Label();
@@ -62,47 +62,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.deliveryMethodBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deliveryMethodDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // delivery_idLabel
-            // 
-            delivery_idLabel.AutoSize = true;
-            delivery_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            delivery_idLabel.Location = new System.Drawing.Point(43, 79);
-            delivery_idLabel.Name = "delivery_idLabel";
-            delivery_idLabel.Size = new System.Drawing.Size(105, 25);
-            delivery_idLabel.TabIndex = 2;
-            delivery_idLabel.Text = "delivery id:";
-            // 
-            // delivery_nameLabel
-            // 
-            delivery_nameLabel.AutoSize = true;
-            delivery_nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            delivery_nameLabel.Location = new System.Drawing.Point(43, 110);
-            delivery_nameLabel.Name = "delivery_nameLabel";
-            delivery_nameLabel.Size = new System.Drawing.Size(139, 25);
-            delivery_nameLabel.TabIndex = 4;
-            delivery_nameLabel.Text = "delivery name:";
-            // 
-            // delivery_descriptionLabel
-            // 
-            delivery_descriptionLabel.AutoSize = true;
-            delivery_descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            delivery_descriptionLabel.Location = new System.Drawing.Point(43, 146);
-            delivery_descriptionLabel.Name = "delivery_descriptionLabel";
-            delivery_descriptionLabel.Size = new System.Drawing.Size(184, 25);
-            delivery_descriptionLabel.TabIndex = 6;
-            delivery_descriptionLabel.Text = "delivery description:";
-            // 
-            // delivery_statusLabel
-            // 
-            delivery_statusLabel.AutoSize = true;
-            delivery_statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            delivery_statusLabel.Location = new System.Drawing.Point(43, 209);
-            delivery_statusLabel.Name = "delivery_statusLabel";
-            delivery_statusLabel.Size = new System.Drawing.Size(142, 25);
-            delivery_statusLabel.TabIndex = 8;
-            delivery_statusLabel.Text = "delivery status:";
-            delivery_statusLabel.Click += new System.EventHandler(this.delivery_statusLabel_Click);
             // 
             // perfume_StoreDataSet
             // 
@@ -145,6 +104,15 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.deliveryMethodDataGridView.DataSource = this.deliveryMethodBindingSource;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.deliveryMethodDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            this.deliveryMethodDataGridView.GridColor = System.Drawing.Color.SeaGreen;
             this.deliveryMethodDataGridView.Location = new System.Drawing.Point(586, 74);
             this.deliveryMethodDataGridView.Name = "deliveryMethodDataGridView";
             this.deliveryMethodDataGridView.RowTemplate.Height = 24;
@@ -176,45 +144,9 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "delivery_status";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // delivery_idTextBox
-            // 
-            this.delivery_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_id", true));
-            this.delivery_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delivery_idTextBox.Location = new System.Drawing.Point(239, 79);
-            this.delivery_idTextBox.Name = "delivery_idTextBox";
-            this.delivery_idTextBox.Size = new System.Drawing.Size(231, 30);
-            this.delivery_idTextBox.TabIndex = 3;
-            // 
-            // delivery_nameTextBox
-            // 
-            this.delivery_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_name", true));
-            this.delivery_nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delivery_nameTextBox.Location = new System.Drawing.Point(239, 110);
-            this.delivery_nameTextBox.Name = "delivery_nameTextBox";
-            this.delivery_nameTextBox.Size = new System.Drawing.Size(231, 30);
-            this.delivery_nameTextBox.TabIndex = 5;
-            // 
-            // delivery_descriptionTextBox
-            // 
-            this.delivery_descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_description", true));
-            this.delivery_descriptionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delivery_descriptionTextBox.Location = new System.Drawing.Point(239, 146);
-            this.delivery_descriptionTextBox.Multiline = true;
-            this.delivery_descriptionTextBox.Name = "delivery_descriptionTextBox";
-            this.delivery_descriptionTextBox.Size = new System.Drawing.Size(301, 42);
-            this.delivery_descriptionTextBox.TabIndex = 7;
-            // 
-            // delivery_statusTextBox
-            // 
-            this.delivery_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_status", true));
-            this.delivery_statusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delivery_statusTextBox.Location = new System.Drawing.Point(239, 209);
-            this.delivery_statusTextBox.Name = "delivery_statusTextBox";
-            this.delivery_statusTextBox.Size = new System.Drawing.Size(231, 30);
-            this.delivery_statusTextBox.TabIndex = 9;
-            // 
             // btnReturn
             // 
+            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Location = new System.Drawing.Point(12, 9);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(75, 30);
@@ -232,9 +164,11 @@
             this.label1.Size = new System.Drawing.Size(419, 32);
             this.label1.TabIndex = 22;
             this.label1.Text = "Delivery Method Management";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSave
             // 
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(458, 262);
             this.btnSave.Name = "btnSave";
@@ -246,6 +180,7 @@
             // 
             // btnPre
             // 
+            this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPre.Location = new System.Drawing.Point(356, 262);
             this.btnPre.Name = "btnPre";
@@ -257,6 +192,7 @@
             // 
             // btnNext
             // 
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.Location = new System.Drawing.Point(254, 262);
             this.btnNext.Name = "btnNext";
@@ -268,6 +204,7 @@
             // 
             // btnDel
             // 
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.Location = new System.Drawing.Point(152, 262);
             this.btnDel.Name = "btnDel";
@@ -279,6 +216,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(47, 259);
             this.btnAdd.Name = "btnAdd";
@@ -288,18 +226,88 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // delivery_idLabel
+            // 
+            delivery_idLabel.AutoSize = true;
+            delivery_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            delivery_idLabel.Location = new System.Drawing.Point(57, 71);
+            delivery_idLabel.Name = "delivery_idLabel";
+            delivery_idLabel.Size = new System.Drawing.Size(100, 24);
+            delivery_idLabel.TabIndex = 28;
+            delivery_idLabel.Text = "delivery id:";
+            // 
+            // delivery_idTextBox
+            // 
+            this.delivery_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_id", true));
+            this.delivery_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delivery_idTextBox.Location = new System.Drawing.Point(240, 71);
+            this.delivery_idTextBox.Name = "delivery_idTextBox";
+            this.delivery_idTextBox.Size = new System.Drawing.Size(225, 28);
+            this.delivery_idTextBox.TabIndex = 29;
+            // 
+            // delivery_nameLabel
+            // 
+            delivery_nameLabel.AutoSize = true;
+            delivery_nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            delivery_nameLabel.Location = new System.Drawing.Point(57, 106);
+            delivery_nameLabel.Name = "delivery_nameLabel";
+            delivery_nameLabel.Size = new System.Drawing.Size(133, 24);
+            delivery_nameLabel.TabIndex = 30;
+            delivery_nameLabel.Text = "delivery name:";
+            // 
+            // delivery_nameTextBox
+            // 
+            this.delivery_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_name", true));
+            this.delivery_nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delivery_nameTextBox.Location = new System.Drawing.Point(240, 106);
+            this.delivery_nameTextBox.Name = "delivery_nameTextBox";
+            this.delivery_nameTextBox.Size = new System.Drawing.Size(225, 28);
+            this.delivery_nameTextBox.TabIndex = 31;
+            // 
+            // delivery_descriptionLabel
+            // 
+            delivery_descriptionLabel.AutoSize = true;
+            delivery_descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            delivery_descriptionLabel.Location = new System.Drawing.Point(57, 141);
+            delivery_descriptionLabel.Name = "delivery_descriptionLabel";
+            delivery_descriptionLabel.Size = new System.Drawing.Size(177, 24);
+            delivery_descriptionLabel.TabIndex = 32;
+            delivery_descriptionLabel.Text = "delivery description:";
+            // 
+            // delivery_descriptionTextBox
+            // 
+            this.delivery_descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_description", true));
+            this.delivery_descriptionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delivery_descriptionTextBox.Location = new System.Drawing.Point(240, 141);
+            this.delivery_descriptionTextBox.Name = "delivery_descriptionTextBox";
+            this.delivery_descriptionTextBox.Size = new System.Drawing.Size(225, 28);
+            this.delivery_descriptionTextBox.TabIndex = 33;
+            // 
+            // delivery_statusLabel
+            // 
+            delivery_statusLabel.AutoSize = true;
+            delivery_statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            delivery_statusLabel.Location = new System.Drawing.Point(57, 175);
+            delivery_statusLabel.Name = "delivery_statusLabel";
+            delivery_statusLabel.Size = new System.Drawing.Size(132, 24);
+            delivery_statusLabel.TabIndex = 34;
+            delivery_statusLabel.Text = "delivery status:";
+            // 
+            // delivery_statusTextBox
+            // 
+            this.delivery_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.deliveryMethodBindingSource, "delivery_status", true));
+            this.delivery_statusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delivery_statusTextBox.Location = new System.Drawing.Point(240, 175);
+            this.delivery_statusTextBox.Name = "delivery_statusTextBox";
+            this.delivery_statusTextBox.Size = new System.Drawing.Size(225, 28);
+            this.delivery_statusTextBox.TabIndex = 35;
+            // 
             // DeliveryMethodManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1089, 335);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnPre);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.btnDel);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.label1);
             this.Controls.Add(delivery_idLabel);
             this.Controls.Add(this.delivery_idTextBox);
             this.Controls.Add(delivery_nameLabel);
@@ -308,9 +316,16 @@
             this.Controls.Add(this.delivery_descriptionTextBox);
             this.Controls.Add(delivery_statusLabel);
             this.Controls.Add(this.delivery_statusTextBox);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnPre);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnDel);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.deliveryMethodDataGridView);
+            this.ForeColor = System.Drawing.Color.SeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DeliveryMethodManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -336,10 +351,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.TextBox delivery_idTextBox;
-        private System.Windows.Forms.TextBox delivery_nameTextBox;
-        private System.Windows.Forms.TextBox delivery_descriptionTextBox;
-        private System.Windows.Forms.TextBox delivery_statusTextBox;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSave;
@@ -347,5 +358,9 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox delivery_idTextBox;
+        private System.Windows.Forms.TextBox delivery_nameTextBox;
+        private System.Windows.Forms.TextBox delivery_descriptionTextBox;
+        private System.Windows.Forms.TextBox delivery_statusTextBox;
     }
 }

@@ -117,30 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="delivery_idLabel.GenerateMember" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="delivery_nameLabel.GenerateMember" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="delivery_descriptionLabel.GenerateMember" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="delivery_statusLabel.GenerateMember" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="perfume_StoreDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="perfume_StoreDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
-  <data name="deliveryMethodBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  </metadata>
+  <metadata name="deliveryMethodBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>227, 17</value>
-  </data>
-  <data name="deliveryMethodTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  </metadata>
+  <metadata name="deliveryMethodTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>489, 17</value>
-  </data>
-  <data name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  </metadata>
+  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>744, 17</value>
-  </data>
+  </metadata>
+  <metadata name="delivery_idLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="delivery_nameLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="delivery_descriptionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="delivery_statusLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
 </root>

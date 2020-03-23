@@ -79,5 +79,10 @@ namespace PefumeStore.Management_Interface
             this.deliveryMethodBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.perfume_StoreDataSet);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
