@@ -60,7 +60,7 @@ namespace PefumeStore.Management_Interface
                 {
                     int countryId = int.Parse(country_idTextBox.Text);
                     string countryName = country_nameTextBox.Text;
-                    int status = (int)country_statusComboBox.SelectedValue;
+                    int status = (int)country_statusComboBox.SelectedIndex;
                     DateTime createdAt = country_createdAtDateTimePicker.Value;
                     countriesTableAdapter.Delete(countryId, countryName, status, createdAt);
 
@@ -128,6 +128,11 @@ namespace PefumeStore.Management_Interface
                 createClearData();
 
             }
+        }
+
+        private void countriesDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            country_statusComboBox.SelectedIndex = (int)countriesDataGridView.SelectedRows[0].Cells[2].Value;
         }
     }
 }

@@ -39,6 +39,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CountryManagement));
             this.countriesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.country_nameTextBox = new System.Windows.Forms.TextBox();
@@ -51,7 +55,6 @@
             this.country_createdAtDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.countriesTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.countriesTableAdapter();
             this.tableAdapterManager = new PefumeStore.Perfume_StoreDataSetTableAdapters.TableAdapterManager();
-            this.country_statusComboBox = new System.Windows.Forms.ComboBox();
             this.createPnl = new System.Windows.Forms.Panel();
             this.createStatusComboBox = new System.Windows.Forms.ComboBox();
             this.createClearBtn = new System.Windows.Forms.Button();
@@ -60,10 +63,7 @@
             this.returnToListBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.country_statusComboBox = new System.Windows.Forms.ComboBox();
             country_nameLabel = new System.Windows.Forms.Label();
             country_statusLabel = new System.Windows.Forms.Label();
             country_idLabel = new System.Windows.Forms.Label();
@@ -181,6 +181,39 @@
             this.countriesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.countriesDataGridView.Size = new System.Drawing.Size(377, 247);
             this.countriesDataGridView.TabIndex = 1;
+            this.countriesDataGridView.SelectionChanged += new System.EventHandler(this.countriesDataGridView_SelectionChanged);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "country_id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "country_name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 74;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "country_status";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Status";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 77;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "country_createdAt";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Created At";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 104;
             // 
             // countriesBindingSource
             // 
@@ -207,7 +240,7 @@
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(222, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 39);
+            this.label1.Size = new System.Drawing.Size(362, 38);
             this.label1.TabIndex = 8;
             this.label1.Text = "Country Management";
             // 
@@ -308,18 +341,6 @@
             this.tableAdapterManager.user_roleTableAdapter = null;
             this.tableAdapterManager.usersTableAdapter = null;
             // 
-            // country_statusComboBox
-            // 
-            this.country_statusComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.countriesBindingSource, "country_status", true));
-            this.country_statusComboBox.DataSource = this.countriesBindingSource;
-            this.country_statusComboBox.DisplayMember = "country_status";
-            this.country_statusComboBox.FormattingEnabled = true;
-            this.country_statusComboBox.Location = new System.Drawing.Point(531, 135);
-            this.country_statusComboBox.Name = "country_statusComboBox";
-            this.country_statusComboBox.Size = new System.Drawing.Size(121, 24);
-            this.country_statusComboBox.TabIndex = 16;
-            this.country_statusComboBox.ValueMember = "country_status";
-            // 
             // createPnl
             // 
             this.createPnl.BackColor = System.Drawing.Color.Transparent;
@@ -413,9 +434,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.country_statusComboBox);
             this.panel1.Controls.Add(this.btnReturn);
             this.panel1.Controls.Add(this.countriesDataGridView);
-            this.panel1.Controls.Add(this.country_statusComboBox);
             this.panel1.Controls.Add(country_statusLabel);
             this.panel1.Controls.Add(country_createdAtLabel);
             this.panel1.Controls.Add(this.country_nameTextBox);
@@ -433,37 +454,16 @@
             this.panel1.Size = new System.Drawing.Size(794, 347);
             this.panel1.TabIndex = 18;
             // 
-            // dataGridViewTextBoxColumn1
+            // country_statusComboBox
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "country_id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "country_name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 74;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "country_status";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Status";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 77;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "country_createdAt";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Created At";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 104;
+            this.country_statusComboBox.FormattingEnabled = true;
+            this.country_statusComboBox.Items.AddRange(new object[] {
+            "Locked",
+            "Active"});
+            this.country_statusComboBox.Location = new System.Drawing.Point(531, 135);
+            this.country_statusComboBox.Name = "country_statusComboBox";
+            this.country_statusComboBox.Size = new System.Drawing.Size(121, 24);
+            this.country_statusComboBox.TabIndex = 16;
             // 
             // CountryManagement
             // 
@@ -471,8 +471,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(794, 347);
-            this.Controls.Add(this.createPnl);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.createPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -507,7 +507,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox country_idTextBox;
         private System.Windows.Forms.DateTimePicker country_createdAtDateTimePicker;
-        private System.Windows.Forms.ComboBox country_statusComboBox;
         private System.Windows.Forms.Panel createPnl;
         private System.Windows.Forms.Button createCreateBtn;
         private System.Windows.Forms.TextBox createCountry_nameTextBox;
@@ -520,5 +519,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.ComboBox country_statusComboBox;
     }
 }

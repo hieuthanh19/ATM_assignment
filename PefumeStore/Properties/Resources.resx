@@ -139,9 +139,6 @@
   <data name="3_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\product\single-product\2\3_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="favicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\favicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="chanel-deal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\product\hot_deals\chanel-deal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

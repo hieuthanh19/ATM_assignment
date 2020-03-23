@@ -243,7 +243,7 @@
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(323, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 39);
+            this.label1.Size = new System.Drawing.Size(333, 38);
             this.label1.TabIndex = 12;
             this.label1.Text = "Brand Management";
             // 

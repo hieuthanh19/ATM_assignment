@@ -157,7 +157,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::PefumeStore.Properties.Resources.favicon;
+
             this.pictureBox11.Location = new System.Drawing.Point(3, 12);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(81, 54);
