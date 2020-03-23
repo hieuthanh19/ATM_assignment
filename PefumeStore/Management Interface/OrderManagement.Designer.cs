@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Label order_idLabel;
             System.Windows.Forms.Label user_idLabel;
             System.Windows.Forms.Label order_paymentStatusLabel;
@@ -45,7 +46,6 @@
             System.Windows.Forms.Label order_createdAtLabel;
             System.Windows.Forms.Label order_updatedAtLabel;
             System.Windows.Forms.Label order_deliveredAtLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ordersTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.ordersTableAdapter();
@@ -67,6 +67,8 @@
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.order_idTextBox = new System.Windows.Forms.TextBox();
             this.user_idTextBox = new System.Windows.Forms.TextBox();
             this.order_paymentStatusTextBox = new System.Windows.Forms.TextBox();
@@ -83,8 +85,11 @@
             this.order_createdAtDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.order_updatedAtDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.order_deliveredAtDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.btnReturn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnPre = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             order_idLabel = new System.Windows.Forms.Label();
             user_idLabel = new System.Windows.Forms.Label();
             order_paymentStatusLabel = new System.Windows.Forms.Label();
@@ -105,150 +110,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // order_idLabel
-            // 
-            order_idLabel.AutoSize = true;
-            order_idLabel.Location = new System.Drawing.Point(536, 76);
-            order_idLabel.Name = "order_idLabel";
-            order_idLabel.Size = new System.Drawing.Size(61, 17);
-            order_idLabel.TabIndex = 2;
-            order_idLabel.Text = "order id:";
-            // 
-            // user_idLabel
-            // 
-            user_idLabel.AutoSize = true;
-            user_idLabel.Location = new System.Drawing.Point(536, 104);
-            user_idLabel.Name = "user_idLabel";
-            user_idLabel.Size = new System.Drawing.Size(55, 17);
-            user_idLabel.TabIndex = 4;
-            user_idLabel.Text = "user id:";
-            // 
-            // order_paymentStatusLabel
-            // 
-            order_paymentStatusLabel.AutoSize = true;
-            order_paymentStatusLabel.Location = new System.Drawing.Point(536, 132);
-            order_paymentStatusLabel.Name = "order_paymentStatusLabel";
-            order_paymentStatusLabel.Size = new System.Drawing.Size(148, 17);
-            order_paymentStatusLabel.TabIndex = 6;
-            order_paymentStatusLabel.Text = "order payment Status:";
-            // 
-            // order_handledByLabel
-            // 
-            order_handledByLabel.AutoSize = true;
-            order_handledByLabel.Location = new System.Drawing.Point(536, 160);
-            order_handledByLabel.Name = "order_handledByLabel";
-            order_handledByLabel.Size = new System.Drawing.Size(121, 17);
-            order_handledByLabel.TabIndex = 8;
-            order_handledByLabel.Text = "order handled By:";
-            // 
-            // order_statusLabel
-            // 
-            order_statusLabel.AutoSize = true;
-            order_statusLabel.Location = new System.Drawing.Point(536, 188);
-            order_statusLabel.Name = "order_statusLabel";
-            order_statusLabel.Size = new System.Drawing.Size(88, 17);
-            order_statusLabel.TabIndex = 10;
-            order_statusLabel.Text = "order status:";
-            // 
-            // order_paymentMethodLabel
-            // 
-            order_paymentMethodLabel.AutoSize = true;
-            order_paymentMethodLabel.Location = new System.Drawing.Point(536, 216);
-            order_paymentMethodLabel.Name = "order_paymentMethodLabel";
-            order_paymentMethodLabel.Size = new System.Drawing.Size(155, 17);
-            order_paymentMethodLabel.TabIndex = 12;
-            order_paymentMethodLabel.Text = "order payment Method:";
-            // 
-            // order_totalCostLabel
-            // 
-            order_totalCostLabel.AutoSize = true;
-            order_totalCostLabel.Location = new System.Drawing.Point(536, 244);
-            order_totalCostLabel.Name = "order_totalCostLabel";
-            order_totalCostLabel.Size = new System.Drawing.Size(109, 17);
-            order_totalCostLabel.TabIndex = 14;
-            order_totalCostLabel.Text = "order total Cost:";
-            // 
-            // order_receiverNameLabel
-            // 
-            order_receiverNameLabel.AutoSize = true;
-            order_receiverNameLabel.Location = new System.Drawing.Point(536, 272);
-            order_receiverNameLabel.Name = "order_receiverNameLabel";
-            order_receiverNameLabel.Size = new System.Drawing.Size(142, 17);
-            order_receiverNameLabel.TabIndex = 16;
-            order_receiverNameLabel.Text = "order receiver Name:";
-            // 
-            // order_receiverAddressLabel
-            // 
-            order_receiverAddressLabel.AutoSize = true;
-            order_receiverAddressLabel.Location = new System.Drawing.Point(536, 300);
-            order_receiverAddressLabel.Name = "order_receiverAddressLabel";
-            order_receiverAddressLabel.Size = new System.Drawing.Size(157, 17);
-            order_receiverAddressLabel.TabIndex = 18;
-            order_receiverAddressLabel.Text = "order receiver Address:";
-            // 
-            // order_receiverPhoneLabel
-            // 
-            order_receiverPhoneLabel.AutoSize = true;
-            order_receiverPhoneLabel.Location = new System.Drawing.Point(538, 360);
-            order_receiverPhoneLabel.Name = "order_receiverPhoneLabel";
-            order_receiverPhoneLabel.Size = new System.Drawing.Size(146, 17);
-            order_receiverPhoneLabel.TabIndex = 20;
-            order_receiverPhoneLabel.Text = "order receiver Phone:";
-            // 
-            // order_receiverEmailLabel
-            // 
-            order_receiverEmailLabel.AutoSize = true;
-            order_receiverEmailLabel.Location = new System.Drawing.Point(538, 388);
-            order_receiverEmailLabel.Name = "order_receiverEmailLabel";
-            order_receiverEmailLabel.Size = new System.Drawing.Size(139, 17);
-            order_receiverEmailLabel.TabIndex = 22;
-            order_receiverEmailLabel.Text = "order receiver Email:";
-            // 
-            // deliveryMethod_idLabel
-            // 
-            deliveryMethod_idLabel.AutoSize = true;
-            deliveryMethod_idLabel.Location = new System.Drawing.Point(538, 416);
-            deliveryMethod_idLabel.Name = "deliveryMethod_idLabel";
-            deliveryMethod_idLabel.Size = new System.Drawing.Size(127, 17);
-            deliveryMethod_idLabel.TabIndex = 24;
-            deliveryMethod_idLabel.Text = "delivery Method id:";
-            // 
-            // order_deliveryStatusLabel
-            // 
-            order_deliveryStatusLabel.AutoSize = true;
-            order_deliveryStatusLabel.Location = new System.Drawing.Point(538, 444);
-            order_deliveryStatusLabel.Name = "order_deliveryStatusLabel";
-            order_deliveryStatusLabel.Size = new System.Drawing.Size(143, 17);
-            order_deliveryStatusLabel.TabIndex = 26;
-            order_deliveryStatusLabel.Text = "order delivery Status:";
-            // 
-            // order_createdAtLabel
-            // 
-            order_createdAtLabel.AutoSize = true;
-            order_createdAtLabel.Location = new System.Drawing.Point(538, 473);
-            order_createdAtLabel.Name = "order_createdAtLabel";
-            order_createdAtLabel.Size = new System.Drawing.Size(115, 17);
-            order_createdAtLabel.TabIndex = 28;
-            order_createdAtLabel.Text = "order created At:";
-            // 
-            // order_updatedAtLabel
-            // 
-            order_updatedAtLabel.AutoSize = true;
-            order_updatedAtLabel.Location = new System.Drawing.Point(538, 501);
-            order_updatedAtLabel.Name = "order_updatedAtLabel";
-            order_updatedAtLabel.Size = new System.Drawing.Size(119, 17);
-            order_updatedAtLabel.TabIndex = 30;
-            order_updatedAtLabel.Text = "order updated At:";
-            // 
-            // order_deliveredAtLabel
-            // 
-            order_deliveredAtLabel.AutoSize = true;
-            order_deliveredAtLabel.Location = new System.Drawing.Point(538, 529);
-            order_deliveredAtLabel.Name = "order_deliveredAtLabel";
-            order_deliveredAtLabel.Size = new System.Drawing.Size(125, 17);
-            order_deliveredAtLabel.TabIndex = 32;
-            order_deliveredAtLabel.Text = "order delivered At:";
             // 
             // perfume_StoreDataSet
             // 
@@ -284,6 +145,7 @@
             // ordersDataGridView
             // 
             this.ordersDataGridView.AutoGenerateColumns = false;
+            this.ordersDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.ordersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ordersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -303,6 +165,15 @@
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16});
             this.ordersDataGridView.DataSource = this.ordersBindingSource;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ordersDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
+            this.ordersDataGridView.GridColor = System.Drawing.Color.SeaGreen;
             this.ordersDataGridView.Location = new System.Drawing.Point(15, 76);
             this.ordersDataGridView.Name = "ordersDataGridView";
             this.ordersDataGridView.RowTemplate.Height = 24;
@@ -314,6 +185,7 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "order_id";
             this.dataGridViewTextBoxColumn1.HeaderText = "order_id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -405,144 +277,9 @@
             this.dataGridViewTextBoxColumn16.HeaderText = "order_deliveredAt";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             // 
-            // order_idTextBox
-            // 
-            this.order_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_id", true));
-            this.order_idTextBox.Location = new System.Drawing.Point(699, 73);
-            this.order_idTextBox.Name = "order_idTextBox";
-            this.order_idTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_idTextBox.TabIndex = 3;
-            // 
-            // user_idTextBox
-            // 
-            this.user_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "user_id", true));
-            this.user_idTextBox.Location = new System.Drawing.Point(699, 101);
-            this.user_idTextBox.Name = "user_idTextBox";
-            this.user_idTextBox.Size = new System.Drawing.Size(247, 22);
-            this.user_idTextBox.TabIndex = 5;
-            // 
-            // order_paymentStatusTextBox
-            // 
-            this.order_paymentStatusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_paymentStatus", true));
-            this.order_paymentStatusTextBox.Location = new System.Drawing.Point(699, 129);
-            this.order_paymentStatusTextBox.Name = "order_paymentStatusTextBox";
-            this.order_paymentStatusTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_paymentStatusTextBox.TabIndex = 7;
-            // 
-            // order_handledByTextBox
-            // 
-            this.order_handledByTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_handledBy", true));
-            this.order_handledByTextBox.Location = new System.Drawing.Point(699, 157);
-            this.order_handledByTextBox.Name = "order_handledByTextBox";
-            this.order_handledByTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_handledByTextBox.TabIndex = 9;
-            // 
-            // order_statusTextBox
-            // 
-            this.order_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_status", true));
-            this.order_statusTextBox.Location = new System.Drawing.Point(699, 185);
-            this.order_statusTextBox.Name = "order_statusTextBox";
-            this.order_statusTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_statusTextBox.TabIndex = 11;
-            // 
-            // order_paymentMethodTextBox
-            // 
-            this.order_paymentMethodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_paymentMethod", true));
-            this.order_paymentMethodTextBox.Location = new System.Drawing.Point(699, 213);
-            this.order_paymentMethodTextBox.Name = "order_paymentMethodTextBox";
-            this.order_paymentMethodTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_paymentMethodTextBox.TabIndex = 13;
-            // 
-            // order_totalCostTextBox
-            // 
-            this.order_totalCostTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_totalCost", true));
-            this.order_totalCostTextBox.Location = new System.Drawing.Point(699, 241);
-            this.order_totalCostTextBox.Name = "order_totalCostTextBox";
-            this.order_totalCostTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_totalCostTextBox.TabIndex = 15;
-            // 
-            // order_receiverNameTextBox
-            // 
-            this.order_receiverNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_receiverName", true));
-            this.order_receiverNameTextBox.Location = new System.Drawing.Point(699, 269);
-            this.order_receiverNameTextBox.Name = "order_receiverNameTextBox";
-            this.order_receiverNameTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_receiverNameTextBox.TabIndex = 17;
-            // 
-            // order_receiverAddressTextBox
-            // 
-            this.order_receiverAddressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_receiverAddress", true));
-            this.order_receiverAddressTextBox.Location = new System.Drawing.Point(699, 297);
-            this.order_receiverAddressTextBox.Multiline = true;
-            this.order_receiverAddressTextBox.Name = "order_receiverAddressTextBox";
-            this.order_receiverAddressTextBox.Size = new System.Drawing.Size(247, 54);
-            this.order_receiverAddressTextBox.TabIndex = 19;
-            // 
-            // order_receiverPhoneTextBox
-            // 
-            this.order_receiverPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_receiverPhone", true));
-            this.order_receiverPhoneTextBox.Location = new System.Drawing.Point(701, 357);
-            this.order_receiverPhoneTextBox.Name = "order_receiverPhoneTextBox";
-            this.order_receiverPhoneTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_receiverPhoneTextBox.TabIndex = 21;
-            this.order_receiverPhoneTextBox.TextChanged += new System.EventHandler(this.order_receiverPhoneTextBox_TextChanged);
-            // 
-            // order_receiverEmailTextBox
-            // 
-            this.order_receiverEmailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_receiverEmail", true));
-            this.order_receiverEmailTextBox.Location = new System.Drawing.Point(701, 385);
-            this.order_receiverEmailTextBox.Name = "order_receiverEmailTextBox";
-            this.order_receiverEmailTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_receiverEmailTextBox.TabIndex = 23;
-            this.order_receiverEmailTextBox.TextChanged += new System.EventHandler(this.order_receiverEmailTextBox_TextChanged);
-            // 
-            // deliveryMethod_idTextBox
-            // 
-            this.deliveryMethod_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "deliveryMethod_id", true));
-            this.deliveryMethod_idTextBox.Location = new System.Drawing.Point(701, 413);
-            this.deliveryMethod_idTextBox.Name = "deliveryMethod_idTextBox";
-            this.deliveryMethod_idTextBox.Size = new System.Drawing.Size(247, 22);
-            this.deliveryMethod_idTextBox.TabIndex = 25;
-            this.deliveryMethod_idTextBox.TextChanged += new System.EventHandler(this.deliveryMethod_idTextBox_TextChanged);
-            // 
-            // order_deliveryStatusTextBox
-            // 
-            this.order_deliveryStatusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_deliveryStatus", true));
-            this.order_deliveryStatusTextBox.Location = new System.Drawing.Point(701, 441);
-            this.order_deliveryStatusTextBox.Name = "order_deliveryStatusTextBox";
-            this.order_deliveryStatusTextBox.Size = new System.Drawing.Size(247, 22);
-            this.order_deliveryStatusTextBox.TabIndex = 27;
-            this.order_deliveryStatusTextBox.TextChanged += new System.EventHandler(this.order_deliveryStatusTextBox_TextChanged);
-            // 
-            // order_createdAtDateTimePicker
-            // 
-            this.order_createdAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "order_createdAt", true));
-            this.order_createdAtDateTimePicker.Location = new System.Drawing.Point(701, 469);
-            this.order_createdAtDateTimePicker.Name = "order_createdAtDateTimePicker";
-            this.order_createdAtDateTimePicker.Size = new System.Drawing.Size(247, 22);
-            this.order_createdAtDateTimePicker.TabIndex = 29;
-            this.order_createdAtDateTimePicker.ValueChanged += new System.EventHandler(this.order_createdAtDateTimePicker_ValueChanged);
-            // 
-            // order_updatedAtDateTimePicker
-            // 
-            this.order_updatedAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "order_updatedAt", true));
-            this.order_updatedAtDateTimePicker.Location = new System.Drawing.Point(701, 497);
-            this.order_updatedAtDateTimePicker.Name = "order_updatedAtDateTimePicker";
-            this.order_updatedAtDateTimePicker.Size = new System.Drawing.Size(247, 22);
-            this.order_updatedAtDateTimePicker.TabIndex = 31;
-            this.order_updatedAtDateTimePicker.ValueChanged += new System.EventHandler(this.order_updatedAtDateTimePicker_ValueChanged);
-            // 
-            // order_deliveredAtDateTimePicker
-            // 
-            this.order_deliveredAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "order_deliveredAt", true));
-            this.order_deliveredAtDateTimePicker.Location = new System.Drawing.Point(701, 525);
-            this.order_deliveredAtDateTimePicker.Name = "order_deliveredAtDateTimePicker";
-            this.order_deliveredAtDateTimePicker.Size = new System.Drawing.Size(247, 22);
-            this.order_deliveredAtDateTimePicker.TabIndex = 33;
-            this.order_deliveredAtDateTimePicker.ValueChanged += new System.EventHandler(this.order_deliveredAtDateTimePicker_ValueChanged);
-            // 
             // btnReturn
             // 
+            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Location = new System.Drawing.Point(15, 15);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(75, 30);
@@ -561,13 +298,349 @@
             this.label1.TabIndex = 34;
             this.label1.Text = "Order Management";
             // 
+            // order_idLabel
+            // 
+            order_idLabel.AutoSize = true;
+            order_idLabel.Location = new System.Drawing.Point(582, 80);
+            order_idLabel.Name = "order_idLabel";
+            order_idLabel.Size = new System.Drawing.Size(61, 17);
+            order_idLabel.TabIndex = 35;
+            order_idLabel.Text = "order id:";
+            // 
+            // order_idTextBox
+            // 
+            this.order_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_id", true));
+            this.order_idTextBox.Location = new System.Drawing.Point(745, 77);
+            this.order_idTextBox.Name = "order_idTextBox";
+            this.order_idTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_idTextBox.TabIndex = 36;
+            // 
+            // user_idLabel
+            // 
+            user_idLabel.AutoSize = true;
+            user_idLabel.Location = new System.Drawing.Point(582, 108);
+            user_idLabel.Name = "user_idLabel";
+            user_idLabel.Size = new System.Drawing.Size(55, 17);
+            user_idLabel.TabIndex = 37;
+            user_idLabel.Text = "user id:";
+            // 
+            // user_idTextBox
+            // 
+            this.user_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "user_id", true));
+            this.user_idTextBox.Location = new System.Drawing.Point(745, 105);
+            this.user_idTextBox.Name = "user_idTextBox";
+            this.user_idTextBox.Size = new System.Drawing.Size(200, 22);
+            this.user_idTextBox.TabIndex = 38;
+            // 
+            // order_paymentStatusLabel
+            // 
+            order_paymentStatusLabel.AutoSize = true;
+            order_paymentStatusLabel.Location = new System.Drawing.Point(582, 136);
+            order_paymentStatusLabel.Name = "order_paymentStatusLabel";
+            order_paymentStatusLabel.Size = new System.Drawing.Size(148, 17);
+            order_paymentStatusLabel.TabIndex = 39;
+            order_paymentStatusLabel.Text = "order payment Status:";
+            // 
+            // order_paymentStatusTextBox
+            // 
+            this.order_paymentStatusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_paymentStatus", true));
+            this.order_paymentStatusTextBox.Location = new System.Drawing.Point(745, 133);
+            this.order_paymentStatusTextBox.Name = "order_paymentStatusTextBox";
+            this.order_paymentStatusTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_paymentStatusTextBox.TabIndex = 40;
+            // 
+            // order_handledByLabel
+            // 
+            order_handledByLabel.AutoSize = true;
+            order_handledByLabel.Location = new System.Drawing.Point(582, 164);
+            order_handledByLabel.Name = "order_handledByLabel";
+            order_handledByLabel.Size = new System.Drawing.Size(121, 17);
+            order_handledByLabel.TabIndex = 41;
+            order_handledByLabel.Text = "order handled By:";
+            // 
+            // order_handledByTextBox
+            // 
+            this.order_handledByTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_handledBy", true));
+            this.order_handledByTextBox.Location = new System.Drawing.Point(745, 161);
+            this.order_handledByTextBox.Name = "order_handledByTextBox";
+            this.order_handledByTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_handledByTextBox.TabIndex = 42;
+            // 
+            // order_statusLabel
+            // 
+            order_statusLabel.AutoSize = true;
+            order_statusLabel.Location = new System.Drawing.Point(582, 192);
+            order_statusLabel.Name = "order_statusLabel";
+            order_statusLabel.Size = new System.Drawing.Size(88, 17);
+            order_statusLabel.TabIndex = 43;
+            order_statusLabel.Text = "order status:";
+            // 
+            // order_statusTextBox
+            // 
+            this.order_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_status", true));
+            this.order_statusTextBox.Location = new System.Drawing.Point(745, 189);
+            this.order_statusTextBox.Name = "order_statusTextBox";
+            this.order_statusTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_statusTextBox.TabIndex = 44;
+            // 
+            // order_paymentMethodLabel
+            // 
+            order_paymentMethodLabel.AutoSize = true;
+            order_paymentMethodLabel.Location = new System.Drawing.Point(582, 220);
+            order_paymentMethodLabel.Name = "order_paymentMethodLabel";
+            order_paymentMethodLabel.Size = new System.Drawing.Size(155, 17);
+            order_paymentMethodLabel.TabIndex = 45;
+            order_paymentMethodLabel.Text = "order payment Method:";
+            // 
+            // order_paymentMethodTextBox
+            // 
+            this.order_paymentMethodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_paymentMethod", true));
+            this.order_paymentMethodTextBox.Location = new System.Drawing.Point(745, 217);
+            this.order_paymentMethodTextBox.Name = "order_paymentMethodTextBox";
+            this.order_paymentMethodTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_paymentMethodTextBox.TabIndex = 46;
+            // 
+            // order_totalCostLabel
+            // 
+            order_totalCostLabel.AutoSize = true;
+            order_totalCostLabel.Location = new System.Drawing.Point(582, 248);
+            order_totalCostLabel.Name = "order_totalCostLabel";
+            order_totalCostLabel.Size = new System.Drawing.Size(109, 17);
+            order_totalCostLabel.TabIndex = 47;
+            order_totalCostLabel.Text = "order total Cost:";
+            // 
+            // order_totalCostTextBox
+            // 
+            this.order_totalCostTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_totalCost", true));
+            this.order_totalCostTextBox.Location = new System.Drawing.Point(745, 245);
+            this.order_totalCostTextBox.Name = "order_totalCostTextBox";
+            this.order_totalCostTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_totalCostTextBox.TabIndex = 48;
+            // 
+            // order_receiverNameLabel
+            // 
+            order_receiverNameLabel.AutoSize = true;
+            order_receiverNameLabel.Location = new System.Drawing.Point(582, 276);
+            order_receiverNameLabel.Name = "order_receiverNameLabel";
+            order_receiverNameLabel.Size = new System.Drawing.Size(142, 17);
+            order_receiverNameLabel.TabIndex = 49;
+            order_receiverNameLabel.Text = "order receiver Name:";
+            // 
+            // order_receiverNameTextBox
+            // 
+            this.order_receiverNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_receiverName", true));
+            this.order_receiverNameTextBox.Location = new System.Drawing.Point(745, 273);
+            this.order_receiverNameTextBox.Name = "order_receiverNameTextBox";
+            this.order_receiverNameTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_receiverNameTextBox.TabIndex = 50;
+            // 
+            // order_receiverAddressLabel
+            // 
+            order_receiverAddressLabel.AutoSize = true;
+            order_receiverAddressLabel.Location = new System.Drawing.Point(582, 304);
+            order_receiverAddressLabel.Name = "order_receiverAddressLabel";
+            order_receiverAddressLabel.Size = new System.Drawing.Size(157, 17);
+            order_receiverAddressLabel.TabIndex = 51;
+            order_receiverAddressLabel.Text = "order receiver Address:";
+            // 
+            // order_receiverAddressTextBox
+            // 
+            this.order_receiverAddressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_receiverAddress", true));
+            this.order_receiverAddressTextBox.Location = new System.Drawing.Point(745, 301);
+            this.order_receiverAddressTextBox.Name = "order_receiverAddressTextBox";
+            this.order_receiverAddressTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_receiverAddressTextBox.TabIndex = 52;
+            // 
+            // order_receiverPhoneLabel
+            // 
+            order_receiverPhoneLabel.AutoSize = true;
+            order_receiverPhoneLabel.Location = new System.Drawing.Point(582, 332);
+            order_receiverPhoneLabel.Name = "order_receiverPhoneLabel";
+            order_receiverPhoneLabel.Size = new System.Drawing.Size(146, 17);
+            order_receiverPhoneLabel.TabIndex = 53;
+            order_receiverPhoneLabel.Text = "order receiver Phone:";
+            // 
+            // order_receiverPhoneTextBox
+            // 
+            this.order_receiverPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_receiverPhone", true));
+            this.order_receiverPhoneTextBox.Location = new System.Drawing.Point(745, 329);
+            this.order_receiverPhoneTextBox.Name = "order_receiverPhoneTextBox";
+            this.order_receiverPhoneTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_receiverPhoneTextBox.TabIndex = 54;
+            // 
+            // order_receiverEmailLabel
+            // 
+            order_receiverEmailLabel.AutoSize = true;
+            order_receiverEmailLabel.Location = new System.Drawing.Point(582, 360);
+            order_receiverEmailLabel.Name = "order_receiverEmailLabel";
+            order_receiverEmailLabel.Size = new System.Drawing.Size(139, 17);
+            order_receiverEmailLabel.TabIndex = 55;
+            order_receiverEmailLabel.Text = "order receiver Email:";
+            // 
+            // order_receiverEmailTextBox
+            // 
+            this.order_receiverEmailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_receiverEmail", true));
+            this.order_receiverEmailTextBox.Location = new System.Drawing.Point(745, 357);
+            this.order_receiverEmailTextBox.Name = "order_receiverEmailTextBox";
+            this.order_receiverEmailTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_receiverEmailTextBox.TabIndex = 56;
+            // 
+            // deliveryMethod_idLabel
+            // 
+            deliveryMethod_idLabel.AutoSize = true;
+            deliveryMethod_idLabel.Location = new System.Drawing.Point(582, 388);
+            deliveryMethod_idLabel.Name = "deliveryMethod_idLabel";
+            deliveryMethod_idLabel.Size = new System.Drawing.Size(127, 17);
+            deliveryMethod_idLabel.TabIndex = 57;
+            deliveryMethod_idLabel.Text = "delivery Method id:";
+            // 
+            // deliveryMethod_idTextBox
+            // 
+            this.deliveryMethod_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "deliveryMethod_id", true));
+            this.deliveryMethod_idTextBox.Location = new System.Drawing.Point(745, 385);
+            this.deliveryMethod_idTextBox.Name = "deliveryMethod_idTextBox";
+            this.deliveryMethod_idTextBox.Size = new System.Drawing.Size(200, 22);
+            this.deliveryMethod_idTextBox.TabIndex = 58;
+            // 
+            // order_deliveryStatusLabel
+            // 
+            order_deliveryStatusLabel.AutoSize = true;
+            order_deliveryStatusLabel.Location = new System.Drawing.Point(582, 416);
+            order_deliveryStatusLabel.Name = "order_deliveryStatusLabel";
+            order_deliveryStatusLabel.Size = new System.Drawing.Size(143, 17);
+            order_deliveryStatusLabel.TabIndex = 59;
+            order_deliveryStatusLabel.Text = "order delivery Status:";
+            // 
+            // order_deliveryStatusTextBox
+            // 
+            this.order_deliveryStatusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "order_deliveryStatus", true));
+            this.order_deliveryStatusTextBox.Location = new System.Drawing.Point(745, 413);
+            this.order_deliveryStatusTextBox.Name = "order_deliveryStatusTextBox";
+            this.order_deliveryStatusTextBox.Size = new System.Drawing.Size(200, 22);
+            this.order_deliveryStatusTextBox.TabIndex = 60;
+            // 
+            // order_createdAtLabel
+            // 
+            order_createdAtLabel.AutoSize = true;
+            order_createdAtLabel.Location = new System.Drawing.Point(582, 445);
+            order_createdAtLabel.Name = "order_createdAtLabel";
+            order_createdAtLabel.Size = new System.Drawing.Size(115, 17);
+            order_createdAtLabel.TabIndex = 61;
+            order_createdAtLabel.Text = "order created At:";
+            // 
+            // order_createdAtDateTimePicker
+            // 
+            this.order_createdAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "order_createdAt", true));
+            this.order_createdAtDateTimePicker.Location = new System.Drawing.Point(745, 441);
+            this.order_createdAtDateTimePicker.Name = "order_createdAtDateTimePicker";
+            this.order_createdAtDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.order_createdAtDateTimePicker.TabIndex = 62;
+            // 
+            // order_updatedAtLabel
+            // 
+            order_updatedAtLabel.AutoSize = true;
+            order_updatedAtLabel.Location = new System.Drawing.Point(582, 473);
+            order_updatedAtLabel.Name = "order_updatedAtLabel";
+            order_updatedAtLabel.Size = new System.Drawing.Size(119, 17);
+            order_updatedAtLabel.TabIndex = 63;
+            order_updatedAtLabel.Text = "order updated At:";
+            // 
+            // order_updatedAtDateTimePicker
+            // 
+            this.order_updatedAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "order_updatedAt", true));
+            this.order_updatedAtDateTimePicker.Location = new System.Drawing.Point(745, 469);
+            this.order_updatedAtDateTimePicker.Name = "order_updatedAtDateTimePicker";
+            this.order_updatedAtDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.order_updatedAtDateTimePicker.TabIndex = 64;
+            // 
+            // order_deliveredAtLabel
+            // 
+            order_deliveredAtLabel.AutoSize = true;
+            order_deliveredAtLabel.Location = new System.Drawing.Point(582, 501);
+            order_deliveredAtLabel.Name = "order_deliveredAtLabel";
+            order_deliveredAtLabel.Size = new System.Drawing.Size(125, 17);
+            order_deliveredAtLabel.TabIndex = 65;
+            order_deliveredAtLabel.Text = "order delivered At:";
+            // 
+            // order_deliveredAtDateTimePicker
+            // 
+            this.order_deliveredAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "order_deliveredAt", true));
+            this.order_deliveredAtDateTimePicker.Location = new System.Drawing.Point(745, 497);
+            this.order_deliveredAtDateTimePicker.Name = "order_deliveredAtDateTimePicker";
+            this.order_deliveredAtDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.order_deliveredAtDateTimePicker.TabIndex = 66;
+            // 
+            // btnSave
+            // 
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(668, 565);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(93, 35);
+            this.btnSave.TabIndex = 67;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnPre
+            // 
+            this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPre.Location = new System.Drawing.Point(566, 565);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(93, 35);
+            this.btnPre.TabIndex = 68;
+            this.btnPre.Text = "Previous";
+            this.btnPre.UseVisualStyleBackColor = true;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(464, 565);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(93, 35);
+            this.btnNext.TabIndex = 69;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.Location = new System.Drawing.Point(362, 565);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(93, 35);
+            this.btnDel.TabIndex = 70;
+            this.btnDel.Text = "Delete";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(253, 565);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(93, 35);
+            this.btnAdd.TabIndex = 71;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // OrderManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 717);
-            this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1011, 682);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnPre);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnDel);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(order_idLabel);
             this.Controls.Add(this.order_idTextBox);
             this.Controls.Add(user_idLabel);
@@ -600,9 +673,11 @@
             this.Controls.Add(this.order_updatedAtDateTimePicker);
             this.Controls.Add(order_deliveredAtLabel);
             this.Controls.Add(this.order_deliveredAtDateTimePicker);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ordersDataGridView);
+            this.ForeColor = System.Drawing.Color.SeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "OrderManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -640,6 +715,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox order_idTextBox;
         private System.Windows.Forms.TextBox user_idTextBox;
         private System.Windows.Forms.TextBox order_paymentStatusTextBox;
@@ -656,7 +733,10 @@
         private System.Windows.Forms.DateTimePicker order_createdAtDateTimePicker;
         private System.Windows.Forms.DateTimePicker order_updatedAtDateTimePicker;
         private System.Windows.Forms.DateTimePicker order_deliveredAtDateTimePicker;
-        private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnPre;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
