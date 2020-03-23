@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Label role_idLabel;
             System.Windows.Forms.Label role_nameLabel;
             System.Windows.Forms.Label role_statusLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserRoleManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.user_roleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.user_roleTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.user_roleTableAdapter();
@@ -41,11 +41,16 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.role_idTextBox = new System.Windows.Forms.TextBox();
             this.role_nameTextBox = new System.Windows.Forms.TextBox();
             this.role_statusTextBox = new System.Windows.Forms.TextBox();
-            this.btnReturn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnPre = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             role_idLabel = new System.Windows.Forms.Label();
             role_nameLabel = new System.Windows.Forms.Label();
             role_statusLabel = new System.Windows.Forms.Label();
@@ -53,33 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.user_roleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_roleDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // role_idLabel
-            // 
-            role_idLabel.AutoSize = true;
-            role_idLabel.Location = new System.Drawing.Point(410, 91);
-            role_idLabel.Name = "role_idLabel";
-            role_idLabel.Size = new System.Drawing.Size(51, 17);
-            role_idLabel.TabIndex = 2;
-            role_idLabel.Text = "role id:";
-            // 
-            // role_nameLabel
-            // 
-            role_nameLabel.AutoSize = true;
-            role_nameLabel.Location = new System.Drawing.Point(410, 119);
-            role_nameLabel.Name = "role_nameLabel";
-            role_nameLabel.Size = new System.Drawing.Size(75, 17);
-            role_nameLabel.TabIndex = 4;
-            role_nameLabel.Text = "role name:";
-            // 
-            // role_statusLabel
-            // 
-            role_statusLabel.AutoSize = true;
-            role_statusLabel.Location = new System.Drawing.Point(410, 147);
-            role_statusLabel.Name = "role_statusLabel";
-            role_statusLabel.Size = new System.Drawing.Size(78, 17);
-            role_statusLabel.TabIndex = 6;
-            role_statusLabel.Text = "role status:";
             // 
             // perfume_StoreDataSet
             // 
@@ -121,10 +99,19 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.user_roleDataGridView.DataSource = this.user_roleBindingSource;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.user_roleDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
+            this.user_roleDataGridView.GridColor = System.Drawing.Color.SeaGreen;
             this.user_roleDataGridView.Location = new System.Drawing.Point(37, 81);
             this.user_roleDataGridView.Name = "user_roleDataGridView";
             this.user_roleDataGridView.RowTemplate.Height = 24;
-            this.user_roleDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.user_roleDataGridView.Size = new System.Drawing.Size(300, 128);
             this.user_roleDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -132,6 +119,7 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "role_id";
             this.dataGridViewTextBoxColumn1.HeaderText = "role_id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -144,30 +132,6 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "role_status";
             this.dataGridViewTextBoxColumn3.HeaderText = "role_status";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // role_idTextBox
-            // 
-            this.role_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_id", true));
-            this.role_idTextBox.Location = new System.Drawing.Point(494, 88);
-            this.role_idTextBox.Name = "role_idTextBox";
-            this.role_idTextBox.Size = new System.Drawing.Size(100, 22);
-            this.role_idTextBox.TabIndex = 3;
-            // 
-            // role_nameTextBox
-            // 
-            this.role_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_name", true));
-            this.role_nameTextBox.Location = new System.Drawing.Point(494, 116);
-            this.role_nameTextBox.Name = "role_nameTextBox";
-            this.role_nameTextBox.Size = new System.Drawing.Size(100, 22);
-            this.role_nameTextBox.TabIndex = 5;
-            // 
-            // role_statusTextBox
-            // 
-            this.role_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_status", true));
-            this.role_statusTextBox.Location = new System.Drawing.Point(494, 144);
-            this.role_statusTextBox.Name = "role_statusTextBox";
-            this.role_statusTextBox.Size = new System.Drawing.Size(100, 22);
-            this.role_statusTextBox.TabIndex = 7;
             // 
             // btnReturn
             // 
@@ -189,22 +153,145 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "User Role Management";
             // 
+            // role_idLabel
+            // 
+            role_idLabel.AutoSize = true;
+            role_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            role_idLabel.Location = new System.Drawing.Point(415, 86);
+            role_idLabel.Name = "role_idLabel";
+            role_idLabel.Size = new System.Drawing.Size(70, 25);
+            role_idLabel.TabIndex = 23;
+            role_idLabel.Text = "role id:";
+            // 
+            // role_idTextBox
+            // 
+            this.role_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_id", true));
+            this.role_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.role_idTextBox.Location = new System.Drawing.Point(537, 86);
+            this.role_idTextBox.Name = "role_idTextBox";
+            this.role_idTextBox.Size = new System.Drawing.Size(189, 30);
+            this.role_idTextBox.TabIndex = 24;
+            // 
+            // role_nameLabel
+            // 
+            role_nameLabel.AutoSize = true;
+            role_nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            role_nameLabel.Location = new System.Drawing.Point(415, 119);
+            role_nameLabel.Name = "role_nameLabel";
+            role_nameLabel.Size = new System.Drawing.Size(104, 25);
+            role_nameLabel.TabIndex = 25;
+            role_nameLabel.Text = "role name:";
+            // 
+            // role_nameTextBox
+            // 
+            this.role_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_name", true));
+            this.role_nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.role_nameTextBox.Location = new System.Drawing.Point(537, 119);
+            this.role_nameTextBox.Name = "role_nameTextBox";
+            this.role_nameTextBox.Size = new System.Drawing.Size(189, 30);
+            this.role_nameTextBox.TabIndex = 26;
+            // 
+            // role_statusLabel
+            // 
+            role_statusLabel.AutoSize = true;
+            role_statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            role_statusLabel.Location = new System.Drawing.Point(415, 155);
+            role_statusLabel.Name = "role_statusLabel";
+            role_statusLabel.Size = new System.Drawing.Size(107, 25);
+            role_statusLabel.TabIndex = 27;
+            role_statusLabel.Text = "role status:";
+            // 
+            // role_statusTextBox
+            // 
+            this.role_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_status", true));
+            this.role_statusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.role_statusTextBox.Location = new System.Drawing.Point(537, 155);
+            this.role_statusTextBox.Name = "role_statusTextBox";
+            this.role_statusTextBox.Size = new System.Drawing.Size(189, 30);
+            this.role_statusTextBox.TabIndex = 28;
+            // 
+            // btnSave
+            // 
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(553, 275);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(93, 35);
+            this.btnSave.TabIndex = 87;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnPre
+            // 
+            this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPre.Location = new System.Drawing.Point(451, 275);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(93, 35);
+            this.btnPre.TabIndex = 88;
+            this.btnPre.Text = "Previous";
+            this.btnPre.UseVisualStyleBackColor = true;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(349, 275);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(93, 35);
+            this.btnNext.TabIndex = 89;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.Location = new System.Drawing.Point(247, 275);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(93, 35);
+            this.btnDel.TabIndex = 90;
+            this.btnDel.Text = "Delete";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(138, 275);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(93, 35);
+            this.btnAdd.TabIndex = 91;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // UserRoleManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(800, 349);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnPre);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnDel);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(role_idLabel);
             this.Controls.Add(this.role_idTextBox);
             this.Controls.Add(role_nameLabel);
             this.Controls.Add(this.role_nameTextBox);
             this.Controls.Add(role_statusLabel);
             this.Controls.Add(this.role_statusTextBox);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.user_roleDataGridView);
+            this.ForeColor = System.Drawing.Color.SeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UserRoleManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -229,10 +316,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox role_idTextBox;
         private System.Windows.Forms.TextBox role_nameTextBox;
         private System.Windows.Forms.TextBox role_statusTextBox;
-        private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnPre;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

@@ -105,6 +105,12 @@
     <Compile Include="Management Interface\DeliveryMethodManagement.Designer.cs">
       <DependentUpon>DeliveryMethodManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Management Interface\FavListManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Interface\FavListManagement.Designer.cs">
+      <DependentUpon>FavListManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Management Interface\OrderItemManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Management Interface\DeliveryMethodManagement.resx">
       <DependentUpon>DeliveryMethodManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management Interface\FavListManagement.resx">
+      <DependentUpon>FavListManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Management Interface\OrderItemManagement.resx">
       <DependentUpon>OrderItemManagement.cs</DependentUpon>
