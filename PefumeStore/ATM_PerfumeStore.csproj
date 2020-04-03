@@ -147,6 +147,12 @@
     <Compile Include="Management Interface\report-cost.Designer.cs">
       <DependentUpon>report-cost.cs</DependentUpon>
     </Compile>
+    <Compile Include="Management Interface\reportproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Interface\reportproduct.Designer.cs">
+      <DependentUpon>reportproduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Management Interface\UserManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     <EmbeddedResource Include="Management Interface\report-cost.resx">
       <DependentUpon>report-cost.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Management Interface\reportproduct.resx">
+      <DependentUpon>reportproduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Management Interface\UserManagement.resx">
       <DependentUpon>UserManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +250,7 @@
       <DependentUpon>UserRoleManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\ReportCost.rdlc" />
+    <EmbeddedResource Include="Report\ReportProduct.rdlc" />
     <EmbeddedResource Include="User Interface\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>

@@ -45,11 +45,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.returnHomeBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btbRpcost = new System.Windows.Forms.Button();
             this.btbRpproduct = new System.Windows.Forms.Button();
+            this.returnHomeBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -203,25 +203,6 @@
             this.label6.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label6.Name = "label6";
             // 
-            // returnHomeBtn
-            // 
-            this.returnHomeBtn.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.returnHomeBtn, "returnHomeBtn");
-            this.returnHomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.returnHomeBtn.FlatAppearance.BorderSize = 2;
-            this.returnHomeBtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.returnHomeBtn.Name = "returnHomeBtn";
-            this.returnHomeBtn.UseVisualStyleBackColor = false;
-            this.returnHomeBtn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.returnHomeBtn);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
@@ -247,6 +228,26 @@
             this.btbRpproduct.ForeColor = System.Drawing.Color.White;
             this.btbRpproduct.Name = "btbRpproduct";
             this.btbRpproduct.UseVisualStyleBackColor = false;
+            this.btbRpproduct.Click += new System.EventHandler(this.btbRpproduct_Click);
+            // 
+            // returnHomeBtn
+            // 
+            this.returnHomeBtn.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.returnHomeBtn, "returnHomeBtn");
+            this.returnHomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.returnHomeBtn.FlatAppearance.BorderSize = 2;
+            this.returnHomeBtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.returnHomeBtn.Name = "returnHomeBtn";
+            this.returnHomeBtn.UseVisualStyleBackColor = false;
+            this.returnHomeBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.returnHomeBtn);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
             // 
             // Admin_Menu
             // 

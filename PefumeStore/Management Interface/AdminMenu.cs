@@ -107,5 +107,12 @@ namespace PefumeStore.Management_Interface
             //UserRoleManagement urm = new UserRoleManagement();
             urm.Show();
         }
+
+        private void btbRpproduct_Click(object sender, EventArgs e)
+        {
+            Hide();
+            reportproduct p = new reportproduct();
+            p.Show();
+        }
     }
 }
