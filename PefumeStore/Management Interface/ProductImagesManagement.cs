@@ -80,13 +80,13 @@ namespace PefumeStore.Management_Interface
         /// <param name="imgName"></param>
         public void AddImgToDb(string imgName)
         {
-            int previousImgID = 0;
-            if (productImgDataGridView.RowCount > 0)
-            {
-                previousImgID = (int)productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[0].Value;
-            }
-            int currentImgId = ++previousImgID;
-            productImgTableAdapter.Insert(this.productId, currentImgId.ToString() + ".jpg", 1);
+            //int previousImgID = 0;
+            //if (productImgDataGridView.RowCount > 0)
+            //{
+            //    previousImgID = (int)productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[0].Value;
+            //}
+            //int currentImgId = ++previousImgID;
+            productImgTableAdapter.Insert(this.productId, DateTime.Now.ToString("yyyyMMddHHmmss") + "-" + imgName, 1);
             //Update data grid view 
             productImgTableAdapter.Fill(this.perfume_StoreDataSet.productImg);
             productImgBindingSource.DataSource = this.perfume_StoreDataSet.productImg;
@@ -108,12 +108,17 @@ namespace PefumeStore.Management_Interface
                 AddImgToDb(ofd.SafeFileName);
                 //add image to new record
                 DataGridViewImageCell dataGridViewImageCell = ((DataGridViewImageCell)productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[4]);
-                dataGridViewImageCell.Value = System.Drawing.Image.FromFile(ofd.FileName);
+                //using (var memoryStream = new MemoryStream(File.ReadAllBytes(ofd.FileName)))
+                //{
+                //    using (var image = System.Drawing.Image.FromStream(memoryStream))
+                //    {
+                //        dataGridViewImageCell.Value = image;
+                //    }
+                //}
 
+                dataGridViewImageCell.Value = System.Drawing.Image.FromFile(ofd.FileName);
                 SaveImages();
                 LoadImageToDataGrid();
-
-
 
             }
         }
