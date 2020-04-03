@@ -141,6 +141,12 @@
     <Compile Include="Management Interface\ProductManagement.Designer.cs">
       <DependentUpon>ProductManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Management Interface\report-cost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Interface\report-cost.Designer.cs">
+      <DependentUpon>report-cost.cs</DependentUpon>
+    </Compile>
     <Compile Include="Management Interface\UserManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </Compile>
     <Compile Include="Management Interface\UserRoleManagement.Designer.cs">
       <DependentUpon>UserRoleManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfume_StoreDataSet.cs">
+      <DependentUpon>Perfume_StoreDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Perfume_StoreDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -222,12 +231,16 @@
     <EmbeddedResource Include="Management Interface\ProductManagement.resx">
       <DependentUpon>ProductManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Management Interface\report-cost.resx">
+      <DependentUpon>report-cost.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Management Interface\UserManagement.resx">
       <DependentUpon>UserManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Management Interface\UserRoleManagement.resx">
       <DependentUpon>UserRoleManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportCost.rdlc" />
     <EmbeddedResource Include="User Interface\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +367,11 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms">
+      <Version>150.1404.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

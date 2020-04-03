@@ -47,6 +47,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.returnHomeBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btbRpcost = new System.Windows.Forms.Button();
+            this.btbRpproduct = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -188,6 +191,9 @@
             this.flowLayoutPanel1.Controls.Add(this.label5);
             this.flowLayoutPanel1.Controls.Add(this.btnUserMng);
             this.flowLayoutPanel1.Controls.Add(this.btnUserRoleMng);
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.btbRpcost);
+            this.flowLayoutPanel1.Controls.Add(this.btbRpproduct);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
@@ -215,6 +221,32 @@
             this.panel1.Controls.Add(this.returnHomeBtn);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label2.Name = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // btbRpcost
+            // 
+            this.btbRpcost.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btbRpcost.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btbRpcost, "btbRpcost");
+            this.btbRpcost.ForeColor = System.Drawing.Color.White;
+            this.btbRpcost.Name = "btbRpcost";
+            this.btbRpcost.UseVisualStyleBackColor = false;
+            this.btbRpcost.Click += new System.EventHandler(this.btbRpcost_Click);
+            // 
+            // btbRpproduct
+            // 
+            this.btbRpproduct.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btbRpproduct.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btbRpproduct, "btbRpproduct");
+            this.btbRpproduct.ForeColor = System.Drawing.Color.White;
+            this.btbRpproduct.Name = "btbRpproduct";
+            this.btbRpproduct.UseVisualStyleBackColor = false;
             // 
             // Admin_Menu
             // 
@@ -258,5 +290,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btbRpcost;
+        private System.Windows.Forms.Button btbRpproduct;
     }
 }

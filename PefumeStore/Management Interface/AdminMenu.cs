@@ -76,6 +76,7 @@ namespace PefumeStore.Management_Interface
         private void btnUserRoleMng_Click(object sender, EventArgs e)
         {
             Hide();
+            //report_cost urm = new report_cost();
             UserRoleManagement urm = new UserRoleManagement();
             urm.Show();
 
@@ -92,6 +93,19 @@ namespace PefumeStore.Management_Interface
         private void Admin_Menu_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btbRpcost_Click(object sender, EventArgs e)
+        {
+            Hide();
+            report_cost urm = new report_cost();
+            //UserRoleManagement urm = new UserRoleManagement();
+            urm.Show();
         }
     }
 }

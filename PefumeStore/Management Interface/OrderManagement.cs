@@ -45,7 +45,7 @@ namespace PefumeStore.Management_Interface
 
         private void order_receiverPhoneTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void order_receiverEmailTextBox_TextChanged(object sender, EventArgs e)
