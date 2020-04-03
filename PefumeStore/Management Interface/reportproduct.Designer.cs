@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.dataTable1TableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.DataTable1TableAdapter();
@@ -40,6 +40,7 @@
             this.btbS = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnReturn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
             this.SuspendLayout();
@@ -78,14 +79,15 @@
             // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.dataTable1BindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.dataTable1BindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "PefumeStore.Report.ReportProduct.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(47, 103);
+            this.reportViewer1.Location = new System.Drawing.Point(35, 84);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(908, 302);
+            this.reportViewer1.Size = new System.Drawing.Size(682, 246);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load_1);
             // 
@@ -93,9 +95,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(454, 41);
+            this.label2.Location = new System.Drawing.Point(401, 33);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 25);
+            this.label2.Size = new System.Drawing.Size(27, 20);
             this.label2.TabIndex = 8;
             this.label2.Text = "To";
             // 
@@ -103,9 +106,10 @@
             // 
             this.From.AutoSize = true;
             this.From.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.From.Location = new System.Drawing.Point(42, 40);
+            this.From.Location = new System.Drawing.Point(93, 32);
+            this.From.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.From.Name = "From";
-            this.From.Size = new System.Drawing.Size(57, 25);
+            this.From.Size = new System.Drawing.Size(46, 20);
             this.From.TabIndex = 9;
             this.From.Text = "From";
             // 
@@ -116,9 +120,10 @@
             this.btbS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btbS.ForeColor = System.Drawing.Color.White;
             this.btbS.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btbS.Location = new System.Drawing.Point(854, 40);
+            this.btbS.Location = new System.Drawing.Point(640, 32);
+            this.btbS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btbS.Name = "btbS";
-            this.btbS.Size = new System.Drawing.Size(101, 36);
+            this.btbS.Size = new System.Drawing.Size(76, 29);
             this.btbS.TabIndex = 7;
             this.btbS.Text = "Search";
             this.btbS.UseVisualStyleBackColor = false;
@@ -126,23 +131,40 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(511, 43);
+            this.dateTimePicker2.Location = new System.Drawing.Point(444, 35);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(237, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(179, 20);
             this.dateTimePicker2.TabIndex = 5;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(162, 43);
+            this.dateTimePicker1.Location = new System.Drawing.Point(183, 35);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(242, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(182, 20);
             this.dateTimePicker1.TabIndex = 6;
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.Location = new System.Drawing.Point(11, 11);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(63, 27);
+            this.btnReturn.TabIndex = 78;
+            this.btnReturn.Text = "Return ";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // reportproduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 418);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(738, 340);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.From);
             this.Controls.Add(this.btbS);
@@ -150,6 +172,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.reportViewer1);
             this.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "reportproduct";
             this.Text = "Product Report";
             this.Load += new System.EventHandler(this.reportproduct_Load);
@@ -171,5 +194,6 @@
         private System.Windows.Forms.Button btbS;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnReturn;
     }
 }

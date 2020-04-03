@@ -114,5 +114,12 @@ namespace PefumeStore.Management_Interface
             reportproduct p = new reportproduct();
             p.Show();
         }
+
+        private void buttonOrI_Click(object sender, EventArgs e)
+        {
+            Hide();
+            OrderItemManagement p = new OrderItemManagement();
+            p.Show();
+        }
     }
 }

@@ -42,5 +42,16 @@ namespace PefumeStore.Management_Interface
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            DialogResult choice = MessageBox.Show("Return to Main Menu?", "Perfume Store Manager", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (choice == DialogResult.Yes)
+            {
+                Hide();
+                Admin_Menu am = new Admin_Menu();
+                am.Show();
+            }
+        }
     }
 }

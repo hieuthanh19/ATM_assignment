@@ -35,21 +35,22 @@
             this.btnDeliveryMethodMng = new System.Windows.Forms.Button();
             this.btnPaymentMethodMng = new System.Windows.Forms.Button();
             this.btnOrderMng = new System.Windows.Forms.Button();
-            this.btnUserRoleMng = new System.Windows.Forms.Button();
-            this.btnUserMng = new System.Windows.Forms.Button();
             this.btnCountryMng = new System.Windows.Forms.Button();
             this.btnBrandMng = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
+            this.returnHomeBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonOrI = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnUserMng = new System.Windows.Forms.Button();
+            this.btnUserRoleMng = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btbRpcost = new System.Windows.Forms.Button();
             this.btbRpproduct = new System.Windows.Forms.Button();
-            this.returnHomeBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -111,26 +112,6 @@
             this.btnOrderMng.UseVisualStyleBackColor = false;
             this.btnOrderMng.Click += new System.EventHandler(this.btnOrderMng_Click);
             // 
-            // btnUserRoleMng
-            // 
-            this.btnUserRoleMng.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnUserRoleMng.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnUserRoleMng, "btnUserRoleMng");
-            this.btnUserRoleMng.ForeColor = System.Drawing.Color.White;
-            this.btnUserRoleMng.Name = "btnUserRoleMng";
-            this.btnUserRoleMng.UseVisualStyleBackColor = false;
-            this.btnUserRoleMng.Click += new System.EventHandler(this.btnUserRoleMng_Click);
-            // 
-            // btnUserMng
-            // 
-            this.btnUserMng.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnUserMng.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnUserMng, "btnUserMng");
-            this.btnUserMng.ForeColor = System.Drawing.Color.White;
-            this.btnUserMng.Name = "btnUserMng";
-            this.btnUserMng.UseVisualStyleBackColor = false;
-            this.btnUserMng.Click += new System.EventHandler(this.btnUserMng_Click);
-            // 
             // btnCountryMng
             // 
             this.btnCountryMng.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -157,12 +138,6 @@
             this.label4.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label4.Name = "label4";
             // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.label5.Name = "label5";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Beige;
@@ -188,6 +163,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnOrderMng);
             this.flowLayoutPanel1.Controls.Add(this.btnDeliveryMethodMng);
             this.flowLayoutPanel1.Controls.Add(this.btnPaymentMethodMng);
+            this.flowLayoutPanel1.Controls.Add(this.buttonOrI);
             this.flowLayoutPanel1.Controls.Add(this.label5);
             this.flowLayoutPanel1.Controls.Add(this.btnUserMng);
             this.flowLayoutPanel1.Controls.Add(this.btnUserRoleMng);
@@ -203,12 +179,66 @@
             this.label6.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label6.Name = "label6";
             // 
+            // returnHomeBtn
+            // 
+            this.returnHomeBtn.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.returnHomeBtn, "returnHomeBtn");
+            this.returnHomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.returnHomeBtn.FlatAppearance.BorderSize = 2;
+            this.returnHomeBtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.returnHomeBtn.Name = "returnHomeBtn";
+            this.returnHomeBtn.UseVisualStyleBackColor = false;
+            this.returnHomeBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.returnHomeBtn);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // buttonOrI
+            // 
+            this.buttonOrI.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.buttonOrI.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonOrI, "buttonOrI");
+            this.buttonOrI.ForeColor = System.Drawing.Color.White;
+            this.buttonOrI.Name = "buttonOrI";
+            this.buttonOrI.UseVisualStyleBackColor = false;
+            this.buttonOrI.Click += new System.EventHandler(this.buttonOrI_Click);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label5.Name = "label5";
+            // 
+            // btnUserMng
+            // 
+            this.btnUserMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnUserMng.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnUserMng, "btnUserMng");
+            this.btnUserMng.ForeColor = System.Drawing.Color.White;
+            this.btnUserMng.Name = "btnUserMng";
+            this.btnUserMng.UseVisualStyleBackColor = false;
+            this.btnUserMng.Click += new System.EventHandler(this.btnUserMng_Click);
+            // 
+            // btnUserRoleMng
+            // 
+            this.btnUserRoleMng.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnUserRoleMng.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnUserRoleMng, "btnUserRoleMng");
+            this.btnUserRoleMng.ForeColor = System.Drawing.Color.White;
+            this.btnUserRoleMng.Name = "btnUserRoleMng";
+            this.btnUserRoleMng.UseVisualStyleBackColor = false;
+            this.btnUserRoleMng.Click += new System.EventHandler(this.btnUserRoleMng_Click);
+            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btbRpcost
             // 
@@ -229,25 +259,6 @@
             this.btbRpproduct.Name = "btbRpproduct";
             this.btbRpproduct.UseVisualStyleBackColor = false;
             this.btbRpproduct.Click += new System.EventHandler(this.btbRpproduct_Click);
-            // 
-            // returnHomeBtn
-            // 
-            this.returnHomeBtn.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.returnHomeBtn, "returnHomeBtn");
-            this.returnHomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.returnHomeBtn.FlatAppearance.BorderSize = 2;
-            this.returnHomeBtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.returnHomeBtn.Name = "returnHomeBtn";
-            this.returnHomeBtn.UseVisualStyleBackColor = false;
-            this.returnHomeBtn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.returnHomeBtn);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
             // 
             // Admin_Menu
             // 
@@ -279,11 +290,8 @@
         private System.Windows.Forms.Button btnDeliveryMethodMng;
         private System.Windows.Forms.Button btnPaymentMethodMng;
         private System.Windows.Forms.Button btnOrderMng;
-        private System.Windows.Forms.Button btnUserRoleMng;
-        private System.Windows.Forms.Button btnUserMng;
         private System.Windows.Forms.Button btnCountryMng;
         private System.Windows.Forms.Button btnBrandMng;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -291,6 +299,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonOrI;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnUserMng;
+        private System.Windows.Forms.Button btnUserRoleMng;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btbRpcost;
         private System.Windows.Forms.Button btbRpproduct;

@@ -52,6 +52,8 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.favListBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.favListDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.user_idTextBox = new System.Windows.Forms.TextBox();
             this.product_idTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,8 +62,6 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             user_idLabel = new System.Windows.Forms.Label();
             product_idLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
@@ -75,9 +75,10 @@
             // 
             user_idLabel.AutoSize = true;
             user_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            user_idLabel.Location = new System.Drawing.Point(51, 93);
+            user_idLabel.Location = new System.Drawing.Point(38, 76);
+            user_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             user_idLabel.Name = "user_idLabel";
-            user_idLabel.Size = new System.Drawing.Size(76, 25);
+            user_idLabel.Size = new System.Drawing.Size(60, 20);
             user_idLabel.TabIndex = 2;
             user_idLabel.Text = "user id:";
             // 
@@ -85,9 +86,10 @@
             // 
             product_idLabel.AutoSize = true;
             product_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            product_idLabel.Location = new System.Drawing.Point(51, 129);
+            product_idLabel.Location = new System.Drawing.Point(38, 105);
+            product_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             product_idLabel.Name = "product_idLabel";
-            product_idLabel.Size = new System.Drawing.Size(103, 25);
+            product_idLabel.Size = new System.Drawing.Size(83, 20);
             product_idLabel.TabIndex = 4;
             product_idLabel.Text = "product id:";
             // 
@@ -149,7 +151,7 @@
             this.favListBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.favListBindingNavigator.Name = "favListBindingNavigator";
             this.favListBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.favListBindingNavigator.Size = new System.Drawing.Size(632, 27);
+            this.favListBindingNavigator.Size = new System.Drawing.Size(474, 27);
             this.favListBindingNavigator.TabIndex = 0;
             this.favListBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -165,7 +167,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -206,7 +208,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -250,6 +252,7 @@
             // favListDataGridView
             // 
             this.favListDataGridView.AutoGenerateColumns = false;
+            this.favListDataGridView.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -264,118 +267,20 @@
             this.dataGridViewTextBoxColumn2});
             this.favListDataGridView.DataSource = this.favListBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.favListDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.favListDataGridView.GridColor = System.Drawing.Color.SeaGreen;
-            this.favListDataGridView.Location = new System.Drawing.Point(347, 90);
+            this.favListDataGridView.Location = new System.Drawing.Point(260, 73);
+            this.favListDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.favListDataGridView.Name = "favListDataGridView";
             this.favListDataGridView.RowTemplate.Height = 24;
-            this.favListDataGridView.Size = new System.Drawing.Size(249, 139);
+            this.favListDataGridView.Size = new System.Drawing.Size(187, 113);
             this.favListDataGridView.TabIndex = 1;
-            // 
-            // user_idTextBox
-            // 
-            this.user_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.favListBindingSource, "user_id", true));
-            this.user_idTextBox.Enabled = false;
-            this.user_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_idTextBox.Location = new System.Drawing.Point(160, 90);
-            this.user_idTextBox.Name = "user_idTextBox";
-            this.user_idTextBox.Size = new System.Drawing.Size(149, 30);
-            this.user_idTextBox.TabIndex = 3;
-            // 
-            // product_idTextBox
-            // 
-            this.product_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.favListBindingSource, "product_id", true));
-            this.product_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.product_idTextBox.Location = new System.Drawing.Point(160, 126);
-            this.product_idTextBox.Name = "product_idTextBox";
-            this.product_idTextBox.Size = new System.Drawing.Size(149, 30);
-            this.product_idTextBox.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(173, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 32);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Fav List Management";
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(477, 253);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(93, 35);
-            this.btnSave.TabIndex = 82;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnPre
-            // 
-            this.btnPre.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPre.ForeColor = System.Drawing.Color.White;
-            this.btnPre.Location = new System.Drawing.Point(375, 253);
-            this.btnPre.Name = "btnPre";
-            this.btnPre.Size = new System.Drawing.Size(93, 35);
-            this.btnPre.TabIndex = 83;
-            this.btnPre.Text = "Previous";
-            this.btnPre.UseVisualStyleBackColor = false;
-            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
-            // 
-            // btnNext
-            // 
-            this.btnNext.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(273, 253);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(93, 35);
-            this.btnNext.TabIndex = 84;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnDel
-            // 
-            this.btnDel.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(171, 253);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(93, 35);
-            this.btnDel.TabIndex = 85;
-            this.btnDel.Text = "Delete";
-            this.btnDel.UseVisualStyleBackColor = false;
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(62, 253);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(93, 35);
-            this.btnAdd.TabIndex = 86;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -389,12 +294,119 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "product id";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
+            // user_idTextBox
+            // 
+            this.user_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.favListBindingSource, "user_id", true));
+            this.user_idTextBox.Enabled = false;
+            this.user_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_idTextBox.Location = new System.Drawing.Point(120, 73);
+            this.user_idTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.user_idTextBox.Name = "user_idTextBox";
+            this.user_idTextBox.Size = new System.Drawing.Size(113, 26);
+            this.user_idTextBox.TabIndex = 3;
+            // 
+            // product_idTextBox
+            // 
+            this.product_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.favListBindingSource, "product_id", true));
+            this.product_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product_idTextBox.Location = new System.Drawing.Point(120, 102);
+            this.product_idTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.product_idTextBox.Name = "product_idTextBox";
+            this.product_idTextBox.Size = new System.Drawing.Size(113, 26);
+            this.product_idTextBox.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(130, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(240, 26);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Fav List Management";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(358, 206);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(70, 28);
+            this.btnSave.TabIndex = 82;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnPre
+            // 
+            this.btnPre.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPre.ForeColor = System.Drawing.Color.White;
+            this.btnPre.Location = new System.Drawing.Point(281, 206);
+            this.btnPre.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(70, 28);
+            this.btnPre.TabIndex = 83;
+            this.btnPre.Text = "Previous";
+            this.btnPre.UseVisualStyleBackColor = false;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.Location = new System.Drawing.Point(205, 206);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(70, 28);
+            this.btnNext.TabIndex = 84;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.Color.White;
+            this.btnDel.Location = new System.Drawing.Point(128, 206);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(70, 28);
+            this.btnDel.TabIndex = 85;
+            this.btnDel.Text = "Delete";
+            this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(46, 206);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(70, 28);
+            this.btnAdd.TabIndex = 86;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // FavListManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(632, 346);
+            this.ClientSize = new System.Drawing.Size(474, 281);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnPre);
             this.Controls.Add(this.btnNext);
@@ -408,6 +420,7 @@
             this.Controls.Add(this.favListDataGridView);
             this.Controls.Add(this.favListBindingNavigator);
             this.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FavListManagement";
             this.Text = "FavListManagement";
             this.Load += new System.EventHandler(this.FavListManagement_Load);
