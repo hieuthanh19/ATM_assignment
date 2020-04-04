@@ -1,6 +1,7 @@
-# ATM_assignment
+# ATM Perfume Store Management Winform assignment
 
 Link onedirve project: https://1drv.ms/u/s!AiFVLPRBePKonNhyDyhLufvMKa14dg?e=wmk98A \
+Link doc: https://1drv.ms/u/s!AiFVLPRBePKonc8Fg4sSC8Bej2jEEA?e=7ppAnd \
 **Giao diện** 
 - ForeColor: SeaGreen trong Web section 
 - Background Color: White
