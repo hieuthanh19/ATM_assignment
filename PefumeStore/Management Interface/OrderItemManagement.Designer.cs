@@ -33,8 +33,8 @@
             System.Windows.Forms.Label product_idLabel;
             System.Windows.Forms.Label orderItem_quantityLabel;
             System.Windows.Forms.Label product_priceLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.orderItemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.orderItemTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.orderItemTableAdapter();
@@ -139,14 +139,14 @@
             // 
             this.orderItemDataGridView.AutoGenerateColumns = false;
             this.orderItemDataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.orderItemDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.orderItemDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.orderItemDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderItemDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -154,14 +154,14 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.orderItemDataGridView.DataSource = this.orderItemBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.orderItemDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.orderItemDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.orderItemDataGridView.GridColor = System.Drawing.Color.SeaGreen;
             this.orderItemDataGridView.Location = new System.Drawing.Point(421, 64);
             this.orderItemDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -199,7 +199,7 @@
             this.order_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderItemBindingSource, "order_id", true));
             this.order_idTextBox.Enabled = false;
             this.order_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.order_idTextBox.Location = new System.Drawing.Point(227, 64);
+            this.order_idTextBox.Location = new System.Drawing.Point(240, 64);
             this.order_idTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.order_idTextBox.Name = "order_idTextBox";
             this.order_idTextBox.Size = new System.Drawing.Size(147, 30);
@@ -208,9 +208,8 @@
             // product_idTextBox
             // 
             this.product_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderItemBindingSource, "product_id", true));
-            this.product_idTextBox.Enabled = false;
             this.product_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.product_idTextBox.Location = new System.Drawing.Point(227, 106);
+            this.product_idTextBox.Location = new System.Drawing.Point(240, 106);
             this.product_idTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.product_idTextBox.Name = "product_idTextBox";
             this.product_idTextBox.Size = new System.Drawing.Size(147, 30);
@@ -220,7 +219,7 @@
             // 
             this.orderItem_quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderItemBindingSource, "orderItem_quantity", true));
             this.orderItem_quantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderItem_quantityTextBox.Location = new System.Drawing.Point(227, 145);
+            this.orderItem_quantityTextBox.Location = new System.Drawing.Point(240, 145);
             this.orderItem_quantityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.orderItem_quantityTextBox.Name = "orderItem_quantityTextBox";
             this.orderItem_quantityTextBox.Size = new System.Drawing.Size(147, 30);
@@ -230,7 +229,7 @@
             // 
             this.product_priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderItemBindingSource, "product_price", true));
             this.product_priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.product_priceTextBox.Location = new System.Drawing.Point(227, 190);
+            this.product_priceTextBox.Location = new System.Drawing.Point(240, 190);
             this.product_priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.product_priceTextBox.Name = "product_priceTextBox";
             this.product_priceTextBox.Size = new System.Drawing.Size(147, 30);
