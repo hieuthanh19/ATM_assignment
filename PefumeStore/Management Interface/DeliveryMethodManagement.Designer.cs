@@ -163,11 +163,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.deliveryMethodDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.deliveryMethodDataGridView.GridColor = System.Drawing.Color.SeaGreen;
-            this.deliveryMethodDataGridView.Location = new System.Drawing.Point(587, 74);
+            this.deliveryMethodDataGridView.Location = new System.Drawing.Point(587, 71);
             this.deliveryMethodDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deliveryMethodDataGridView.Name = "deliveryMethodDataGridView";
             this.deliveryMethodDataGridView.RowTemplate.Height = 24;
-            this.deliveryMethodDataGridView.Size = new System.Drawing.Size(451, 220);
+            this.deliveryMethodDataGridView.Size = new System.Drawing.Size(451, 223);
             this.deliveryMethodDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -284,7 +284,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(47, 258);
+            this.btnAdd.Location = new System.Drawing.Point(44, 262);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(93, 34);
