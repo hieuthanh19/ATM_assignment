@@ -121,5 +121,19 @@ namespace PefumeStore.Management_Interface
             OrderItemManagement p = new OrderItemManagement();
             p.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult choice = MessageBox.Show("Exit the program?", "Perfume Store Manager", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (choice == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

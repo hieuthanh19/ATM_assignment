@@ -37,7 +37,6 @@
             System.Windows.Forms.Label createCountry_statusLabel;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CountryManagement));
             this.countriesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -474,11 +473,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.createPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CountryManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfume Store Manager | Country Management";
+            this.Text = "Country Management | Perfume Store Management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CountryManagement_FormClosed);
             this.Load += new System.EventHandler(this.CountryManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.countriesDataGridView)).EndInit();

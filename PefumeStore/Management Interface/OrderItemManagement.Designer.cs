@@ -68,10 +68,9 @@
             // 
             order_idLabel.AutoSize = true;
             order_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            order_idLabel.Location = new System.Drawing.Point(32, 54);
-            order_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            order_idLabel.Location = new System.Drawing.Point(43, 66);
             order_idLabel.Name = "order_idLabel";
-            order_idLabel.Size = new System.Drawing.Size(66, 20);
+            order_idLabel.Size = new System.Drawing.Size(83, 25);
             order_idLabel.TabIndex = 2;
             order_idLabel.Text = "order id:";
             // 
@@ -79,10 +78,9 @@
             // 
             product_idLabel.AutoSize = true;
             product_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            product_idLabel.Location = new System.Drawing.Point(32, 89);
-            product_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            product_idLabel.Location = new System.Drawing.Point(43, 110);
             product_idLabel.Name = "product_idLabel";
-            product_idLabel.Size = new System.Drawing.Size(83, 20);
+            product_idLabel.Size = new System.Drawing.Size(103, 25);
             product_idLabel.TabIndex = 4;
             product_idLabel.Text = "product id:";
             // 
@@ -90,10 +88,9 @@
             // 
             orderItem_quantityLabel.AutoSize = true;
             orderItem_quantityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            orderItem_quantityLabel.Location = new System.Drawing.Point(32, 120);
-            orderItem_quantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            orderItem_quantityLabel.Location = new System.Drawing.Point(43, 148);
             orderItem_quantityLabel.Name = "orderItem_quantityLabel";
-            orderItem_quantityLabel.Size = new System.Drawing.Size(146, 20);
+            orderItem_quantityLabel.Size = new System.Drawing.Size(178, 25);
             orderItem_quantityLabel.TabIndex = 6;
             orderItem_quantityLabel.Text = "order Item quantity:";
             // 
@@ -101,10 +98,9 @@
             // 
             product_priceLabel.AutoSize = true;
             product_priceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            product_priceLabel.Location = new System.Drawing.Point(32, 157);
-            product_priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            product_priceLabel.Location = new System.Drawing.Point(43, 193);
             product_priceLabel.Name = "product_priceLabel";
-            product_priceLabel.Size = new System.Drawing.Size(105, 20);
+            product_priceLabel.Size = new System.Drawing.Size(130, 25);
             product_priceLabel.TabIndex = 8;
             product_priceLabel.Text = "product price:";
             // 
@@ -167,11 +163,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.orderItemDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.orderItemDataGridView.GridColor = System.Drawing.Color.SeaGreen;
-            this.orderItemDataGridView.Location = new System.Drawing.Point(316, 52);
-            this.orderItemDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.orderItemDataGridView.Location = new System.Drawing.Point(421, 64);
+            this.orderItemDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.orderItemDataGridView.Name = "orderItemDataGridView";
             this.orderItemDataGridView.RowTemplate.Height = 24;
-            this.orderItemDataGridView.Size = new System.Drawing.Size(334, 179);
+            this.orderItemDataGridView.Size = new System.Drawing.Size(445, 220);
             this.orderItemDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -203,10 +199,10 @@
             this.order_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderItemBindingSource, "order_id", true));
             this.order_idTextBox.Enabled = false;
             this.order_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.order_idTextBox.Location = new System.Drawing.Point(170, 52);
-            this.order_idTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.order_idTextBox.Location = new System.Drawing.Point(227, 64);
+            this.order_idTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.order_idTextBox.Name = "order_idTextBox";
-            this.order_idTextBox.Size = new System.Drawing.Size(111, 26);
+            this.order_idTextBox.Size = new System.Drawing.Size(147, 30);
             this.order_idTextBox.TabIndex = 3;
             // 
             // product_idTextBox
@@ -214,30 +210,30 @@
             this.product_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderItemBindingSource, "product_id", true));
             this.product_idTextBox.Enabled = false;
             this.product_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.product_idTextBox.Location = new System.Drawing.Point(170, 86);
-            this.product_idTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.product_idTextBox.Location = new System.Drawing.Point(227, 106);
+            this.product_idTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.product_idTextBox.Name = "product_idTextBox";
-            this.product_idTextBox.Size = new System.Drawing.Size(111, 26);
+            this.product_idTextBox.Size = new System.Drawing.Size(147, 30);
             this.product_idTextBox.TabIndex = 5;
             // 
             // orderItem_quantityTextBox
             // 
             this.orderItem_quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderItemBindingSource, "orderItem_quantity", true));
             this.orderItem_quantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderItem_quantityTextBox.Location = new System.Drawing.Point(170, 118);
-            this.orderItem_quantityTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.orderItem_quantityTextBox.Location = new System.Drawing.Point(227, 145);
+            this.orderItem_quantityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.orderItem_quantityTextBox.Name = "orderItem_quantityTextBox";
-            this.orderItem_quantityTextBox.Size = new System.Drawing.Size(111, 26);
+            this.orderItem_quantityTextBox.Size = new System.Drawing.Size(147, 30);
             this.orderItem_quantityTextBox.TabIndex = 7;
             // 
             // product_priceTextBox
             // 
             this.product_priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderItemBindingSource, "product_price", true));
             this.product_priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.product_priceTextBox.Location = new System.Drawing.Point(170, 154);
-            this.product_priceTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.product_priceTextBox.Location = new System.Drawing.Point(227, 190);
+            this.product_priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.product_priceTextBox.Name = "product_priceTextBox";
-            this.product_priceTextBox.Size = new System.Drawing.Size(111, 26);
+            this.product_priceTextBox.Size = new System.Drawing.Size(147, 30);
             this.product_priceTextBox.TabIndex = 9;
             // 
             // btnSave
@@ -246,10 +242,10 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(440, 260);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Location = new System.Drawing.Point(587, 320);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(70, 28);
+            this.btnSave.Size = new System.Drawing.Size(93, 34);
             this.btnSave.TabIndex = 72;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -261,10 +257,10 @@
             this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPre.ForeColor = System.Drawing.Color.White;
-            this.btnPre.Location = new System.Drawing.Point(364, 260);
-            this.btnPre.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPre.Location = new System.Drawing.Point(485, 320);
+            this.btnPre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPre.Name = "btnPre";
-            this.btnPre.Size = new System.Drawing.Size(70, 28);
+            this.btnPre.Size = new System.Drawing.Size(93, 34);
             this.btnPre.TabIndex = 73;
             this.btnPre.Text = "Previous";
             this.btnPre.UseVisualStyleBackColor = false;
@@ -276,10 +272,10 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(287, 260);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNext.Location = new System.Drawing.Point(383, 320);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(70, 28);
+            this.btnNext.Size = new System.Drawing.Size(93, 34);
             this.btnNext.TabIndex = 74;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -291,10 +287,10 @@
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(211, 260);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDel.Location = new System.Drawing.Point(281, 320);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(70, 28);
+            this.btnDel.Size = new System.Drawing.Size(93, 34);
             this.btnDel.TabIndex = 75;
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -306,10 +302,10 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(129, 260);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(172, 320);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 28);
+            this.btnAdd.Size = new System.Drawing.Size(93, 34);
             this.btnAdd.TabIndex = 76;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -318,10 +314,10 @@
             // btnReturn
             // 
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReturn.Location = new System.Drawing.Point(17, 10);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturn.Location = new System.Drawing.Point(23, 12);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(56, 24);
+            this.btnReturn.Size = new System.Drawing.Size(75, 30);
             this.btnReturn.TabIndex = 77;
             this.btnReturn.Text = "Return ";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -331,19 +327,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(217, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(289, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 26);
+            this.label1.Size = new System.Drawing.Size(342, 32);
             this.label1.TabIndex = 78;
             this.label1.Text = "Order Item Management";
             // 
             // OrderItemManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(682, 376);
+            this.ClientSize = new System.Drawing.Size(909, 463);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnSave);
@@ -361,9 +356,9 @@
             this.Controls.Add(this.product_priceTextBox);
             this.Controls.Add(this.orderItemDataGridView);
             this.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "OrderItemManagement";
-            this.Text = "OrderItemManagement";
+            this.Text = "Order Item Management | Perfume Store Management";
             this.Load += new System.EventHandler(this.OrderItemManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderItemBindingSource)).EndInit();

@@ -54,7 +54,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductManagement));
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.productTableAdapter();
@@ -98,9 +97,9 @@
             this.createClearBtn = new System.Windows.Forms.Button();
             this.createCreateBtn = new System.Windows.Forms.Button();
             this.listPnl = new System.Windows.Forms.Panel();
-            this.product_statusComboBox = new System.Windows.Forms.ComboBox();
-            this.product_originalPriceNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.product_currentPriceNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.product_originalPriceNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.product_statusComboBox = new System.Windows.Forms.ComboBox();
             product_idLabel = new System.Windows.Forms.Label();
             product_nameLabel = new System.Windows.Forms.Label();
             product_volumneLabel = new System.Windows.Forms.Label();
@@ -138,8 +137,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.createProduct_quantityNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.createProduct_volumneNumericUpDown)).BeginInit();
             this.listPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.product_originalPriceNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product_currentPriceNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.product_originalPriceNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // product_idLabel
@@ -520,7 +519,7 @@
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(366, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 39);
+            this.label1.Size = new System.Drawing.Size(363, 38);
             this.label1.TabIndex = 30;
             this.label1.Text = "Product Management";
             // 
@@ -918,17 +917,19 @@
             this.listPnl.Size = new System.Drawing.Size(1006, 604);
             this.listPnl.TabIndex = 45;
             // 
-            // product_statusComboBox
+            // product_currentPriceNumericUpDown
             // 
-            this.product_statusComboBox.FormattingEnabled = true;
-            this.product_statusComboBox.Items.AddRange(new object[] {
-            "Locked",
-            "In Stock",
-            "Out of Stock"});
-            this.product_statusComboBox.Location = new System.Drawing.Point(735, 369);
-            this.product_statusComboBox.Name = "product_statusComboBox";
-            this.product_statusComboBox.Size = new System.Drawing.Size(192, 24);
-            this.product_statusComboBox.TabIndex = 51;
+            this.product_currentPriceNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_currentPrice", true));
+            this.product_currentPriceNumericUpDown.DecimalPlaces = 2;
+            this.product_currentPriceNumericUpDown.Location = new System.Drawing.Point(735, 276);
+            this.product_currentPriceNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.product_currentPriceNumericUpDown.Name = "product_currentPriceNumericUpDown";
+            this.product_currentPriceNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.product_currentPriceNumericUpDown.TabIndex = 53;
             // 
             // product_originalPriceNumericUpDown
             // 
@@ -944,19 +945,17 @@
             this.product_originalPriceNumericUpDown.Size = new System.Drawing.Size(120, 22);
             this.product_originalPriceNumericUpDown.TabIndex = 52;
             // 
-            // product_currentPriceNumericUpDown
+            // product_statusComboBox
             // 
-            this.product_currentPriceNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productBindingSource, "product_currentPrice", true));
-            this.product_currentPriceNumericUpDown.DecimalPlaces = 2;
-            this.product_currentPriceNumericUpDown.Location = new System.Drawing.Point(735, 276);
-            this.product_currentPriceNumericUpDown.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.product_currentPriceNumericUpDown.Name = "product_currentPriceNumericUpDown";
-            this.product_currentPriceNumericUpDown.Size = new System.Drawing.Size(120, 22);
-            this.product_currentPriceNumericUpDown.TabIndex = 53;
+            this.product_statusComboBox.FormattingEnabled = true;
+            this.product_statusComboBox.Items.AddRange(new object[] {
+            "Locked",
+            "In Stock",
+            "Out of Stock"});
+            this.product_statusComboBox.Location = new System.Drawing.Point(735, 369);
+            this.product_statusComboBox.Name = "product_statusComboBox";
+            this.product_statusComboBox.Size = new System.Drawing.Size(192, 24);
+            this.product_statusComboBox.TabIndex = 51;
             // 
             // ProductManagement
             // 
@@ -967,11 +966,10 @@
             this.Controls.Add(this.listPnl);
             this.Controls.Add(this.createPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ProductManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfume Store Manager | Product Management";
+            this.Text = "Product Management | Perfume Store Management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ProductManagement_FormClosed);
             this.Load += new System.EventHandler(this.ProductManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
@@ -991,8 +989,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.createProduct_volumneNumericUpDown)).EndInit();
             this.listPnl.ResumeLayout(false);
             this.listPnl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.product_originalPriceNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.product_currentPriceNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.product_originalPriceNumericUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }

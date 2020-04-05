@@ -61,11 +61,11 @@
             reportDataSource2.Value = this.ordersBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "PefumeStore.Report.ReportCost.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(9, 90);
-            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.reportViewer1.Location = new System.Drawing.Point(12, 111);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(934, 402);
+            this.reportViewer1.Size = new System.Drawing.Size(1245, 494);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
@@ -92,18 +92,18 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(227, 49);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(303, 60);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(182, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(241, 22);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(489, 49);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Location = new System.Drawing.Point(652, 60);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(179, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(237, 22);
             this.dateTimePicker2.TabIndex = 1;
             // 
             // btbS
@@ -113,10 +113,10 @@
             this.btbS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btbS.ForeColor = System.Drawing.Color.White;
             this.btbS.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btbS.Location = new System.Drawing.Point(703, 43);
-            this.btbS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btbS.Location = new System.Drawing.Point(937, 53);
+            this.btbS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btbS.Name = "btbS";
-            this.btbS.Size = new System.Drawing.Size(76, 29);
+            this.btbS.Size = new System.Drawing.Size(101, 36);
             this.btbS.TabIndex = 3;
             this.btbS.Text = "Search";
             this.btbS.UseVisualStyleBackColor = false;
@@ -126,10 +126,9 @@
             // 
             this.From.AutoSize = true;
             this.From.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.From.Location = new System.Drawing.Point(137, 47);
-            this.From.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.From.Location = new System.Drawing.Point(183, 58);
             this.From.Name = "From";
-            this.From.Size = new System.Drawing.Size(46, 20);
+            this.From.Size = new System.Drawing.Size(57, 25);
             this.From.TabIndex = 4;
             this.From.Text = "From";
             // 
@@ -137,10 +136,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(446, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(595, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 20);
+            this.label2.Size = new System.Drawing.Size(36, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "To";
             // 
@@ -148,10 +146,10 @@
             // 
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(9, 11);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturn.Location = new System.Drawing.Point(12, 14);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(63, 28);
+            this.btnReturn.Size = new System.Drawing.Size(84, 34);
             this.btnReturn.TabIndex = 24;
             this.btnReturn.Text = "Return ";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -159,10 +157,10 @@
             // 
             // report_cost
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(951, 501);
+            this.ClientSize = new System.Drawing.Size(1268, 617);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.From);
@@ -171,9 +169,10 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.reportViewer1);
             this.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "report_cost";
-            this.Text = "Cost report";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cost report | Perfume Store Management";
             this.Load += new System.EventHandler(this.report_cost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();

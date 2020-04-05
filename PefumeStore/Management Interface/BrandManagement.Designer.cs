@@ -38,7 +38,6 @@
             System.Windows.Forms.Label craeteBrand_statusLabel;
             System.Windows.Forms.Label createCountry_idLabel;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrandManagement));
             this.brandDataGridView = new System.Windows.Forms.DataGridView();
             this.brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
@@ -497,11 +496,10 @@
             this.Controls.Add(this.createPnl);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "BrandManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfume Store Manager | Brand Management";
+            this.Text = "Brand Management | Perfume Store Management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BrandManagement_FormClosed);
             this.Load += new System.EventHandler(this.BrandManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.brandDataGridView)).EndInit();

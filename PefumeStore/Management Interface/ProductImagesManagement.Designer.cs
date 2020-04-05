@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductImagesManagement));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnReturn = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
@@ -43,13 +42,13 @@
             this.productImgTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.productImgTableAdapter();
             this.btnDelete = new System.Windows.Forms.Button();
             this.productImgDataGridView = new System.Windows.Forms.DataGridView();
+            this.product_idLabel = new System.Windows.Forms.Label();
+            this.product_nameLabel = new System.Windows.Forms.Label();
             this.imgidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imgpathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imgstatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Image = new System.Windows.Forms.DataGridViewImageColumn();
-            this.product_idLabel = new System.Windows.Forms.Label();
-            this.product_nameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productImgBindingSource)).BeginInit();
@@ -119,7 +118,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(266, 115);
+            this.btnAdd.Location = new System.Drawing.Point(380, 115);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(111, 34);
             this.btnAdd.TabIndex = 35;
@@ -134,7 +133,7 @@
             this.btnChangeStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeStatus.ForeColor = System.Drawing.Color.White;
-            this.btnChangeStatus.Location = new System.Drawing.Point(383, 115);
+            this.btnChangeStatus.Location = new System.Drawing.Point(497, 115);
             this.btnChangeStatus.Name = "btnChangeStatus";
             this.btnChangeStatus.Size = new System.Drawing.Size(154, 34);
             this.btnChangeStatus.TabIndex = 36;
@@ -158,7 +157,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(543, 115);
+            this.btnDelete.Location = new System.Drawing.Point(657, 115);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(111, 34);
             this.btnDelete.TabIndex = 40;
@@ -180,14 +179,14 @@
             this.imgstatusDataGridViewTextBoxColumn,
             this.Image});
             this.productImgDataGridView.DataSource = this.productImgBindingSource;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.productImgDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.productImgDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.productImgDataGridView.GridColor = System.Drawing.Color.SeaGreen;
             this.productImgDataGridView.Location = new System.Drawing.Point(12, 155);
             this.productImgDataGridView.MultiSelect = false;
@@ -195,44 +194,8 @@
             this.productImgDataGridView.ReadOnly = true;
             this.productImgDataGridView.RowTemplate.Height = 80;
             this.productImgDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.productImgDataGridView.Size = new System.Drawing.Size(645, 220);
+            this.productImgDataGridView.Size = new System.Drawing.Size(756, 324);
             this.productImgDataGridView.TabIndex = 44;
-            // 
-            // imgidDataGridViewTextBoxColumn
-            // 
-            this.imgidDataGridViewTextBoxColumn.DataPropertyName = "img_id";
-            this.imgidDataGridViewTextBoxColumn.HeaderText = "Image ID";
-            this.imgidDataGridViewTextBoxColumn.Name = "imgidDataGridViewTextBoxColumn";
-            this.imgidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productidDataGridViewTextBoxColumn
-            // 
-            this.productidDataGridViewTextBoxColumn.DataPropertyName = "product_id";
-            this.productidDataGridViewTextBoxColumn.HeaderText = "Product ID";
-            this.productidDataGridViewTextBoxColumn.Name = "productidDataGridViewTextBoxColumn";
-            this.productidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // imgpathDataGridViewTextBoxColumn
-            // 
-            this.imgpathDataGridViewTextBoxColumn.DataPropertyName = "img_path";
-            this.imgpathDataGridViewTextBoxColumn.HeaderText = "Image Name";
-            this.imgpathDataGridViewTextBoxColumn.Name = "imgpathDataGridViewTextBoxColumn";
-            this.imgpathDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // imgstatusDataGridViewTextBoxColumn
-            // 
-            this.imgstatusDataGridViewTextBoxColumn.DataPropertyName = "img_status";
-            this.imgstatusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.imgstatusDataGridViewTextBoxColumn.Name = "imgstatusDataGridViewTextBoxColumn";
-            this.imgstatusDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // Image
-            // 
-            this.Image.HeaderText = "Image";
-            this.Image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Image.Name = "Image";
-            this.Image.ReadOnly = true;
-            this.Image.Width = 200;
             // 
             // product_idLabel
             // 
@@ -256,12 +219,49 @@
             this.product_nameLabel.TabIndex = 46;
             this.product_nameLabel.Text = "Name: ";
             // 
+            // imgidDataGridViewTextBoxColumn
+            // 
+            this.imgidDataGridViewTextBoxColumn.DataPropertyName = "img_id";
+            this.imgidDataGridViewTextBoxColumn.HeaderText = "Image ID";
+            this.imgidDataGridViewTextBoxColumn.Name = "imgidDataGridViewTextBoxColumn";
+            this.imgidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productidDataGridViewTextBoxColumn
+            // 
+            this.productidDataGridViewTextBoxColumn.DataPropertyName = "product_id";
+            this.productidDataGridViewTextBoxColumn.HeaderText = "Product ID";
+            this.productidDataGridViewTextBoxColumn.Name = "productidDataGridViewTextBoxColumn";
+            this.productidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // imgpathDataGridViewTextBoxColumn
+            // 
+            this.imgpathDataGridViewTextBoxColumn.DataPropertyName = "img_path";
+            this.imgpathDataGridViewTextBoxColumn.HeaderText = "Image Name";
+            this.imgpathDataGridViewTextBoxColumn.Name = "imgpathDataGridViewTextBoxColumn";
+            this.imgpathDataGridViewTextBoxColumn.ReadOnly = true;
+            this.imgpathDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // imgstatusDataGridViewTextBoxColumn
+            // 
+            this.imgstatusDataGridViewTextBoxColumn.DataPropertyName = "img_status";
+            this.imgstatusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.imgstatusDataGridViewTextBoxColumn.Name = "imgstatusDataGridViewTextBoxColumn";
+            this.imgstatusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Image
+            // 
+            this.Image.HeaderText = "Image";
+            this.Image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Image.Name = "Image";
+            this.Image.ReadOnly = true;
+            this.Image.Width = 250;
+            // 
             // ProductImagesManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(681, 431);
+            this.ClientSize = new System.Drawing.Size(780, 491);
             this.Controls.Add(this.product_idLabel);
             this.Controls.Add(this.product_nameLabel);
             this.Controls.Add(this.productImgDataGridView);
@@ -270,10 +270,9 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.labelTitle);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProductImagesManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfume Store Manager | Product Images Management";
+            this.Text = "Product Images Management | Perfume Store Management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ProductImagesManagement_FormClosed);
             this.Load += new System.EventHandler(this.Product_Images_Management_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
@@ -299,12 +298,12 @@
         private Perfume_StoreDataSetTableAdapters.productImgTableAdapter productImgTableAdapter;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView productImgDataGridView;
+        private System.Windows.Forms.Label product_idLabel;
+        private System.Windows.Forms.Label product_nameLabel;
         private System.Windows.Forms.DataGridViewTextBoxColumn imgidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imgpathDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imgstatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn Image;
-        private System.Windows.Forms.Label product_idLabel;
-        private System.Windows.Forms.Label product_nameLabel;
     }
 }

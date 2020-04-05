@@ -48,12 +48,12 @@ namespace PefumeStore.Management_Interface
         {
             for (int i = 0; i < productImgDataGridView.Rows.Count; i++)
             {
-
                 int productId = (int)productImgDataGridView.Rows[i].Cells[1].Value;
                 string imgName = (string)productImgDataGridView.Rows[i].Cells[2].Value;
                 // Directory: img/product/productId/imgname
                 string filepath = AppDomain.CurrentDomain.BaseDirectory + "img\\product\\" + productId + "\\" + imgName;
                 //Bitmap bmp = new Bitmap(Application.StartupPath + "\\Data\\AirPlaneData\\" + dt.Rows[row][4]);
+                productImgDataGridView.Rows[i].Cells[4].Value = null;
                 Bitmap bmp = new Bitmap(filepath);
                 ((DataGridViewImageCell)productImgDataGridView.Rows[i].Cells[4]).Value = bmp;
             }
@@ -94,7 +94,6 @@ namespace PefumeStore.Management_Interface
             //focus on new row
             productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Selected = true;
             productImgDataGridView.CurrentCell = productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[0];
-
         }
 
         /// <summary>
@@ -115,7 +114,7 @@ namespace PefumeStore.Management_Interface
                 //        dataGridViewImageCell.Value = image;
                 //    }
                 //}
-
+                
                 dataGridViewImageCell.Value = System.Drawing.Image.FromFile(ofd.FileName);
                 SaveImages();
                 LoadImageToDataGrid();
@@ -129,6 +128,7 @@ namespace PefumeStore.Management_Interface
         public void SaveImages()
         {
             //get info in last record
+            
             Image myImg = (productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[4].Value as Image);
             int productId = (int)productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[1].Value;
             string imgName = (string)productImgDataGridView.Rows[productImgDataGridView.RowCount - 1].Cells[2].Value;

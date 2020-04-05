@@ -123,23 +123,19 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Arial Rounded MT Bold, 24pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>95, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 37</value>
+    <value>563, 46</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Perfume Store Manager</value>
+    <value>Perfume Store Management</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -153,6 +149,7 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnProductMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -160,13 +157,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnProductMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 26</value>
+    <value>14, 122</value>
   </data>
   <data name="btnProductMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnProductMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnProductMng.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -181,10 +178,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnProductMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnProductMng.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>11</value>
   </data>
   <data name="btnCategoryMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -193,13 +190,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnCategoryMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 75</value>
+    <value>201, 122</value>
   </data>
   <data name="btnCategoryMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnCategoryMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnCategoryMng.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -214,10 +211,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnCategoryMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCategoryMng.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>15</value>
   </data>
   <data name="btnDeliveryMethodMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -226,13 +223,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnDeliveryMethodMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 295</value>
+    <value>199, 220</value>
   </data>
   <data name="btnDeliveryMethodMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnDeliveryMethodMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnDeliveryMethodMng.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -247,10 +244,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDeliveryMethodMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnDeliveryMethodMng.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="btnPaymentMethodMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -259,13 +256,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnPaymentMethodMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 344</value>
+    <value>386, 220</value>
   </data>
   <data name="btnPaymentMethodMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnPaymentMethodMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnPaymentMethodMng.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -280,10 +277,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnPaymentMethodMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnPaymentMethodMng.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="btnOrderMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -292,13 +289,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnOrderMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 246</value>
+    <value>12, 220</value>
   </data>
   <data name="btnOrderMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnOrderMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnOrderMng.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -313,10 +310,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnOrderMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnOrderMng.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btnCountryMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -325,13 +322,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnCountryMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 173</value>
+    <value>573, 122</value>
   </data>
   <data name="btnCountryMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnCountryMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnCountryMng.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -346,10 +343,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnCountryMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCountryMng.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>17</value>
   </data>
   <data name="btnBrandMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -358,13 +355,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnBrandMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 124</value>
+    <value>386, 122</value>
   </data>
   <data name="btnBrandMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnBrandMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnBrandMng.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -379,10 +376,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnBrandMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnBrandMng.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>16</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -391,19 +388,16 @@
     <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 220</value>
-  </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>12, 189</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 24</value>
+    <value>222, 29</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Order </value>
+    <value>Order Management</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -412,76 +406,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 57</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 682</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 218</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 13</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>dahsboard_content</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -493,19 +421,16 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 0</value>
-  </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>14, 91</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 24</value>
+    <value>242, 29</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Product </value>
+    <value>Product Management</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -514,10 +439,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>9</value>
   </data>
   <data name="buttonOrI.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -529,13 +454,13 @@
     <value>NoControl</value>
   </data>
   <data name="buttonOrI.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 393</value>
+    <value>573, 220</value>
   </data>
   <data name="buttonOrI.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="buttonOrI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="buttonOrI.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -550,10 +475,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonOrI.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonOrI.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>14</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -565,19 +490,16 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 440</value>
-  </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>15, 286</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 24</value>
+    <value>210, 29</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>User</value>
+    <value>User Management</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -586,10 +508,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>3</value>
   </data>
   <data name="btnUserMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -601,13 +523,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnUserMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 466</value>
+    <value>14, 317</value>
   </data>
   <data name="btnUserMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnUserMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnUserMng.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -622,10 +544,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnUserMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnUserMng.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>5</value>
   </data>
   <data name="btnUserRoleMng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -637,13 +559,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnUserRoleMng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 515</value>
+    <value>201, 317</value>
   </data>
   <data name="btnUserRoleMng.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnUserRoleMng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btnUserRoleMng.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -658,10 +580,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnUserRoleMng.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnUserRoleMng.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>7</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -673,13 +595,10 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 562</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>12, 388</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 24</value>
+    <value>86, 29</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -694,10 +613,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>1</value>
   </data>
   <data name="btbRpcost.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -709,13 +628,13 @@
     <value>NoControl</value>
   </data>
   <data name="btbRpcost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 588</value>
+    <value>12, 419</value>
   </data>
   <data name="btbRpcost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btbRpcost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btbRpcost.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -730,10 +649,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btbRpcost.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btbRpcost.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>2</value>
   </data>
   <data name="btbRpproduct.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -745,13 +664,13 @@
     <value>NoControl</value>
   </data>
   <data name="btbRpproduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 637</value>
+    <value>199, 419</value>
   </data>
   <data name="btbRpproduct.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btbRpproduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 45</value>
+    <value>181, 55</value>
   </data>
   <data name="btbRpproduct.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -766,34 +685,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btbRpproduct.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btbRpproduct.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 57</value>
-  </data>
-  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 688</value>
-  </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btbRpproduct.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="returnHomeBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -805,19 +700,22 @@
     <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <data name="returnHomeBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 8</value>
+    <value>8, 10</value>
   </data>
   <data name="returnHomeBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="returnHomeBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 29</value>
+    <value>157, 36</value>
   </data>
   <data name="returnHomeBtn.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="returnHomeBtn.Text" xml:space="preserve">
     <value>Return to Home</value>
+  </data>
+  <data name="returnHomeBtn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;returnHomeBtn.Name" xml:space="preserve">
     <value>returnHomeBtn</value>
@@ -832,13 +730,13 @@
     <value>1</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 8</value>
+    <value>12, 10</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>736, 44</value>
+    <value>756, 54</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -853,25 +751,136 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btnExit.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnExit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="btnExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 2</value>
+  </data>
+  <data name="btnExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 36</value>
+  </data>
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 499</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>756, 44</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Myriad Pro, 9pt, style=Bold</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 10</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 17</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Copyright @ Perfume Store</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>752, 744</value>
+    <value>783, 553</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Perfume Store Manager | Admin Menu</value>
+    <value>Main Menu | Perfume Store Management </value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Admin_Menu</value>

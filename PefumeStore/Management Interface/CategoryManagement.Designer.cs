@@ -64,10 +64,9 @@
             // 
             category_idLabel.AutoSize = true;
             category_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            category_idLabel.Location = new System.Drawing.Point(382, 76);
-            category_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            category_idLabel.Location = new System.Drawing.Point(509, 94);
             category_idLabel.Name = "category_idLabel";
-            category_idLabel.Size = new System.Drawing.Size(84, 18);
+            category_idLabel.Size = new System.Drawing.Size(107, 24);
             category_idLabel.TabIndex = 2;
             category_idLabel.Text = "category id:";
             // 
@@ -75,10 +74,9 @@
             // 
             category_nameLabel.AutoSize = true;
             category_nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            category_nameLabel.Location = new System.Drawing.Point(382, 104);
-            category_nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            category_nameLabel.Location = new System.Drawing.Point(509, 128);
             category_nameLabel.Name = "category_nameLabel";
-            category_nameLabel.Size = new System.Drawing.Size(110, 18);
+            category_nameLabel.Size = new System.Drawing.Size(140, 24);
             category_nameLabel.TabIndex = 4;
             category_nameLabel.Text = "category name:";
             // 
@@ -86,10 +84,9 @@
             // 
             category_statusLabel.AutoSize = true;
             category_statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            category_statusLabel.Location = new System.Drawing.Point(382, 132);
-            category_statusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            category_statusLabel.Location = new System.Drawing.Point(509, 162);
             category_statusLabel.Name = "category_statusLabel";
-            category_statusLabel.Size = new System.Drawing.Size(113, 18);
+            category_statusLabel.Size = new System.Drawing.Size(139, 24);
             category_statusLabel.TabIndex = 6;
             category_statusLabel.Text = "category status:";
             // 
@@ -152,11 +149,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.categoryDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.categoryDataGridView.GridColor = System.Drawing.Color.SeaGreen;
-            this.categoryDataGridView.Location = new System.Drawing.Point(23, 76);
-            this.categoryDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.categoryDataGridView.Location = new System.Drawing.Point(31, 94);
+            this.categoryDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.categoryDataGridView.Name = "categoryDataGridView";
             this.categoryDataGridView.RowTemplate.Height = 24;
-            this.categoryDataGridView.Size = new System.Drawing.Size(322, 123);
+            this.categoryDataGridView.Size = new System.Drawing.Size(429, 151);
             this.categoryDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -165,59 +162,59 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "category id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 78;
+            this.dataGridViewTextBoxColumn1.Width = 99;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "category_name";
             this.dataGridViewTextBoxColumn2.HeaderText = "category name";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 94;
+            this.dataGridViewTextBoxColumn2.Width = 120;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "category_status";
             this.dataGridViewTextBoxColumn3.HeaderText = "category status";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 96;
+            this.dataGridViewTextBoxColumn3.Width = 123;
             // 
             // category_idTextBox
             // 
             this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoryBindingSource, "category_id", true));
             this.category_idTextBox.Enabled = false;
             this.category_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category_idTextBox.Location = new System.Drawing.Point(491, 76);
-            this.category_idTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.category_idTextBox.Location = new System.Drawing.Point(655, 94);
+            this.category_idTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.category_idTextBox.Name = "category_idTextBox";
-            this.category_idTextBox.Size = new System.Drawing.Size(134, 24);
+            this.category_idTextBox.Size = new System.Drawing.Size(177, 28);
             this.category_idTextBox.TabIndex = 3;
             // 
             // category_nameTextBox
             // 
             this.category_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoryBindingSource, "category_name", true));
             this.category_nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category_nameTextBox.Location = new System.Drawing.Point(491, 104);
-            this.category_nameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.category_nameTextBox.Location = new System.Drawing.Point(655, 128);
+            this.category_nameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.category_nameTextBox.Name = "category_nameTextBox";
-            this.category_nameTextBox.Size = new System.Drawing.Size(134, 24);
+            this.category_nameTextBox.Size = new System.Drawing.Size(177, 28);
             this.category_nameTextBox.TabIndex = 5;
             // 
             // category_statusTextBox
             // 
             this.category_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoryBindingSource, "category_status", true));
             this.category_statusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category_statusTextBox.Location = new System.Drawing.Point(491, 132);
-            this.category_statusTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.category_statusTextBox.Location = new System.Drawing.Point(655, 162);
+            this.category_statusTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.category_statusTextBox.Name = "category_statusTextBox";
-            this.category_statusTextBox.Size = new System.Drawing.Size(134, 24);
+            this.category_statusTextBox.Size = new System.Drawing.Size(177, 28);
             this.category_statusTextBox.TabIndex = 7;
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(4, 12);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturn.Location = new System.Drawing.Point(5, 15);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(56, 24);
+            this.btnReturn.Size = new System.Drawing.Size(75, 30);
             this.btnReturn.TabIndex = 23;
             this.btnReturn.Text = "Return ";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -227,10 +224,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(259, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 26);
+            this.label1.Size = new System.Drawing.Size(322, 32);
             this.label1.TabIndex = 22;
             this.label1.Text = "Category Management";
             // 
@@ -240,10 +236,10 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(457, 218);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Location = new System.Drawing.Point(609, 268);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(70, 28);
+            this.btnSave.Size = new System.Drawing.Size(93, 34);
             this.btnSave.TabIndex = 92;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -255,10 +251,10 @@
             this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPre.ForeColor = System.Drawing.Color.White;
-            this.btnPre.Location = new System.Drawing.Point(380, 218);
-            this.btnPre.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPre.Location = new System.Drawing.Point(507, 268);
+            this.btnPre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPre.Name = "btnPre";
-            this.btnPre.Size = new System.Drawing.Size(70, 28);
+            this.btnPre.Size = new System.Drawing.Size(93, 34);
             this.btnPre.TabIndex = 93;
             this.btnPre.Text = "Previous";
             this.btnPre.UseVisualStyleBackColor = false;
@@ -270,10 +266,10 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(304, 218);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNext.Location = new System.Drawing.Point(405, 268);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(70, 28);
+            this.btnNext.Size = new System.Drawing.Size(93, 34);
             this.btnNext.TabIndex = 94;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -285,10 +281,10 @@
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(227, 218);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDel.Location = new System.Drawing.Point(303, 268);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(70, 28);
+            this.btnDel.Size = new System.Drawing.Size(93, 34);
             this.btnDel.TabIndex = 95;
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -300,10 +296,10 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(146, 218);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(195, 268);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 28);
+            this.btnAdd.Size = new System.Drawing.Size(93, 34);
             this.btnAdd.TabIndex = 96;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -311,10 +307,10 @@
             // 
             // CategoryManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(685, 277);
+            this.ClientSize = new System.Drawing.Size(913, 341);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnPre);
             this.Controls.Add(this.btnNext);
@@ -331,11 +327,11 @@
             this.Controls.Add(this.categoryDataGridView);
             this.ForeColor = System.Drawing.Color.SeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "CategoryManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfume Store Manager | Category Management";
+            this.Text = "Category Management | Perfume Store Management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CategoryManagement_FormClosed);
             this.Load += new System.EventHandler(this.CategoryManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();

@@ -296,11 +296,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\Perfume_Store.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Database\Perfume_Store_log.ldf">
       <DependentUpon>Perfume_Store.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\User_16x.png" />
     <None Include="Resources\User_7x_16x.png" />

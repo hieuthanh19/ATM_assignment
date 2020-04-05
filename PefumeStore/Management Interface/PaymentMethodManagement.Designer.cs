@@ -33,8 +33,8 @@
             System.Windows.Forms.Label payment_nameLabel;
             System.Windows.Forms.Label payment_descriptionLabel;
             System.Windows.Forms.Label payment_statusLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.perfume_StoreDataSet = new PefumeStore.Perfume_StoreDataSet();
             this.paymentMethodBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paymentMethodTableAdapter = new PefumeStore.Perfume_StoreDataSetTableAdapters.paymentMethodTableAdapter();
@@ -68,10 +68,9 @@
             // 
             payment_idLabel.AutoSize = true;
             payment_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            payment_idLabel.Location = new System.Drawing.Point(43, 70);
-            payment_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            payment_idLabel.Location = new System.Drawing.Point(57, 86);
             payment_idLabel.Name = "payment_idLabel";
-            payment_idLabel.Size = new System.Drawing.Size(83, 18);
+            payment_idLabel.Size = new System.Drawing.Size(107, 24);
             payment_idLabel.TabIndex = 23;
             payment_idLabel.Text = "payment id:";
             // 
@@ -79,10 +78,9 @@
             // 
             payment_nameLabel.AutoSize = true;
             payment_nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            payment_nameLabel.Location = new System.Drawing.Point(43, 99);
-            payment_nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            payment_nameLabel.Location = new System.Drawing.Point(57, 122);
             payment_nameLabel.Name = "payment_nameLabel";
-            payment_nameLabel.Size = new System.Drawing.Size(109, 18);
+            payment_nameLabel.Size = new System.Drawing.Size(140, 24);
             payment_nameLabel.TabIndex = 25;
             payment_nameLabel.Text = "payment name:";
             // 
@@ -90,10 +88,9 @@
             // 
             payment_descriptionLabel.AutoSize = true;
             payment_descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            payment_descriptionLabel.Location = new System.Drawing.Point(43, 127);
-            payment_descriptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            payment_descriptionLabel.Location = new System.Drawing.Point(57, 156);
             payment_descriptionLabel.Name = "payment_descriptionLabel";
-            payment_descriptionLabel.Size = new System.Drawing.Size(144, 18);
+            payment_descriptionLabel.Size = new System.Drawing.Size(184, 24);
             payment_descriptionLabel.TabIndex = 27;
             payment_descriptionLabel.Text = "payment description:";
             // 
@@ -101,10 +98,9 @@
             // 
             payment_statusLabel.AutoSize = true;
             payment_statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            payment_statusLabel.Location = new System.Drawing.Point(43, 154);
-            payment_statusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            payment_statusLabel.Location = new System.Drawing.Point(57, 190);
             payment_statusLabel.Name = "payment_statusLabel";
-            payment_statusLabel.Size = new System.Drawing.Size(112, 18);
+            payment_statusLabel.Size = new System.Drawing.Size(139, 24);
             payment_statusLabel.TabIndex = 29;
             payment_statusLabel.Text = "payment status:";
             // 
@@ -143,14 +139,14 @@
             // 
             this.paymentMethodDataGridView.AutoGenerateColumns = false;
             this.paymentMethodDataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.paymentMethodDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.paymentMethodDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.paymentMethodDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.paymentMethodDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -158,20 +154,20 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.paymentMethodDataGridView.DataSource = this.paymentMethodBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.paymentMethodDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.paymentMethodDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.paymentMethodDataGridView.GridColor = System.Drawing.Color.SeaGreen;
-            this.paymentMethodDataGridView.Location = new System.Drawing.Point(411, 51);
-            this.paymentMethodDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.paymentMethodDataGridView.Location = new System.Drawing.Point(548, 63);
+            this.paymentMethodDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paymentMethodDataGridView.Name = "paymentMethodDataGridView";
             this.paymentMethodDataGridView.RowTemplate.Height = 24;
-            this.paymentMethodDataGridView.Size = new System.Drawing.Size(334, 191);
+            this.paymentMethodDataGridView.Size = new System.Drawing.Size(445, 235);
             this.paymentMethodDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -202,10 +198,10 @@
             // btnReturn
             // 
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReturn.Location = new System.Drawing.Point(17, 12);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturn.Location = new System.Drawing.Point(23, 15);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(56, 24);
+            this.btnReturn.Size = new System.Drawing.Size(75, 30);
             this.btnReturn.TabIndex = 23;
             this.btnReturn.Text = "Return ";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -215,10 +211,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(143, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(191, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 26);
+            this.label1.Size = new System.Drawing.Size(427, 32);
             this.label1.TabIndex = 22;
             this.label1.Text = "Payment Method Management";
             // 
@@ -228,10 +223,10 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(17, 216);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(23, 266);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 28);
+            this.btnAdd.Size = new System.Drawing.Size(93, 34);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -243,10 +238,10 @@
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(96, 216);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDel.Location = new System.Drawing.Point(128, 266);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(70, 28);
+            this.btnDel.Size = new System.Drawing.Size(93, 34);
             this.btnDel.TabIndex = 0;
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -258,10 +253,10 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(172, 216);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNext.Location = new System.Drawing.Point(229, 266);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(70, 28);
+            this.btnNext.Size = new System.Drawing.Size(93, 34);
             this.btnNext.TabIndex = 0;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -273,10 +268,10 @@
             this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPre.ForeColor = System.Drawing.Color.White;
-            this.btnPre.Location = new System.Drawing.Point(249, 216);
-            this.btnPre.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPre.Location = new System.Drawing.Point(332, 266);
+            this.btnPre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPre.Name = "btnPre";
-            this.btnPre.Size = new System.Drawing.Size(70, 28);
+            this.btnPre.Size = new System.Drawing.Size(93, 34);
             this.btnPre.TabIndex = 0;
             this.btnPre.Text = "Previous";
             this.btnPre.UseVisualStyleBackColor = false;
@@ -288,10 +283,10 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(326, 216);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Location = new System.Drawing.Point(435, 266);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(70, 28);
+            this.btnSave.Size = new System.Drawing.Size(93, 34);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -302,48 +297,48 @@
             this.payment_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentMethodBindingSource, "payment_id", true));
             this.payment_idTextBox.Enabled = false;
             this.payment_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.payment_idTextBox.Location = new System.Drawing.Point(185, 67);
-            this.payment_idTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.payment_idTextBox.Location = new System.Drawing.Point(247, 82);
+            this.payment_idTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.payment_idTextBox.Name = "payment_idTextBox";
-            this.payment_idTextBox.Size = new System.Drawing.Size(158, 24);
+            this.payment_idTextBox.Size = new System.Drawing.Size(209, 28);
             this.payment_idTextBox.TabIndex = 24;
             // 
             // payment_nameTextBox
             // 
             this.payment_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentMethodBindingSource, "payment_name", true));
             this.payment_nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.payment_nameTextBox.Location = new System.Drawing.Point(185, 96);
-            this.payment_nameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.payment_nameTextBox.Location = new System.Drawing.Point(247, 118);
+            this.payment_nameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.payment_nameTextBox.Name = "payment_nameTextBox";
-            this.payment_nameTextBox.Size = new System.Drawing.Size(158, 24);
+            this.payment_nameTextBox.Size = new System.Drawing.Size(209, 28);
             this.payment_nameTextBox.TabIndex = 26;
             // 
             // payment_descriptionTextBox
             // 
             this.payment_descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentMethodBindingSource, "payment_description", true));
             this.payment_descriptionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.payment_descriptionTextBox.Location = new System.Drawing.Point(185, 124);
-            this.payment_descriptionTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.payment_descriptionTextBox.Location = new System.Drawing.Point(247, 153);
+            this.payment_descriptionTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.payment_descriptionTextBox.Name = "payment_descriptionTextBox";
-            this.payment_descriptionTextBox.Size = new System.Drawing.Size(158, 24);
+            this.payment_descriptionTextBox.Size = new System.Drawing.Size(209, 28);
             this.payment_descriptionTextBox.TabIndex = 28;
             // 
             // payment_statusTextBox
             // 
             this.payment_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentMethodBindingSource, "payment_status", true));
             this.payment_statusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.payment_statusTextBox.Location = new System.Drawing.Point(185, 151);
-            this.payment_statusTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.payment_statusTextBox.Location = new System.Drawing.Point(247, 186);
+            this.payment_statusTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.payment_statusTextBox.Name = "payment_statusTextBox";
-            this.payment_statusTextBox.Size = new System.Drawing.Size(158, 24);
+            this.payment_statusTextBox.Size = new System.Drawing.Size(209, 28);
             this.payment_statusTextBox.TabIndex = 30;
             // 
             // PaymentMethodManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(770, 275);
+            this.ClientSize = new System.Drawing.Size(1027, 338);
             this.Controls.Add(payment_idLabel);
             this.Controls.Add(this.payment_idTextBox);
             this.Controls.Add(payment_nameLabel);
@@ -362,11 +357,11 @@
             this.Controls.Add(this.paymentMethodDataGridView);
             this.ForeColor = System.Drawing.Color.SeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "PaymentMethodManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfume Store Manager | Payment Method Management";
+            this.Text = "Payment Method Management | Perfume Store Management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PaymentMethodManagement_FormClosed);
             this.Load += new System.EventHandler(this.PaymentMethodManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();

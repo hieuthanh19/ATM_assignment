@@ -16,6 +16,8 @@ namespace PefumeStore
         public MainMenu()
         {
             InitializeComponent();
+           
+          
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -25,10 +27,15 @@ namespace PefumeStore
 
         private void button1_Click(object sender, EventArgs e)
         {
+          
+
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
             Hide();
             Admin_Menu am = new Admin_Menu();
             am.Show();
-
         }
     }
 }

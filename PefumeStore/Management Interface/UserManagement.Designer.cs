@@ -95,110 +95,99 @@
             // user_idLabel
             // 
             user_idLabel.AutoSize = true;
-            user_idLabel.Location = new System.Drawing.Point(304, 55);
-            user_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_idLabel.Location = new System.Drawing.Point(405, 68);
             user_idLabel.Name = "user_idLabel";
-            user_idLabel.Size = new System.Drawing.Size(41, 13);
+            user_idLabel.Size = new System.Drawing.Size(55, 17);
             user_idLabel.TabIndex = 25;
             user_idLabel.Text = "user id:";
             // 
             // user_usernameLabel
             // 
             user_usernameLabel.AutoSize = true;
-            user_usernameLabel.Location = new System.Drawing.Point(304, 78);
-            user_usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_usernameLabel.Location = new System.Drawing.Point(405, 96);
             user_usernameLabel.Name = "user_usernameLabel";
-            user_usernameLabel.Size = new System.Drawing.Size(79, 13);
+            user_usernameLabel.Size = new System.Drawing.Size(107, 17);
             user_usernameLabel.TabIndex = 27;
             user_usernameLabel.Text = "user username:";
             // 
             // user_passwordLabel
             // 
             user_passwordLabel.AutoSize = true;
-            user_passwordLabel.Location = new System.Drawing.Point(304, 101);
-            user_passwordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_passwordLabel.Location = new System.Drawing.Point(405, 124);
             user_passwordLabel.Name = "user_passwordLabel";
-            user_passwordLabel.Size = new System.Drawing.Size(78, 13);
+            user_passwordLabel.Size = new System.Drawing.Size(104, 17);
             user_passwordLabel.TabIndex = 29;
             user_passwordLabel.Text = "user password:";
             // 
             // user_roleIdLabel
             // 
             user_roleIdLabel.AutoSize = true;
-            user_roleIdLabel.Location = new System.Drawing.Point(304, 124);
-            user_roleIdLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_roleIdLabel.Location = new System.Drawing.Point(405, 153);
             user_roleIdLabel.Name = "user_roleIdLabel";
-            user_roleIdLabel.Size = new System.Drawing.Size(62, 13);
+            user_roleIdLabel.Size = new System.Drawing.Size(83, 17);
             user_roleIdLabel.TabIndex = 31;
             user_roleIdLabel.Text = "user role Id:";
             // 
             // user_fullNameLabel
             // 
             user_fullNameLabel.AutoSize = true;
-            user_fullNameLabel.Location = new System.Drawing.Point(304, 146);
-            user_fullNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_fullNameLabel.Location = new System.Drawing.Point(405, 180);
             user_fullNameLabel.Name = "user_fullNameLabel";
-            user_fullNameLabel.Size = new System.Drawing.Size(77, 13);
+            user_fullNameLabel.Size = new System.Drawing.Size(103, 17);
             user_fullNameLabel.TabIndex = 33;
             user_fullNameLabel.Text = "user full Name:";
             // 
             // user_addressLabel
             // 
             user_addressLabel.AutoSize = true;
-            user_addressLabel.Location = new System.Drawing.Point(304, 169);
-            user_addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_addressLabel.Location = new System.Drawing.Point(405, 208);
             user_addressLabel.Name = "user_addressLabel";
-            user_addressLabel.Size = new System.Drawing.Size(70, 13);
+            user_addressLabel.Size = new System.Drawing.Size(95, 17);
             user_addressLabel.TabIndex = 35;
             user_addressLabel.Text = "user address:";
             // 
             // user_phoneLabel
             // 
             user_phoneLabel.AutoSize = true;
-            user_phoneLabel.Location = new System.Drawing.Point(304, 192);
-            user_phoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_phoneLabel.Location = new System.Drawing.Point(405, 236);
             user_phoneLabel.Name = "user_phoneLabel";
-            user_phoneLabel.Size = new System.Drawing.Size(63, 13);
+            user_phoneLabel.Size = new System.Drawing.Size(84, 17);
             user_phoneLabel.TabIndex = 37;
             user_phoneLabel.Text = "user phone:";
             // 
             // user_emailLabel
             // 
             user_emailLabel.AutoSize = true;
-            user_emailLabel.Location = new System.Drawing.Point(304, 214);
-            user_emailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_emailLabel.Location = new System.Drawing.Point(405, 263);
             user_emailLabel.Name = "user_emailLabel";
-            user_emailLabel.Size = new System.Drawing.Size(57, 13);
+            user_emailLabel.Size = new System.Drawing.Size(77, 17);
             user_emailLabel.TabIndex = 39;
             user_emailLabel.Text = "user email:";
             // 
             // user_avartarLabel
             // 
             user_avartarLabel.AutoSize = true;
-            user_avartarLabel.Location = new System.Drawing.Point(304, 237);
-            user_avartarLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_avartarLabel.Location = new System.Drawing.Point(405, 292);
             user_avartarLabel.Name = "user_avartarLabel";
-            user_avartarLabel.Size = new System.Drawing.Size(66, 13);
+            user_avartarLabel.Size = new System.Drawing.Size(89, 17);
             user_avartarLabel.TabIndex = 41;
             user_avartarLabel.Text = "user avartar:";
             // 
             // user_createdAtLabel
             // 
             user_createdAtLabel.AutoSize = true;
-            user_createdAtLabel.Location = new System.Drawing.Point(304, 261);
-            user_createdAtLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_createdAtLabel.Location = new System.Drawing.Point(405, 321);
             user_createdAtLabel.Name = "user_createdAtLabel";
-            user_createdAtLabel.Size = new System.Drawing.Size(82, 13);
+            user_createdAtLabel.Size = new System.Drawing.Size(109, 17);
             user_createdAtLabel.TabIndex = 43;
             user_createdAtLabel.Text = "user created At:";
             // 
             // user_statusLabel
             // 
             user_statusLabel.AutoSize = true;
-            user_statusLabel.Location = new System.Drawing.Point(304, 283);
-            user_statusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            user_statusLabel.Location = new System.Drawing.Point(405, 348);
             user_statusLabel.Name = "user_statusLabel";
-            user_statusLabel.Size = new System.Drawing.Size(61, 13);
+            user_statusLabel.Size = new System.Drawing.Size(82, 17);
             user_statusLabel.TabIndex = 45;
             user_statusLabel.Text = "user status:";
             // 
@@ -267,11 +256,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.usersDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.usersDataGridView.GridColor = System.Drawing.Color.SeaGreen;
-            this.usersDataGridView.Location = new System.Drawing.Point(36, 55);
-            this.usersDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usersDataGridView.Location = new System.Drawing.Point(48, 68);
+            this.usersDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usersDataGridView.Name = "usersDataGridView";
             this.usersDataGridView.RowTemplate.Height = 24;
-            this.usersDataGridView.Size = new System.Drawing.Size(225, 179);
+            this.usersDataGridView.Size = new System.Drawing.Size(300, 220);
             this.usersDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -345,10 +334,10 @@
             // btnReturn
             // 
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReturn.Location = new System.Drawing.Point(11, 12);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Location = new System.Drawing.Point(15, 15);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(56, 24);
+            this.btnReturn.Size = new System.Drawing.Size(75, 30);
             this.btnReturn.TabIndex = 25;
             this.btnReturn.Text = "Return ";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -358,10 +347,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(201, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(268, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 26);
+            this.label1.Size = new System.Drawing.Size(262, 32);
             this.label1.TabIndex = 24;
             this.label1.Text = "User Management";
             // 
@@ -369,103 +357,103 @@
             // 
             this.user_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_id", true));
             this.user_idTextBox.Enabled = false;
-            this.user_idTextBox.Location = new System.Drawing.Point(390, 53);
-            this.user_idTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_idTextBox.Location = new System.Drawing.Point(520, 65);
+            this.user_idTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_idTextBox.Name = "user_idTextBox";
-            this.user_idTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_idTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_idTextBox.TabIndex = 26;
             // 
             // user_usernameTextBox
             // 
             this.user_usernameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_username", true));
             this.user_usernameTextBox.Enabled = false;
-            this.user_usernameTextBox.Location = new System.Drawing.Point(390, 76);
-            this.user_usernameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_usernameTextBox.Location = new System.Drawing.Point(520, 94);
+            this.user_usernameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_usernameTextBox.Name = "user_usernameTextBox";
-            this.user_usernameTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_usernameTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_usernameTextBox.TabIndex = 28;
             // 
             // user_passwordTextBox
             // 
             this.user_passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_password", true));
             this.user_passwordTextBox.Enabled = false;
-            this.user_passwordTextBox.Location = new System.Drawing.Point(390, 98);
-            this.user_passwordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_passwordTextBox.Location = new System.Drawing.Point(520, 121);
+            this.user_passwordTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_passwordTextBox.Name = "user_passwordTextBox";
-            this.user_passwordTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_passwordTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_passwordTextBox.TabIndex = 30;
             // 
             // user_roleIdTextBox
             // 
             this.user_roleIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_roleId", true));
             this.user_roleIdTextBox.Enabled = false;
-            this.user_roleIdTextBox.Location = new System.Drawing.Point(390, 121);
-            this.user_roleIdTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_roleIdTextBox.Location = new System.Drawing.Point(520, 149);
+            this.user_roleIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_roleIdTextBox.Name = "user_roleIdTextBox";
-            this.user_roleIdTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_roleIdTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_roleIdTextBox.TabIndex = 32;
             // 
             // user_fullNameTextBox
             // 
             this.user_fullNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_fullName", true));
-            this.user_fullNameTextBox.Location = new System.Drawing.Point(390, 144);
-            this.user_fullNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_fullNameTextBox.Location = new System.Drawing.Point(520, 177);
+            this.user_fullNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_fullNameTextBox.Name = "user_fullNameTextBox";
-            this.user_fullNameTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_fullNameTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_fullNameTextBox.TabIndex = 34;
             // 
             // user_addressTextBox
             // 
             this.user_addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_address", true));
-            this.user_addressTextBox.Location = new System.Drawing.Point(390, 167);
-            this.user_addressTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_addressTextBox.Location = new System.Drawing.Point(520, 206);
+            this.user_addressTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_addressTextBox.Name = "user_addressTextBox";
-            this.user_addressTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_addressTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_addressTextBox.TabIndex = 36;
             // 
             // user_phoneTextBox
             // 
             this.user_phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_phone", true));
-            this.user_phoneTextBox.Location = new System.Drawing.Point(390, 189);
-            this.user_phoneTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_phoneTextBox.Location = new System.Drawing.Point(520, 233);
+            this.user_phoneTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_phoneTextBox.Name = "user_phoneTextBox";
-            this.user_phoneTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_phoneTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_phoneTextBox.TabIndex = 38;
             // 
             // user_emailTextBox
             // 
             this.user_emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_email", true));
-            this.user_emailTextBox.Location = new System.Drawing.Point(390, 212);
-            this.user_emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_emailTextBox.Location = new System.Drawing.Point(520, 261);
+            this.user_emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_emailTextBox.Name = "user_emailTextBox";
-            this.user_emailTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_emailTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_emailTextBox.TabIndex = 40;
             // 
             // user_avartarTextBox
             // 
             this.user_avartarTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_avartar", true));
-            this.user_avartarTextBox.Location = new System.Drawing.Point(390, 235);
-            this.user_avartarTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_avartarTextBox.Location = new System.Drawing.Point(520, 289);
+            this.user_avartarTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_avartarTextBox.Name = "user_avartarTextBox";
-            this.user_avartarTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_avartarTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_avartarTextBox.TabIndex = 42;
             // 
             // user_createdAtDateTimePicker
             // 
             this.user_createdAtDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.usersBindingSource, "user_createdAt", true));
-            this.user_createdAtDateTimePicker.Location = new System.Drawing.Point(390, 258);
-            this.user_createdAtDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_createdAtDateTimePicker.Location = new System.Drawing.Point(520, 318);
+            this.user_createdAtDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_createdAtDateTimePicker.Name = "user_createdAtDateTimePicker";
-            this.user_createdAtDateTimePicker.Size = new System.Drawing.Size(180, 20);
+            this.user_createdAtDateTimePicker.Size = new System.Drawing.Size(239, 22);
             this.user_createdAtDateTimePicker.TabIndex = 44;
             // 
             // user_statusTextBox
             // 
             this.user_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "user_status", true));
-            this.user_statusTextBox.Location = new System.Drawing.Point(390, 280);
-            this.user_statusTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_statusTextBox.Location = new System.Drawing.Point(520, 345);
+            this.user_statusTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_statusTextBox.Name = "user_statusTextBox";
-            this.user_statusTextBox.Size = new System.Drawing.Size(180, 20);
+            this.user_statusTextBox.Size = new System.Drawing.Size(239, 22);
             this.user_statusTextBox.TabIndex = 46;
             // 
             // btnSave
@@ -474,10 +462,10 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(382, 332);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Location = new System.Drawing.Point(509, 409);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(70, 28);
+            this.btnSave.Size = new System.Drawing.Size(93, 34);
             this.btnSave.TabIndex = 77;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -489,10 +477,10 @@
             this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPre.ForeColor = System.Drawing.Color.White;
-            this.btnPre.Location = new System.Drawing.Point(306, 332);
-            this.btnPre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPre.Location = new System.Drawing.Point(408, 409);
+            this.btnPre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPre.Name = "btnPre";
-            this.btnPre.Size = new System.Drawing.Size(70, 28);
+            this.btnPre.Size = new System.Drawing.Size(93, 34);
             this.btnPre.TabIndex = 78;
             this.btnPre.Text = "Previous";
             this.btnPre.UseVisualStyleBackColor = false;
@@ -504,10 +492,10 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(230, 332);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNext.Location = new System.Drawing.Point(307, 409);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(70, 28);
+            this.btnNext.Size = new System.Drawing.Size(93, 34);
             this.btnNext.TabIndex = 79;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -519,10 +507,10 @@
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(153, 332);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDel.Location = new System.Drawing.Point(204, 409);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(70, 28);
+            this.btnDel.Size = new System.Drawing.Size(93, 34);
             this.btnDel.TabIndex = 80;
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -534,10 +522,10 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(71, 332);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Location = new System.Drawing.Point(95, 409);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 28);
+            this.btnAdd.Size = new System.Drawing.Size(93, 34);
             this.btnAdd.TabIndex = 81;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -545,10 +533,10 @@
             // 
             // UserManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(600, 493);
+            this.ClientSize = new System.Drawing.Size(800, 607);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnPre);
             this.Controls.Add(this.btnNext);
@@ -581,11 +569,11 @@
             this.Controls.Add(this.usersDataGridView);
             this.ForeColor = System.Drawing.Color.SeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "UserManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfume Store Manager | User Management";
+            this.Text = "User Management | Perfume Store Management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserManagement_FormClosed);
             this.Load += new System.EventHandler(this.UserManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();

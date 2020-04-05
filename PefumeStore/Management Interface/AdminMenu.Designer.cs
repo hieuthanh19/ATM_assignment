@@ -38,12 +38,7 @@
             this.btnCountryMng = new System.Windows.Forms.Button();
             this.btnBrandMng = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.returnHomeBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.buttonOrI = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.btnUserMng = new System.Windows.Forms.Button();
@@ -51,16 +46,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btbRpcost = new System.Windows.Forms.Button();
             this.btbRpproduct = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.returnHomeBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnProductMng
             // 
@@ -135,68 +135,14 @@
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Name = "label4";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Beige;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label3);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.label6);
-            this.flowLayoutPanel1.Controls.Add(this.btnProductMng);
-            this.flowLayoutPanel1.Controls.Add(this.btnCategoryMng);
-            this.flowLayoutPanel1.Controls.Add(this.btnBrandMng);
-            this.flowLayoutPanel1.Controls.Add(this.btnCountryMng);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
-            this.flowLayoutPanel1.Controls.Add(this.btnOrderMng);
-            this.flowLayoutPanel1.Controls.Add(this.btnDeliveryMethodMng);
-            this.flowLayoutPanel1.Controls.Add(this.btnPaymentMethodMng);
-            this.flowLayoutPanel1.Controls.Add(this.buttonOrI);
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.flowLayoutPanel1.Controls.Add(this.btnUserMng);
-            this.flowLayoutPanel1.Controls.Add(this.btnUserRoleMng);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.btbRpcost);
-            this.flowLayoutPanel1.Controls.Add(this.btbRpproduct);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Name = "label6";
-            // 
-            // returnHomeBtn
-            // 
-            this.returnHomeBtn.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.returnHomeBtn, "returnHomeBtn");
-            this.returnHomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.returnHomeBtn.FlatAppearance.BorderSize = 2;
-            this.returnHomeBtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.returnHomeBtn.Name = "returnHomeBtn";
-            this.returnHomeBtn.UseVisualStyleBackColor = false;
-            this.returnHomeBtn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.returnHomeBtn);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
             // 
             // buttonOrI
             // 
@@ -211,7 +157,7 @@
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Name = "label5";
             // 
             // btnUserMng
@@ -237,7 +183,7 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Name = "label2";
             // 
             // btbRpcost
@@ -260,25 +206,84 @@
             this.btbRpproduct.UseVisualStyleBackColor = false;
             this.btbRpproduct.Click += new System.EventHandler(this.btbRpproduct_Click);
             // 
+            // returnHomeBtn
+            // 
+            this.returnHomeBtn.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.returnHomeBtn, "returnHomeBtn");
+            this.returnHomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.returnHomeBtn.FlatAppearance.BorderSize = 2;
+            this.returnHomeBtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.returnHomeBtn.Name = "returnHomeBtn";
+            this.returnHomeBtn.UseVisualStyleBackColor = false;
+            this.returnHomeBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.returnHomeBtn);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnExit.FlatAppearance.BorderSize = 2;
+            this.btnExit.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnExit.Name = "btnExit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.btnExit);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Name = "label3";
+            // 
             // Admin_Menu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btbRpcost);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btbRpproduct);
+            this.Controls.Add(this.btnUserMng);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnUserRoleMng);
+            this.Controls.Add(this.btnOrderMng);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnDeliveryMethodMng);
+            this.Controls.Add(this.btnProductMng);
+            this.Controls.Add(this.btnPaymentMethodMng);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.buttonOrI);
+            this.Controls.Add(this.btnCategoryMng);
+            this.Controls.Add(this.btnBrandMng);
+            this.Controls.Add(this.btnCountryMng);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Admin_Menu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Admin_Menu_FormClosed);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -293,10 +298,7 @@
         private System.Windows.Forms.Button btnCountryMng;
         private System.Windows.Forms.Button btnBrandMng;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button returnHomeBtn;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonOrI;
@@ -306,5 +308,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btbRpcost;
         private System.Windows.Forms.Button btbRpproduct;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -64,10 +64,9 @@
             // 
             role_idLabel.AutoSize = true;
             role_idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            role_idLabel.Location = new System.Drawing.Point(311, 70);
-            role_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            role_idLabel.Location = new System.Drawing.Point(415, 86);
             role_idLabel.Name = "role_idLabel";
-            role_idLabel.Size = new System.Drawing.Size(55, 20);
+            role_idLabel.Size = new System.Drawing.Size(70, 25);
             role_idLabel.TabIndex = 23;
             role_idLabel.Text = "role id:";
             // 
@@ -75,10 +74,9 @@
             // 
             role_nameLabel.AutoSize = true;
             role_nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            role_nameLabel.Location = new System.Drawing.Point(311, 97);
-            role_nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            role_nameLabel.Location = new System.Drawing.Point(415, 119);
             role_nameLabel.Name = "role_nameLabel";
-            role_nameLabel.Size = new System.Drawing.Size(83, 20);
+            role_nameLabel.Size = new System.Drawing.Size(104, 25);
             role_nameLabel.TabIndex = 25;
             role_nameLabel.Text = "role name:";
             // 
@@ -86,10 +84,9 @@
             // 
             role_statusLabel.AutoSize = true;
             role_statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            role_statusLabel.Location = new System.Drawing.Point(311, 126);
-            role_statusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            role_statusLabel.Location = new System.Drawing.Point(415, 155);
             role_statusLabel.Name = "role_statusLabel";
-            role_statusLabel.Size = new System.Drawing.Size(87, 20);
+            role_statusLabel.Size = new System.Drawing.Size(107, 25);
             role_statusLabel.TabIndex = 27;
             role_statusLabel.Text = "role status:";
             // 
@@ -150,11 +147,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.user_roleDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.user_roleDataGridView.GridColor = System.Drawing.Color.SeaGreen;
-            this.user_roleDataGridView.Location = new System.Drawing.Point(28, 66);
-            this.user_roleDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_roleDataGridView.Location = new System.Drawing.Point(37, 81);
+            this.user_roleDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_roleDataGridView.Name = "user_roleDataGridView";
             this.user_roleDataGridView.RowTemplate.Height = 24;
-            this.user_roleDataGridView.Size = new System.Drawing.Size(225, 104);
+            this.user_roleDataGridView.Size = new System.Drawing.Size(300, 128);
             this.user_roleDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -178,10 +175,10 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(10, 12);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Location = new System.Drawing.Point(13, 15);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(56, 24);
+            this.btnReturn.Size = new System.Drawing.Size(75, 30);
             this.btnReturn.TabIndex = 23;
             this.btnReturn.Text = "Return ";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -191,10 +188,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(267, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 26);
+            this.label1.Size = new System.Drawing.Size(333, 32);
             this.label1.TabIndex = 22;
             this.label1.Text = "User Role Management";
             // 
@@ -203,30 +199,30 @@
             this.role_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_id", true));
             this.role_idTextBox.Enabled = false;
             this.role_idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.role_idTextBox.Location = new System.Drawing.Point(403, 70);
-            this.role_idTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.role_idTextBox.Location = new System.Drawing.Point(537, 86);
+            this.role_idTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.role_idTextBox.Name = "role_idTextBox";
-            this.role_idTextBox.Size = new System.Drawing.Size(143, 26);
+            this.role_idTextBox.Size = new System.Drawing.Size(189, 30);
             this.role_idTextBox.TabIndex = 24;
             // 
             // role_nameTextBox
             // 
             this.role_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_name", true));
             this.role_nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.role_nameTextBox.Location = new System.Drawing.Point(403, 97);
-            this.role_nameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.role_nameTextBox.Location = new System.Drawing.Point(537, 119);
+            this.role_nameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.role_nameTextBox.Name = "role_nameTextBox";
-            this.role_nameTextBox.Size = new System.Drawing.Size(143, 26);
+            this.role_nameTextBox.Size = new System.Drawing.Size(189, 30);
             this.role_nameTextBox.TabIndex = 26;
             // 
             // role_statusTextBox
             // 
             this.role_statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_roleBindingSource, "role_status", true));
             this.role_statusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.role_statusTextBox.Location = new System.Drawing.Point(403, 126);
-            this.role_statusTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.role_statusTextBox.Location = new System.Drawing.Point(537, 155);
+            this.role_statusTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.role_statusTextBox.Name = "role_statusTextBox";
-            this.role_statusTextBox.Size = new System.Drawing.Size(143, 26);
+            this.role_statusTextBox.Size = new System.Drawing.Size(189, 30);
             this.role_statusTextBox.TabIndex = 28;
             // 
             // btnSave
@@ -235,10 +231,10 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(415, 223);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Location = new System.Drawing.Point(553, 274);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(70, 28);
+            this.btnSave.Size = new System.Drawing.Size(93, 34);
             this.btnSave.TabIndex = 87;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -250,10 +246,10 @@
             this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPre.ForeColor = System.Drawing.Color.White;
-            this.btnPre.Location = new System.Drawing.Point(338, 223);
-            this.btnPre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPre.Location = new System.Drawing.Point(451, 274);
+            this.btnPre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPre.Name = "btnPre";
-            this.btnPre.Size = new System.Drawing.Size(70, 28);
+            this.btnPre.Size = new System.Drawing.Size(93, 34);
             this.btnPre.TabIndex = 88;
             this.btnPre.Text = "Previous";
             this.btnPre.UseVisualStyleBackColor = false;
@@ -265,10 +261,10 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(262, 223);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNext.Location = new System.Drawing.Point(349, 274);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(70, 28);
+            this.btnNext.Size = new System.Drawing.Size(93, 34);
             this.btnNext.TabIndex = 89;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -280,10 +276,10 @@
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(185, 223);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDel.Location = new System.Drawing.Point(247, 274);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(70, 28);
+            this.btnDel.Size = new System.Drawing.Size(93, 34);
             this.btnDel.TabIndex = 90;
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = false;
@@ -295,10 +291,10 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(104, 223);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Location = new System.Drawing.Point(139, 274);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 28);
+            this.btnAdd.Size = new System.Drawing.Size(93, 34);
             this.btnAdd.TabIndex = 91;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -306,10 +302,10 @@
             // 
             // UserRoleManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(600, 284);
+            this.ClientSize = new System.Drawing.Size(800, 350);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnPre);
             this.Controls.Add(this.btnNext);
@@ -326,11 +322,11 @@
             this.Controls.Add(this.user_roleDataGridView);
             this.ForeColor = System.Drawing.Color.SeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "UserRoleManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfume Store Manager | User Role Management";
+            this.Text = "User Role Management | Perfume Store Management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserRoleManagement_FormClosed);
             this.Load += new System.EventHandler(this.UserRoleManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfume_StoreDataSet)).EndInit();
